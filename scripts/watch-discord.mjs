@@ -71,7 +71,8 @@ async function messagesSince(channel, afterId) {
 }
 
 const state = await readJson(STATE, {});
-const alerts = [];
+const codeAlerts = [];
+const updateAlerts = [];
 
 for (const { channel, game } of watch) {
   let messages;
@@ -100,16 +101,17 @@ for (const { channel, game } of watch) {
     if (!text) continue;
     const fresh = codesIn(text).filter((c) => !known.has(c.toUpperCase()));
     if (fresh.length) {
-      alerts.push(
+      codeAlerts.push(
         `🎁 **${label}** posted possible codes: ${fresh.map((c) => `\`${c}\``).join(', ')}\n` +
           `Check them in-game, then run the "Add a code" action${game ? ` with game \`${game}\`` : ''}.`
       );
     } else if (/update|patch|release|out now/i.test(text)) {
-      alerts.push(`🔄 **${label}** posted an update. Worth checking for new codes.`);
+      updateAlerts.push(`🔄 **${label}** posted an update. Worth checking for new codes.`);
     }
   }
 }
 
 await writeJson(STATE, state);
-console.log(`${alerts.length} alerts from ${watch.length} channels.`);
-if (alerts.length) await sendDiscord(alerts.slice(0, 15).join('\n\n'));
+console.log(`${codeAlerts.length} code alerts, ${updateAlerts.length} update alerts from ${watch.length} channels.`);
+if (codeAlerts.length) await sendDiscord(codeAlerts.slice(0, 15).join('\n\n'), 'codes');
+if (updateAlerts.length) await sendDiscord(updateAlerts.slice(0, 15).join('\n\n'), 'updates');
