@@ -2,15 +2,15 @@
 import Base from '../layouts/Base.astro';
 import { site } from '../site.config';
 ---
-<Base title="About" description="What BloxRising is and how we check Roblox codes.">
+<Base title="About" description="What EarlySpawn is and how we check game codes.">
   <div class="wrap prose page">
-    <h1>About BloxRising</h1>
-    <p>BloxRising covers the Roblox games gaining players fastest, with codes, beginner guides, and game info in one place. We cover new games early, often before the bigger sites get to them.</p>
+    <h1>About {site.name}</h1>
+    <p>{site.name} covers the games gaining players fastest, with codes, beginner guides, and game info in one place. We cover new games early, often before the bigger sites get to them.</p>
     <h2>How we check codes</h2>
     <p>Every code on this site comes from the game's own announcements, and we check it in-game before listing it. Each codes page shows when it was last checked. Codes that stop working move to the expired list.</p>
     <h2>Spotted a new code?</h2>
     <p>Send it to <a href={`mailto:${site.email}`}>{site.email}</a> and we'll check it and add it.</p>
-    <p>BloxRising is a fan site. It isn't affiliated with or endorsed by Roblox Corporation or any game developer.</p>
+    <p>{site.name} is a fan site. It isn't affiliated with or endorsed by Roblox Corporation or any game developer.</p>
   </div>
 </Base>
 <style>.page { padding-top: 36px; } .page h1 { margin-bottom: 18px; }</style>

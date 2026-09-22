@@ -1,4 +1,5 @@
 ---
+import { site } from '../site.config';
 const path = Astro.url.pathname;
 const links = [
   { href: '/games/', label: 'Games' },
@@ -8,8 +9,8 @@ const links = [
 ---
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="BloxRising home">
-      <img src="/logo-header.png" alt="BloxRising" width="180" height="56" />
+    <a class="logo" href="/" aria-label={`${site.name} home`}>
+      <img src="/logo-header.png" alt={site.name} width="180" height="56" />
     </a>
     <nav class="site-nav" aria-label="Main">
       {links.map((l) => (

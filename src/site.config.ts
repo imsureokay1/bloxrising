@@ -1,13 +1,13 @@
 // Site-wide settings. Edit these, then save.
 export const site = {
-  name: 'BloxRising',
-  url: 'https://bloxrising.com',
-  tagline: 'Codes, guides, and game info for the Roblox games blowing up right now.',
-  email: 'contact@bloxrising.com',
+  name: 'EarlySpawn',
+  url: 'https://earlyspawn.com',
+  tagline: 'Rising games, spotted early. Codes, guides, and game info, updated daily.',
+  email: 'contact@earlyspawn.com',
 
   // Your social links. Leave '' to hide one.
   socials: {
-    tiktok: '', // e.g. 'https://www.tiktok.com/@bloxrising'
+    tiktok: '', // e.g. 'https://www.tiktok.com/@earlyspawn'
     youtube: '',
     x: '',
     discord: '',

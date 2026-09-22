@@ -1,6 +1,6 @@
-# BloxRising
+# EarlySpawn
 
-The bloxrising.com website, built with [Astro](https://astro.build).
+The earlyspawn.com website, built with [Astro](https://astro.build).
 
 ## Preview it (no install)
 
@@ -23,7 +23,7 @@ Then open http://localhost:4321
 
 1. Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git → pick your repo.
 2. Framework preset: **Astro**. Build command: `npm run build`. Output folder: `dist`.
-3. After the first deploy: Custom domains → add `bloxrising.com` (and `www.bloxrising.com`). Let Cloudflare replace the old parking records.
+3. After the first deploy: Custom domains → add `earlyspawn.com` (and `www.earlyspawn.com`). Let Cloudflare replace the old parking records.
 
 Every change you push to GitHub goes live automatically.
 
@@ -57,3 +57,25 @@ Ad slots show as grey boxes while you preview and are hidden on the live site. O
 
 - Check the Slayers 2 codes in the game's menu, fill in the rewards, and set `lastChecked`.
 - Read through the Privacy Policy (`src/pages/privacy.astro`). It covers AdSense basics but isn't legal advice.
+
+## Automation (GitHub Actions)
+
+Two robots live in `.github/workflows/`. They run on GitHub's servers for free.
+
+**Track games** (every 3 hours, automatic)
+- Updates each game's player count and the "Rising this week" ranking on the site.
+- Pings your Discord when a game updates, changes its description, shows possible new codes, or takes over #1 rising.
+- Commits the new numbers, so the live site updates by itself (about 8 builds a day, well inside Cloudflare's free 500 a month).
+
+**Add a game** (you start it)
+- GitHub → your repo → Actions → "Add a game" → Run workflow → paste the Roblox link → Run.
+- Creates the game's file, downloads its icon, and the page goes live a couple of minutes later.
+- Then check its codes in-game and fill in the About section and guides.
+
+### One-time setup
+1. **Discord alerts:** In your Discord server: Server Settings → Integrations → Webhooks → New Webhook → pick a channel → Copy Webhook URL.
+2. **Save it as a secret:** GitHub repo → Settings → Secrets and variables → Actions → New repository secret. Name: `DISCORD_WEBHOOK_URL`, value: the URL. Never paste it into a file.
+3. **Allow the robots to save:** Settings → Actions → General → Workflow permissions → "Read and write permissions" → Save.
+4. **First run:** Actions → "Track games" → Run workflow. The first run records a starting point; alerts start from the second run.
+
+Codes are never published automatically. The robot only suggests them, since codes found in descriptions can be old or fake. You check them in-game and add them.

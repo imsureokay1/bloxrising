@@ -36,6 +36,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
 
     <CodeList codes={d.codes} />
 
+    {d.redeemSteps.length > 0 && (
     <section class="block" aria-labelledby="redeem-title">
       <h2 id="redeem-title">How to redeem {d.name} codes</h2>
       <ol class="steps">
@@ -48,6 +49,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
         </figure>
       )}
     </section>
+    )}
 
     {d.troubleshooting.length > 0 && (
       <section class="block" aria-labelledby="fix-title">

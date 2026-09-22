@@ -19,6 +19,11 @@ const posts = (await getCollection('guides'))
   .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
 const paragraphs = d.about.split(/\n\s*\n/).filter(Boolean);
 const checked = formatDate(d.lastChecked);
+const byline = [
+  d.developer && `By ${d.developer}`,
+  d.genre,
+  d.released && `released ${formatDate(d.released)}`,
+].filter(Boolean).join(', ');
 ---
 <Base image={d.cover} title={`${d.name}${d.altName ? ` (${d.altName})` : ''}: Codes, Guides and Game Info`} description={`Everything for ${d.name} on Roblox: working codes, beginner guides, and what the game is about.`}>
   <div class="wrap">
@@ -37,7 +42,7 @@ const checked = formatDate(d.lastChecked);
       <div class="titles">
         <h1>{d.name}</h1>
         {d.altName && <p class="aka">Also called {d.altName}</p>}
-        <p class="by">By {d.developer}{d.genre && `, ${d.genre}`}{d.released && `, released ${formatDate(d.released)}`}</p>
+        {byline && <p class="by">{byline}</p>}
       </div>
       <a class="btn" href={d.robloxUrl} rel="noopener">Play on Roblox</a>
     </header>
