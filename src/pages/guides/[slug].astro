@@ -1,0 +1,48 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { formatDate } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+interface Props { guide: CollectionEntry<'guides'> }
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const game = (await getCollection('games')).find((g) => g.id === guide.data.game);
+---
+<Base title={guide.data.title} description={guide.data.description}>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a>
+      {game && (<><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{game.data.name}</a></>)}
+    </nav>
+    <article>
+      <header class="head">
+        <h1>{guide.data.title}</h1>
+        <p class="date">Updated {formatDate(guide.data.updated)}</p>
+      </header>
+      <AdSlot size="banner" />
+      <div class="prose">
+        <Content />
+      </div>
+      {game && (
+        <p class="cta">
+          <a class="btn" href={`/codes/${game.id}/`}>Get the latest {game.data.name} codes</a>
+          <a class="btn btn-ghost" href={`/games/${game.id}/`}>More {game.data.name} guides</a>
+        </p>
+      )}
+      <AdSlot size="rect" />
+    </article>
+  </div>
+</Base>
+
+<style>
+  .head { padding-top: 14px; }
+  .head h1 { max-width: 22ch; }
+  .date { color: var(--muted); margin: 10px 0 0; }
+  .cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+</style>

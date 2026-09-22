@@ -1,0 +1,98 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import CodeList from '../../components/CodeList.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { formatDate, monthYear } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games');
+  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+}
+
+interface Props { game: CollectionEntry<'games'> }
+const { game } = Astro.props;
+const d = game.data;
+const checked = formatDate(d.lastChecked);
+const related = (await getCollection('guides')).filter((g) => g.data.game === game.id);
+const title = `${d.name} Codes (${monthYear(d.lastChecked)})`;
+const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.lastChecked)}` : title;
+---
+<Base image={d.cover} title={searchTitle} description={`All working ${d.name} codes, checked in-game. ${d.summary}`}>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{d.name}</a><span aria-hidden="true">/</span><span>Codes</span>
+    </nav>
+
+    <header class="head">
+      <h1>{title}</h1>
+      {checked
+        ? <span class="checked">Last checked {checked}</span>
+        : <span class="checked is-pending">Codes not checked in-game yet</span>}
+      <p class="lede">{d.summary}</p>
+    </header>
+
+    <AdSlot size="banner" />
+
+    <CodeList codes={d.codes} />
+
+    <section class="block" aria-labelledby="redeem-title">
+      <h2 id="redeem-title">How to redeem {d.name} codes</h2>
+      <ol class="steps">
+        {d.redeemSteps.map((s) => <li>{s}</li>)}
+      </ol>
+      {d.redeemImage && (
+        <figure class="shot">
+          <img src={d.redeemImage.src} alt={d.redeemImage.alt} width="1200" height="538" loading="lazy" />
+          <figcaption>Where to redeem codes in {d.name}</figcaption>
+        </figure>
+      )}
+    </section>
+
+    {d.troubleshooting.length > 0 && (
+      <section class="block" aria-labelledby="fix-title">
+        <h2 id="fix-title">Codes not working?</h2>
+        <dl class="fixes list-card">
+          {d.troubleshooting.map((t) => (
+            <div><dt>{t.q}</dt><dd>{t.a}</dd></div>
+          ))}
+        </dl>
+      </section>
+    )}
+
+    <AdSlot size="rect" />
+
+    <section class="block" aria-labelledby="more-title">
+      <h2 id="more-title">More {d.name}</h2>
+      <div class="more">
+        <a class="list-card more-link" href={`/games/${game.id}/`}>About {d.name}: game info and all guides</a>
+        {related.map((g) => (
+          <a class="list-card more-link" href={`/guides/${g.id}/`}>{g.data.title}</a>
+        ))}
+        <a class="btn btn-ghost" href={d.robloxUrl} rel="noopener">Play {d.name} on Roblox</a>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .page { max-width: 760px; }
+  .head { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 14px; }
+  .block { margin-top: 40px; }
+  .block h2 { margin-bottom: 14px; }
+  .steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .steps li { counter-increment: step; display: flex; gap: 14px; align-items: flex-start; font-size: 16px; }
+  .steps li::before { content: counter(step); width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--ground); font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: -2px; }
+  .shot { margin: 20px 0 0; }
+  .shot img { border-radius: 14px; border: 1px solid var(--line); width: 100%; height: auto; }
+  .shot figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+  .fixes { margin: 0; padding: 6px 18px; }
+  .fixes div { padding: 12px 0; border-top: 1px solid var(--line); }
+  .fixes div:first-child { border-top: none; }
+  dt { font-weight: 700; }
+  dd { margin: 2px 0 0; color: var(--ink-2); }
+  .more { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+  .more-link { padding: 14px 18px; font-weight: 700; color: var(--ink); min-height: 48px; }
+  .more-link:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  .more .btn { align-self: flex-start; margin-top: 6px; }
+</style>

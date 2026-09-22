@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import GameRow from '../../components/GameRow.astro';
+
+const games = (await getCollection('games')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<Base title="All Roblox Codes" description="Every Roblox game we track, A to Z, with working codes checked in-game.">
+  <div class="wrap">
+    <h1 class="title">All Roblox codes</h1>
+    <p class="lede">Every game we track, A to Z.</p>
+    <div class="search filter">
+      <label for="filter">Filter games</label>
+      <input id="filter" type="search" placeholder="Type a game name" autocomplete="off" />
+    </div>
+    <div class="rows" id="rows">
+      {games.map((g) => <GameRow game={g} />)}
+    </div>
+    <p class="empty" id="empty" hidden>No games match that search yet.</p>
+  </div>
+</Base>
+
+<script>
+  const input = document.getElementById('filter') as HTMLInputElement;
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('#rows .game-row'));
+  const empty = document.getElementById('empty') as HTMLElement;
+  function apply() {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    rows.forEach((r) => {
+      const hit = !q || (r.dataset.name ?? '').includes(q);
+      r.style.display = hit ? '' : 'none';
+      if (hit) shown++;
+    });
+    empty.hidden = shown > 0;
+  }
+  const q = new URLSearchParams(location.search).get('q');
+  if (q) input.value = q;
+  input.addEventListener('input', apply);
+  apply();
+</script>
+
+<style>
+  .title { padding-top: 36px; }
+  .filter { margin: 22px 0 18px; }
+  .rows { display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
+  .empty { color: var(--muted); }
+</style>

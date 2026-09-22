@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site.config';
+const updated = 'September 21, 2026';
+---
+<Base title="Privacy Policy" description="How BloxRising handles data, cookies, and advertising.">
+  <div class="wrap prose page">
+    <h1>Privacy Policy</h1>
+    <p><em>Last updated: {updated}</em></p>
+
+    <p>This policy explains what information {site.name} ({site.url}) collects and how it's used. {site.name} doesn't have accounts or logins, and we don't ask you for personal information to use the site.</p>
+
+    <h2>Information collected automatically</h2>
+    <p>Like most websites, our hosting and security provider (Cloudflare) processes basic technical information when you visit, such as your IP address, browser type, and the pages you view. This is used to deliver the site, keep it secure, and understand overall traffic.</p>
+
+    <h2>Advertising and cookies</h2>
+    <p>We use Google AdSense to show ads. Third-party vendors, including Google, use cookies to serve ads based on your previous visits to this and other websites.</p>
+    <p>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the internet. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener">Google Ads Settings</a>. You can also opt out of some third-party vendors' use of cookies for personalized advertising at <a href="https://www.aboutads.info/choices/" rel="noopener">aboutads.info</a>.</p>
+    <p>To learn more, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites that use its services</a>.</p>
+
+    <h2>Children's privacy</h2>
+    <p>{site.name} is a general-audience site and is not directed at children under 13. We don't knowingly collect personal information from children. If you believe a child has sent us personal information, contact us and we'll delete it.</p>
+
+    <h2>Emails you send us</h2>
+    <p>If you email us, we use your message and email address only to reply. We don't sell or share it.</p>
+
+    <h2>Links to other sites</h2>
+    <p>We link to Roblox and other websites. Their privacy practices are their own, so check their policies.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. The date at the top shows when it last changed.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href={`mailto:${site.email}`}>{site.email}</a></p>
+  </div>
+</Base>
+<style>.page { padding-top: 36px; } .page h1 { margin-bottom: 12px; }</style>

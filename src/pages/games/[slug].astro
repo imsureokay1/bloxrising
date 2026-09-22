@@ -1,0 +1,144 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { formatDate, tileColor } from '../../lib/format';
+import { kindLabel } from '../../lib/kinds';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games');
+  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+}
+
+interface Props { game: CollectionEntry<'games'> }
+const { game } = Astro.props;
+const d = game.data;
+const active = d.codes.filter((c) => c.status === 'active');
+const posts = (await getCollection('guides'))
+  .filter((g) => g.data.game === game.id)
+  .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
+const paragraphs = d.about.split(/\n\s*\n/).filter(Boolean);
+const checked = formatDate(d.lastChecked);
+---
+<Base image={d.cover} title={`${d.name}${d.altName ? ` (${d.altName})` : ''}: Codes, Guides and Game Info`} description={`Everything for ${d.name} on Roblox: working codes, beginner guides, and what the game is about.`}>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{d.name}</span>
+    </nav>
+
+    {d.cover && (
+      <img class="cover" src={d.cover} alt={`${d.name} cover art`} width="1200" height="675" />
+    )}
+
+    <header class="hub-head">
+      {d.icon
+        ? <img class="tile" src={d.icon} alt="" width="72" height="72" />
+        : <span class="tile" style={`background:${tileColor(d.name)}`} aria-hidden="true">{d.name.charAt(0)}</span>}
+      <div class="titles">
+        <h1>{d.name}</h1>
+        {d.altName && <p class="aka">Also called {d.altName}</p>}
+        <p class="by">By {d.developer}{d.genre && `, ${d.genre}`}{d.released && `, released ${formatDate(d.released)}`}</p>
+      </div>
+      <a class="btn" href={d.robloxUrl} rel="noopener">Play on Roblox</a>
+    </header>
+
+    <nav class="jump" aria-label="On this page">
+      <a href="#codes">Codes</a>
+      {posts.length > 0 && <a href="#guides">Guides</a>}
+      {paragraphs.length > 0 && <a href="#about">About the game</a>}
+    </nav>
+
+    <div class="hub-grid">
+      <div class="main-col">
+        <section id="codes" class="card codes-card" aria-labelledby="codes-title">
+          <div class="card-head">
+            <h2 id="codes-title">Codes</h2>
+            {checked
+              ? <span class="checked">Checked {checked}</span>
+              : <span class="checked is-pending">Not checked yet</span>}
+          </div>
+          {active.length === 0 ? (
+            <p>No working codes right now.</p>
+          ) : (
+            <ul class="mini-codes">
+              {active.slice(0, 3).map((c) => (
+                <li><span class="code">{c.code}</span><span class="reward">{c.reward || 'Reward not confirmed yet'}</span></li>
+              ))}
+            </ul>
+          )}
+          <a class="btn btn-ghost" href={`/codes/${game.id}/`}>
+            {active.length > 3 ? `See all ${active.length} codes` : 'Copy codes and how to redeem'}
+          </a>
+        </section>
+
+        {posts.length > 0 && (
+          <section id="guides" class="section" aria-labelledby="guides-title">
+            <h2 id="guides-title">Guides and news</h2>
+            <div class="posts">
+              {posts.map((p) => (
+                <a class="list-card post" href={`/guides/${p.id}/`}>
+                  <span class="kind">{kindLabel[p.data.kind]}</span>
+                  <span class="t">{p.data.title}</span>
+                  <span class="desc">{p.data.description}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {paragraphs.length > 0 && (
+          <section id="about" class="section prose" aria-labelledby="about-title">
+            <h2 id="about-title">About {d.name}</h2>
+            {paragraphs.map((p) => <p>{p}</p>)}
+          </section>
+        )}
+      </div>
+
+      <aside class="side-col">
+        {d.quickFacts.length > 0 && (
+          <section class="card facts" aria-labelledby="facts-title">
+            <h2 id="facts-title">Quick facts</h2>
+            <dl>
+              {d.quickFacts.map((f) => (<div><dt>{f.label}</dt><dd>{f.value}</dd></div>))}
+            </dl>
+          </section>
+        )}
+        <AdSlot size="rect" />
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .cover { width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: 360px; object-fit: cover; border-radius: 20px; margin-top: 18px; }
+  img.tile { object-fit: cover; }
+  .hub-head { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; padding-top: 18px; }
+  .tile { width: 72px; height: 72px; border-radius: 18px; color: #fff; font-family: var(--display); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .titles { flex: 1; min-width: 200px; }
+  .by { margin: 6px 0 0; color: var(--muted); }
+  .aka { margin: 6px 0 0; font-weight: 600; color: var(--ink-2); }
+  .jump { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  .jump a { font-weight: 600; color: var(--ink); padding: 8px 14px; border-radius: 999px; background: var(--ground-2); min-height: 40px; display: inline-flex; align-items: center; }
+  .jump a:hover { background: var(--ink); color: var(--ground); text-decoration: none; }
+  .hub-grid { display: grid; gap: 0 32px; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .hub-grid { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; margin-top: 24px; }
+  .card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+  .codes-card { border: 2px solid var(--ink); }
+  .mini-codes { list-style: none; margin: 0 0 16px; padding: 0; }
+  .mini-codes li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .code { font-family: var(--mono); font-weight: 700; }
+  .reward { color: var(--muted); font-size: 14px; }
+  .section h2 { margin-bottom: 14px; }
+  .posts { display: flex; flex-direction: column; gap: 10px; }
+  .post { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; color: var(--ink); }
+  .post:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  .kind { font-size: 14px; font-weight: 700; color: var(--green); }
+  .t { font-weight: 700; font-size: 17px; }
+  .desc { color: var(--ink-2); font-size: 15px; }
+  .facts h2 { font-size: 1.2rem; margin-bottom: 8px; }
+  .facts dl { margin: 0; }
+  .facts div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; font-weight: 700; text-align: right; }
+</style>

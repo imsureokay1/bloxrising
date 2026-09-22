@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { games: CollectionEntry<'games'>[] }
+const ranked = Astro.props.games
+  .filter((g) => g.data.rising != null)
+  .sort((a, b) => (a.data.rising ?? 99) - (b.data.rising ?? 99))
+  .slice(0, 5);
+---
+<section class="rising" aria-labelledby="rising-title">
+  <h2 id="rising-title">Rising this week</h2>
+  <p>Games gaining players fastest right now.</p>
+  {ranked.length === 0 ? (
+    <p class="empty">No games ranked yet. Add a "rising" number to a game file to list it here.</p>
+  ) : (
+    <ol>
+      {ranked.map((g, i) => (
+        <li>
+          <span class="rank">{i + 1}</span>
+          <a href={`/codes/${g.id}/`}>
+            <span class="name">{g.data.name}</span>
+            {g.data.players && <span class="players">{g.data.players}</span>}
+          </a>
+        </li>
+      ))}
+    </ol>
+  )}
+</section>
+
+<style>
+  .rising { background: var(--ink); color: var(--ground); border-radius: 20px; padding: 24px 22px 10px; }
+  .rising h2 { color: var(--ground); }
+  .rising > p { margin: 6px 0 10px; color: #B7BAC2; font-size: 15px; }
+  .rising .empty { padding-bottom: 14px; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px solid #2E3139; }
+  .rank { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; color: var(--green-bright); width: 30px; }
+  li a { display: flex; flex-direction: column; gap: 2px; color: var(--ground); flex: 1; min-height: 44px; justify-content: center; }
+  li a:hover { color: #fff; }
+  .name { font-weight: 700; font-size: 17px; }
+  .players { font-size: 14px; color: #B7BAC2; }
+</style>

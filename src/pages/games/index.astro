@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import GameCard from '../../components/GameCard.astro';
+
+const games = (await getCollection('games')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<Base title="Roblox Games" description="Every Roblox game we cover, with codes, guides, and game info in one place.">
+  <div class="wrap">
+    <h1 class="title">Games</h1>
+    <p class="lede">Codes, guides, and game info for every game we cover.</p>
+    <div class="grid">
+      {games.map((g) => <GameCard game={g} />)}
+    </div>
+  </div>
+</Base>
+<style>
+  .title { padding-top: 36px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin-top: 24px; }
+</style>

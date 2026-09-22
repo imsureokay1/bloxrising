@@ -1,0 +1,20 @@
+---
+import { site } from '../site.config';
+const socials = [
+  { href: site.socials.tiktok, label: 'TikTok' },
+  { href: site.socials.youtube, label: 'YouTube' },
+  { href: site.socials.x, label: 'X' },
+  { href: site.socials.discord, label: 'Discord' },
+].filter((s) => s.href);
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy Policy</a>
+      {socials.map((s) => <a href={s.href} rel="noopener">{s.label}</a>)}
+    </nav>
+    <p>© {new Date().getFullYear()} {site.name}. Not affiliated with or endorsed by Roblox Corporation. Game names belong to their creators.</p>
+  </div>
+</footer>

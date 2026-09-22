@@ -1,0 +1,80 @@
+---
+import { formatDate } from '../lib/format';
+interface Code { code: string; reward: string; expires?: string | null; status: 'active' | 'expired' }
+interface Props { codes: Code[] }
+const active = Astro.props.codes.filter((c) => c.status === 'active');
+const expired = Astro.props.codes.filter((c) => c.status === 'expired');
+---
+<section class="codes" aria-labelledby="active-title">
+  <h2 id="active-title">Active codes</h2>
+  {active.length === 0 ? (
+    <p class="none">There are no working codes right now. New ones usually arrive with updates, so check back soon.</p>
+  ) : (
+    <ul>
+      {active.map((c) => (
+        <li class="list-card">
+          <span class="text">
+            <span class="code">{c.code}</span>
+            <span class="reward">{c.reward || 'Reward not confirmed yet'}</span>
+            {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
+          </span>
+          <button class="btn copy" type="button" data-code={c.code} aria-label={`Copy code ${c.code}`}>Copy</button>
+        </li>
+      ))}
+    </ul>
+  )}
+</section>
+
+{expired.length > 0 && (
+  <section class="expired" aria-labelledby="expired-title">
+    <h2 id="expired-title">Expired codes</h2>
+    <ul>
+      {expired.map((c) => (
+        <li>
+          <span class="code">{c.code}</span>
+          {c.reward && <span class="reward">{c.reward}</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const code = btn.dataset.code ?? '';
+      try {
+        await navigator.clipboard.writeText(code);
+      } catch {
+        const t = document.createElement('textarea');
+        t.value = code;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        t.remove();
+      }
+      document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => {
+        b.textContent = 'Copy';
+        b.classList.remove('is-copied');
+      });
+      btn.textContent = 'Copied';
+      btn.classList.add('is-copied');
+    });
+  });
+</script>
+
+<style>
+  section { margin-top: 32px; }
+  h2 { margin-bottom: 14px; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .codes li { display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; }
+  .text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+  .code { font-family: var(--mono); font-weight: 700; font-size: 17px; letter-spacing: 0.02em; word-break: break-all; }
+  .reward { font-size: 14px; color: var(--muted); }
+  .expires { font-size: 13px; font-weight: 700; color: var(--amber-ink); }
+  .copy { min-width: 88px; flex-shrink: 0; }
+  :global(.copy.is-copied) { background: var(--ink); }
+  .none { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 0; }
+  .expired li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; background: var(--ground-2); border-radius: 12px; padding: 12px 16px; }
+  .expired .code { font-weight: 600; font-size: 15px; color: var(--muted); text-decoration: line-through; }
+</style>

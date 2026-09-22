@@ -1,0 +1,98 @@
+{
+  "name": "Slayers 2",
+  "altName": "Project Slayers 2",
+  "developer": "Ouw Productions",
+  "robloxUrl": "https://www.roblox.com/games/16205713724/Slayers-2",
+  "group": "Ouw Productions",
+  "summary": "Free Spins, Wen and more for Slayers 2 (also called Project Slayers 2), the Demon Slayer-inspired open-world RPG by Ouw Productions.",
+  "about": "Slayers 2 is a free open-world action RPG on Roblox, inspired by Demon Slayer and made by Ouw Productions. It's the sequel to Project Slayers.\n\nYou pick one of two paths. Slayers learn Breathing Styles and work toward Final Selection. Demons serve Muzan and unlock Blood Demon Arts. Your clan, rolled with spins, shapes your skills and stats on either path.",
+  "genre": "Action RPG",
+  "icon": "/images/slayers-2/icon.webp",
+  "cover": "/images/slayers-2/cover.webp",
+  "released": "2026-09-18",
+  "quickFacts": [
+    {
+      "label": "Developer",
+      "value": "Ouw Productions"
+    },
+    {
+      "label": "Genre",
+      "value": "Open-world action RPG"
+    },
+    {
+      "label": "Paths",
+      "value": "Slayer or Demon"
+    },
+    {
+      "label": "Currency",
+      "value": "Wen"
+    },
+    {
+      "label": "Breathing unlocks",
+      "value": "Level 25"
+    }
+  ],
+  "lastChecked": "2026-09-22",
+  "rising": 1,
+  "players": null,
+  "codes": [
+    {
+      "code": "SKILLTREERESET",
+      "reward": "Skill tree points reset",
+      "expires": "2026-09-28",
+      "status": "active"
+    },
+    {
+      "code": "RELEASE26",
+      "reward": "100 Wen, 30 Spins, 1 Refinement Ore",
+      "expires": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "code": "EVILARTSPINS",
+      "reward": "",
+      "expires": null,
+      "status": "expired"
+    },
+    {
+      "code": "SORRYFORSHUTDOWN",
+      "reward": "",
+      "expires": null,
+      "status": "expired"
+    },
+    {
+      "code": "POINTSRESET",
+      "reward": "",
+      "expires": null,
+      "status": "expired"
+    }
+  ],
+  "redeemSteps": [
+    "Join the Ouw Productions group on Roblox. RELEASE26 needs it, and the game checks it for you.",
+    "Fully close and reopen Slayers 2.",
+    "On the main menu, find the code list and the \"Enter a code\" box at the bottom.",
+    "Type or paste a code and press Enter. Redeemed codes turn green and get crossed out."
+  ],
+  "troubleshooting": [
+    {
+      "q": "Not in the group?",
+      "a": "Join Ouw Productions, then restart the game. It checks when you join."
+    },
+    {
+      "q": "Typo?",
+      "a": "Codes are case-sensitive, so use the Copy button."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has probably expired. Check back after the next update."
+    }
+  ],
+  "redeemImage": {
+    "src": "/images/slayers-2/redeem-codes.webp",
+    "alt": "Slayers 2 main menu with the code list and the Enter a code box circled at the bottom"
+  }
+}

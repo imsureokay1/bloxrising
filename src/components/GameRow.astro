@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDate, tileColor } from '../lib/format';
+
+interface Props { game: CollectionEntry<'games'> }
+const { game } = Astro.props;
+const { name, codes, lastChecked, icon } = game.data;
+const active = codes.filter((c) => c.status === 'active').length;
+const checked = formatDate(lastChecked);
+---
+<a class="game-row list-card" href={`/codes/${game.id}/`} data-name={name.toLowerCase()}>
+  {icon
+    ? <img class="tile" src={icon} alt="" width="48" height="48" loading="lazy" />
+    : <span class="tile" style={`background:${tileColor(name)}`} aria-hidden="true">{name.charAt(0)}</span>}
+  <span class="info">
+    <span class="name">{name}</span>
+    <span class="meta">
+      {active} active {active === 1 ? 'code' : 'codes'}{checked ? `, checked ${checked}` : ', not checked yet'}
+    </span>
+  </span>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+</a>
+
+<style>
+  .game-row { display: flex; align-items: center; gap: 14px; padding: 14px; min-height: 76px; color: var(--ink); }
+  .game-row:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  .game-row svg { color: var(--muted); flex-shrink: 0; }
+  img.tile { object-fit: cover; }
+  .tile { width: 48px; height: 48px; border-radius: 12px; color: #fff; font-family: var(--display); font-weight: 800; font-size: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .info { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+  .name { font-weight: 700; font-size: 17px; }
+  .meta { font-size: 14px; color: var(--muted); }
+</style>

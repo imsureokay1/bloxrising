@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatDate } from '../../lib/format';
+import { kindLabel } from '../../lib/kinds';
+
+const games = await getCollection('games');
+const guides = (await getCollection('guides')).sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
+const nameFor = (id: string) => games.find((g) => g.id === id)?.data.name ?? '';
+---
+<Base title="Roblox Guides and News" description="Beginner guides, tier lists, updates, and spotlights for rising Roblox games.">
+  <div class="wrap">
+    <h1 class="title">Guides and news</h1>
+    <p class="lede">Beginner guides, tier lists, updates, and spotlights for rising Roblox games.</p>
+    <div class="list">
+      {guides.map((g) => (
+        <a class="list-card item" href={`/guides/${g.id}/`}>
+          <span class="kind">{nameFor(g.data.game)} {kindLabel[g.data.kind].toLowerCase()}</span>
+          <span class="t">{g.data.title}</span>
+          <span class="desc">{g.data.description}</span>
+          <span class="date">Updated {formatDate(g.data.updated)}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .title { padding-top: 36px; }
+  .list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; max-width: 760px; }
+  .item { display: flex; flex-direction: column; gap: 4px; padding: 18px; color: var(--ink); }
+  .item:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  .kind { font-size: 14px; font-weight: 700; color: var(--green); }
+  .t { font-weight: 700; font-size: 18px; }
+  .desc { color: var(--ink-2); font-size: 15px; }
+  .date { color: var(--muted); font-size: 14px; }
+</style>

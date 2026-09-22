@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { tileColor } from '../lib/format';
+interface Props { game: CollectionEntry<'games'> }
+const { game } = Astro.props;
+const d = game.data;
+const active = d.codes.filter((c) => c.status === 'active').length;
+---
+<a class="game-card list-card" href={`/games/${game.id}/`}>
+  {d.icon
+    ? <img class="tile" src={d.icon} alt="" width="52" height="52" loading="lazy" />
+    : <span class="tile" style={`background:${tileColor(d.name)}`} aria-hidden="true">{d.name.charAt(0)}</span>}
+  <span class="name">{d.name}</span>
+  <span class="meta">{d.genre || d.developer}</span>
+  <span class="codes">{active} active {active === 1 ? 'code' : 'codes'}</span>
+</a>
+<style>
+  .game-card { display: flex; flex-direction: column; gap: 4px; padding: 18px; color: var(--ink); }
+  .game-card:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  img.tile { object-fit: cover; }
+  .tile { width: 52px; height: 52px; border-radius: 14px; color: #fff; font-family: var(--display); font-weight: 800; font-size: 24px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+  .name { font-weight: 700; font-size: 18px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .codes { margin-top: 6px; font-size: 14px; font-weight: 700; color: var(--green); }
+</style>
