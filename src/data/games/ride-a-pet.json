@@ -4,7 +4,7 @@
   "developer": "this game is gud",
   "robloxUrl": "https://www.roblox.com/games/124216119978534",
   "summary": "Ride A Pet has no code redemption menu yet. Here's what that means, and where codes will show up first when they arrive.",
-  "about": "Ride A Pet is a Roblox pet game by the group \"this game is gud\". You hunt for eggs around the map, hatch them at nests on your plot, and ride the pets you collect.\n\nFaster mounts let you reach further parts of the map, where rarer eggs are hidden, so progress builds on itself. Later on there are mutations, an index, and rebirths to chase.",
+  "about": "Ride A Pet is a Roblox pet game by the group \"this game is gud\". Eggs appear around the map, and taking one starts a break timer, usually 20 or 30 seconds, that you have to beat. Get it home and it hatches at a nest on your plot.\n\nFaster mounts reach the far spawns before the timer runs out, feeding your pets makes them stronger, and weather events can mutate pets and eggs for big multipliers. Later on it's about rebirths, money, and luck upgrades, since luck decides which pet a rare egg actually gives you.",
   "genre": "Pet collecting",
   "icon": "/images/ride-a-pet/icon.png",
   "cover": null,
@@ -13,7 +13,8 @@
     { "label": "Developer", "value": "this game is gud" },
     { "label": "Genre", "value": "Pet collecting" },
     { "label": "Codes menu", "value": "Not in the game yet" },
-    { "label": "Main loop", "value": "Find eggs, hatch, ride" }
+    { "label": "Main loop", "value": "Steal eggs, hatch, ride" },
+    { "label": "Steal timer", "value": "20 or 30 seconds" }
   ],
   "lastChecked": null,
   "rising": 2,
