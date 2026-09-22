@@ -1,0 +1,32 @@
+name: Track games
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: earlyspawn-data
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check games on Roblox
+        run: node scripts/track.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: Save changes
+        run: |
+          git config user.name "earlyspawn-bot"
+          git config user.email "bot@earlyspawn.com"
+          git add src/data data
+          git diff --cached --quiet || (git commit -m "Update player counts and rising games" && git push)
