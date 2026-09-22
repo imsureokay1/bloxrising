@@ -36,6 +36,8 @@ const games = defineCollection({
         status: z.enum(['active', 'expired']),
       })
     ).default([]),
+    // Shown instead of the code list when a game has no working codes (e.g. no code box in-game yet).
+    codesNote: z.string().default(''),
     redeemSteps: z.array(z.string()).default([]),
     // Screenshot of where to redeem. Put the file in public/images/<game>/ and write its path here.
     redeemImage: z.object({ src: z.string(), alt: z.string() }).nullable().default(null),

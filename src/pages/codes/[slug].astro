@@ -34,7 +34,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
 
     <AdSlot size="banner" />
 
-    <CodeList codes={d.codes} />
+    <CodeList codes={d.codes} note={d.codesNote} />
 
     {d.redeemSteps.length > 0 && (
     <section class="block" aria-labelledby="redeem-title">
