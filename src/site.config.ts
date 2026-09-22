@@ -7,7 +7,7 @@ export const site = {
 
   // Your social links. Leave '' to hide one.
   socials: {
-    tiktok: '', // e.g. 'https://www.tiktok.com/@earlyspawn'
+    tiktok: 'https://www.tiktok.com/@earlyspawn',
     youtube: '',
     x: '',
     discord: '',
