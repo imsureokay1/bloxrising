@@ -1,14 +1,19 @@
 ---
 import { formatDate } from '../lib/format';
 interface Code { code: string; reward: string; expires?: string | null; status: 'active' | 'expired' }
-interface Props { codes: Code[] }
+interface Props { codes: Code[]; note?: string }
+const note = Astro.props.note ?? '';
 const active = Astro.props.codes.filter((c) => c.status === 'active');
 const expired = Astro.props.codes.filter((c) => c.status === 'expired');
 ---
 <section class="codes" aria-labelledby="active-title">
   <h2 id="active-title">Active codes</h2>
   {active.length === 0 ? (
-    <p class="none">There are no working codes right now. New ones usually arrive with updates, so check back soon.</p>
+    <div class="none">
+      {note
+        ? note.split(/\n\s*\n/).map((p) => <p>{p}</p>)
+        : <p>There are no working codes right now. New ones usually arrive with updates, so check back soon.</p>}
+    </div>
   ) : (
     <ul>
       {active.map((c) => (
@@ -74,7 +79,8 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
   .expires { font-size: 13px; font-weight: 700; color: var(--amber-ink); }
   .copy { min-width: 88px; flex-shrink: 0; }
   :global(.copy.is-copied) { background: var(--ink); }
-  .none { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 0; }
+  .none { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; }
+  .none p { margin: 14px 0; line-height: 1.55; }
   .expired li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; background: var(--ground-2); border-radius: 12px; padding: 12px 16px; }
   .expired .code { font-weight: 600; font-size: 15px; color: var(--muted); text-decoration: line-through; }
 </style>
