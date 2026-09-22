@@ -1,0 +1,56 @@
+name: Add a code
+
+on:
+  workflow_dispatch:
+    inputs:
+      game:
+        description: 'Game (file name, e.g. slayers-2)'
+        required: true
+      code:
+        description: 'The code, exactly as the game shows it'
+        required: true
+      reward:
+        description: 'Reward, e.g. 30 Spins and 100 Wen'
+        required: false
+      expires:
+        description: 'Expiry date, e.g. 2026-10-05 (blank if unknown)'
+        required: false
+      status:
+        description: 'active or expired'
+        required: true
+        default: 'active'
+        type: choice
+        options:
+          - active
+          - expired
+
+permissions:
+  contents: write
+
+concurrency:
+  group: earlyspawn-data
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Publish the code
+        run: node scripts/add-code.mjs
+        env:
+          GAME: ${{ inputs.game }}
+          CODE: ${{ inputs.code }}
+          REWARD: ${{ inputs.reward }}
+          EXPIRES: ${{ inputs.expires }}
+          STATUS: ${{ inputs.status }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: Save changes
+        run: |
+          git config user.name "earlyspawn-bot"
+          git config user.email "bot@earlyspawn.com"
+          git add src/data
+          git diff --cached --quiet || (git commit -m "Update codes" && git push)
