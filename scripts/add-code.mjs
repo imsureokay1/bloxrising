@@ -45,5 +45,6 @@ const active = data.codes.filter((c) => c.status === 'active').length;
 console.log(`${status === 'active' ? 'Added' : 'Expired'} ${code} for ${data.name}. Active codes: ${active}`);
 await sendDiscord(
   `${status === 'active' ? '✅ New code live' : '⌛ Code expired'}: **${data.name}** \`${code}\`` +
-    `${reward ? ` — ${reward}` : ''}\nhttps://earlyspawn.com/codes/${game}/`
+    `${reward ? ` — ${reward}` : ''}\nhttps://earlyspawn.com/codes/${game}/`,
+  'codes'
 );

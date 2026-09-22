@@ -76,7 +76,7 @@ export function slugify(name) {
     .slice(0, 60);
 }
 
-// Removes emoji and bracket tags like "[UPDATE 3] ✨" from a Roblox game title.
+// Removes emoji and bracket tags like "[UPDATE 3]" from a Roblox game title.
 export function cleanName(name) {
   return String(name)
     .replace(/\[[^\]]*\]|\([^)]*\)/g, ' ')
@@ -92,10 +92,16 @@ export function formatPlayers(n) {
   return `${n} playing`;
 }
 
-export async function sendDiscord(content) {
-  const hook = process.env.DISCORD_WEBHOOK_URL;
+export async function sendDiscord(content, kind = 'general') {
+  // Route by kind so codes and updates can land in different channels.
+  // Set DISCORD_CODES_WEBHOOK_URL and DISCORD_UPDATES_WEBHOOK_URL to split them;
+  // anything missing falls back to DISCORD_WEBHOOK_URL.
+  const hook =
+    (kind === 'codes' && process.env.DISCORD_CODES_WEBHOOK_URL) ||
+    (kind === 'updates' && process.env.DISCORD_UPDATES_WEBHOOK_URL) ||
+    process.env.DISCORD_WEBHOOK_URL;
   if (!hook) {
-    console.log('[discord skipped]', content);
+    console.log(`[discord skipped: ${kind}]`, content);
     return;
   }
   // Discord messages max out at 2000 characters.
