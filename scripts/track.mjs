@@ -1,5 +1,6 @@
 // Runs on a schedule (GitHub Actions). For every game in src/data/games:
 // - updates player counts and the "Rising this week" ranking on the site
+// - retires codes once their expiry date passes
 // - spots game updates and possible new codes in the game's Roblox description
 // - pings your Discord so you can check and publish codes
 import fs from 'node:fs/promises';
@@ -69,6 +70,8 @@ for (const file of files) {
 
 const details = await gameDetails(games.map((g) => state[g.id].universeId).filter(Boolean));
 const now = Date.now();
+const today = new Date().toISOString().slice(0, 10);
+const tomorrow = new Date(now + DAY).toISOString().slice(0, 10);
 const alerts = [];
 
 for (const g of games) {
@@ -90,6 +93,26 @@ for (const g of games) {
   }
   s.updated = info.updated;
 
+  // Retire codes whose expiry date has passed, and warn the day before.
+  for (const c of g.data.codes ?? []) {
+    if (c.status !== 'active' || !c.expires) continue;
+    if (c.expires < today) {
+      c.status = 'expired';
+      alerts.push(`⌛ **${name}**: \`${c.code}\` expired, so it moved to the expired list. ${url}`);
+    } else if (c.expires === today || c.expires === tomorrow) {
+      alerts.push(`⏳ **${name}**: \`${c.code}\` expires ${c.expires}. Check in-game for a replacement code.`);
+    }
+  }
+
+  // Nudge to re-check games whose codes haven't been looked at in a while.
+  const staleDays = g.data.lastChecked
+    ? Math.floor((now - Date.parse(`${g.data.lastChecked}T12:00:00Z`)) / DAY)
+    : null;
+  if (staleDays !== null && staleDays >= 7 && staleDays % 7 === 0 && s.staleNudged !== today) {
+    s.staleNudged = today;
+    alerts.push(`🕰️ **${name}** codes haven't been checked for ${staleDays} days. ${url}`);
+  }
+
   // Description changes -> possible codes.
   const hash = crypto.createHash('sha1').update(info.description ?? '').digest('hex');
   if (s.descHash && s.descHash !== hash) {
@@ -98,7 +121,7 @@ for (const g of games) {
     if (fresh.length) {
       alerts.push(
         `🎁 **${name}**: possible new codes in the game description: ${fresh.map((c) => `\`${c}\``).join(', ')}\n` +
-          `Check them in-game, then add them to \`${g.path}\`.`
+          `Check them in-game, then publish them with the "Add a code" action.`
       );
     } else {
       alerts.push(`📝 **${name}** changed its Roblox description. Worth a quick look. ${g.data.robloxUrl}`);
