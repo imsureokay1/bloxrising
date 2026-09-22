@@ -2,7 +2,7 @@
 // - updates player counts and the "Rising this week" ranking on the site
 // - retires codes once their expiry date passes
 // - spots game updates and possible new codes in the game's Roblox description
-// - pings your Discord so you can check and publish codes
+// - pings your Discord (codes and updates go to their own channels)
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 import {
@@ -72,7 +72,8 @@ const details = await gameDetails(games.map((g) => state[g.id].universeId).filte
 const now = Date.now();
 const today = new Date().toISOString().slice(0, 10);
 const tomorrow = new Date(now + DAY).toISOString().slice(0, 10);
-const alerts = [];
+const codeAlerts = [];
+const updateAlerts = [];
 
 for (const g of games) {
   const s = state[g.id];
@@ -89,7 +90,7 @@ for (const g of games) {
 
   // Game update detection.
   if (s.updated && info.updated && s.updated !== info.updated) {
-    alerts.push(`🔄 **${name}** just updated. New codes often come with updates, so check the in-game code list. ${url}`);
+    updateAlerts.push(`🔄 **${name}** just updated. New codes often come with updates, so check the in-game code list. ${url}`);
   }
   s.updated = info.updated;
 
@@ -98,9 +99,9 @@ for (const g of games) {
     if (c.status !== 'active' || !c.expires) continue;
     if (c.expires < today) {
       c.status = 'expired';
-      alerts.push(`⌛ **${name}**: \`${c.code}\` expired, so it moved to the expired list. ${url}`);
+      codeAlerts.push(`⌛ **${name}**: \`${c.code}\` expired, so it moved to the expired list. ${url}`);
     } else if (c.expires === today || c.expires === tomorrow) {
-      alerts.push(`⏳ **${name}**: \`${c.code}\` expires ${c.expires}. Check in-game for a replacement code.`);
+      codeAlerts.push(`⏳ **${name}**: \`${c.code}\` expires ${c.expires}. Check in-game for a replacement code.`);
     }
   }
 
@@ -110,7 +111,7 @@ for (const g of games) {
     : null;
   if (staleDays !== null && staleDays >= 7 && staleDays % 7 === 0 && s.staleNudged !== today) {
     s.staleNudged = today;
-    alerts.push(`🕰️ **${name}** codes haven't been checked for ${staleDays} days. ${url}`);
+    codeAlerts.push(`🕰️ **${name}** codes haven't been checked for ${staleDays} days. ${url}`);
   }
 
   // Description changes -> possible codes.
@@ -119,12 +120,12 @@ for (const g of games) {
     const known = new Set((g.data.codes ?? []).map((c) => c.code.toUpperCase()));
     const fresh = codeCandidates(info.description).filter((c) => !known.has(c.toUpperCase()));
     if (fresh.length) {
-      alerts.push(
+      codeAlerts.push(
         `🎁 **${name}**: possible new codes in the game description: ${fresh.map((c) => `\`${c}\``).join(', ')}\n` +
           `Check them in-game, then publish them with the "Add a code" action.`
       );
     } else {
-      alerts.push(`📝 **${name}** changed its Roblox description. Worth a quick look. ${g.data.robloxUrl}`);
+      updateAlerts.push(`📝 **${name}** changed its Roblox description. Worth a quick look. ${g.data.robloxUrl}`);
     }
   }
   s.descHash = hash;
@@ -146,7 +147,7 @@ const newTop = ranked[0]?.id;
 if (newTop && previousTop && newTop !== previousTop) {
   const top = ranked[0];
   const pct = top.growth != null ? ` (${top.growth > 0 ? '+' : ''}${top.growth.toFixed(0)}% in 24h)` : '';
-  alerts.push(`📈 New #1 rising game: **${top.data.name}**${pct}.`);
+  updateAlerts.push(`📈 New #1 rising game: **${top.data.name}**${pct}.`);
 }
 
 // Save only files that actually changed.
@@ -159,5 +160,9 @@ for (const g of games) {
 }
 await writeJson(STATE_FILE, state);
 
-console.log(`Tracked ${games.length} games, updated ${changed} files, ${alerts.length} alerts.`);
-if (alerts.length) await sendDiscord(alerts.join('\n\n'));
+console.log(
+  `Tracked ${games.length} games, updated ${changed} files, ` +
+    `${codeAlerts.length} code alerts, ${updateAlerts.length} update alerts.`
+);
+if (codeAlerts.length) await sendDiscord(codeAlerts.join('\n\n'), 'codes');
+if (updateAlerts.length) await sendDiscord(updateAlerts.join('\n\n'), 'updates');
