@@ -34,6 +34,11 @@ const games = defineCollection({
         // Date the code stops working, if the game shows it, e.g. "2026-09-25".
         expires: z.string().nullable().default(null),
         status: z.enum(['active', 'expired']),
+        // Date this exact code was redeemed in-game by us. null = we haven't tested it,
+        // so the page says so rather than claiming it's verified.
+        verified: z.string().nullable().default(null),
+        // Where the code came from, e.g. "In-game code list" or "Developer Discord".
+        source: z.string().default(''),
       })
     ).default([]),
     // Shown instead of the code list when a game has no working codes (e.g. no code box in-game yet).
@@ -42,6 +47,8 @@ const games = defineCollection({
     // Screenshot of where to redeem. Put the file in public/images/<game>/ and write its path here.
     redeemImage: z.object({ src: z.string(), alt: z.string() }).nullable().default(null),
     troubleshooting: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    // Questions players actually ask about this game. Shown on the codes page and marked up as an FAQ.
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
   }),
 });
 

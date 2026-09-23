@@ -1,6 +1,13 @@
 ---
 import { formatDate } from '../lib/format';
-interface Code { code: string; reward: string; expires?: string | null; status: 'active' | 'expired' }
+interface Code {
+  code: string;
+  reward: string;
+  expires?: string | null;
+  status: 'active' | 'expired';
+  verified?: string | null;
+  source?: string;
+}
 interface Props { codes: Code[]; note?: string }
 const note = Astro.props.note ?? '';
 const active = Astro.props.codes.filter((c) => c.status === 'active');
@@ -21,7 +28,13 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
           <span class="text">
             <span class="code">{c.code}</span>
             <span class="reward">{c.reward || 'Reward not confirmed yet'}</span>
-            {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
+            <span class="status">
+              {c.verified
+                ? <span class="ok">Redeemed by us on {formatDate(c.verified)}</span>
+                : <span class="untested">Not tested by us yet</span>}
+              {c.source && <span class="src">Source: {c.source}</span>}
+              {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
+            </span>
           </span>
           <button class="btn copy" type="button" data-code={c.code} aria-label={`Copy code ${c.code}`}>Copy</button>
         </li>
@@ -33,6 +46,7 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
 {expired.length > 0 && (
   <section class="expired" aria-labelledby="expired-title">
     <h2 id="expired-title">Expired codes</h2>
+    <p class="why">These no longer work. We keep them listed so you don't waste time on codes you find elsewhere.</p>
     <ul>
       {expired.map((c) => (
         <li>
@@ -71,12 +85,17 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
 <style>
   section { margin-top: 32px; }
   h2 { margin-bottom: 14px; }
+  .why { color: var(--muted); margin: -6px 0 14px; font-size: 15px; }
   ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .codes li { display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; }
-  .text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+  .text { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
   .code { font-family: var(--mono); font-weight: 700; font-size: 17px; letter-spacing: 0.02em; word-break: break-all; }
-  .reward { font-size: 14px; color: var(--muted); }
-  .expires { font-size: 13px; font-weight: 700; color: var(--amber-ink); }
+  .reward { font-size: 14px; color: var(--ink-2); }
+  .status { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; }
+  .ok { font-weight: 700; color: var(--green); }
+  .untested { font-weight: 700; color: var(--amber-ink); }
+  .src { color: var(--muted); }
+  .expires { font-weight: 700; color: var(--amber-ink); }
   .copy { min-width: 88px; flex-shrink: 0; }
   :global(.copy.is-copied) { background: var(--ink); }
   .none { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; }
