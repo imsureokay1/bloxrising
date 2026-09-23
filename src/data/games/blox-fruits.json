@@ -3,18 +3,73 @@
   "altName": "",
   "developer": "Gamer Robot Inc",
   "robloxUrl": "https://www.roblox.com/games/2753915549",
-  "summary": "Codes, guides, and game info for Blox Fruits on Roblox.",
-  "about": "",
-  "genre": "",
+  "summary": "All working Blox Fruits codes for 2x Experience, stat resets and money, plus the current way to redeem them in-game.",
+  "about": "Blox Fruits is one of Roblox's biggest games, made by Gamer Robot Inc and inspired by One Piece. You sail between islands across three seas, fight NPCs and bosses, and level up either as a sword user, a gun user, a fighting-style user, or a Devil Fruit user.\n\nMost codes here give 2x Experience for a set time, which is the fastest way to push through the level grind. Others give a free stat reset, so you can rebuild your build without paying, and a couple give small amounts of money or a title.",
+  "genre": "Open-world fighting RPG",
   "icon": "/images/blox-fruits/icon.png",
-  "cover": null,
+  "cover": "/images/blox-fruits/cover.webp",
   "released": null,
-  "quickFacts": [],
-  "lastChecked": null,
+  "quickFacts": [
+    { "label": "Developer", "value": "Gamer Robot Inc" },
+    { "label": "Genre", "value": "Open-world fighting RPG" },
+    { "label": "Codes menu", "value": "Settings, Redeem DLC Code" },
+    { "label": "Most codes give", "value": "20 minutes of 2x Experience" },
+    { "label": "Seas", "value": "First, Second and Third" }
+  ],
+  "lastChecked": "2026-09-23",
   "rising": null,
   "players": "158K playing",
-  "codes": [],
-  "redeemSteps": [],
-  "redeemImage": null,
-  "troubleshooting": []
+  "codes": [
+    { "code": "GAMER_ROBOT_1M", "reward": "1 hour 30 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "SUB2GAMERROBOT_EXP1", "reward": "30 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Sub2Fer999", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Enyu_is_Pro", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "JCWK", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "StarcodeHEO", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "MagicBUS", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "KittGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Sub2CaptainMaui", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Sub2OfficialNoobie", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "TheGreatAce", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Sub2NoobMaster123", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Sub2Daigrock", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Axiore", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "StrawHatMaine", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "TantaiGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "Bluxxy", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active" },
+    { "code": "KITT_RESET", "reward": "Free stat reset", "expires": null, "status": "active" },
+    { "code": "Sub2UncleKizaru", "reward": "Free stat reset", "expires": null, "status": "active" },
+    { "code": "BigNews", "reward": "The in-game title BIGNEWS (only applies in the Second or Third Sea)", "expires": null, "status": "active" },
+    { "code": "fudd10_V2", "reward": "2 Money", "expires": null, "status": "active" },
+    { "code": "fudd10", "reward": "1 Money", "expires": null, "status": "active" },
+    { "code": "Chandler", "reward": "0 Money, a joke code", "expires": null, "status": "active" }
+  ],
+  "redeemSteps": [
+    "Click the gear icon in the row of icons on the left of your screen.",
+    "In Settings, scroll down to Gameplay and find Redeem DLC Code.",
+    "Click the yellow Redeem button next to it.",
+    "Type or paste a code into the Enter Promo Code box, then press Redeem."
+  ],
+  "redeemImage": {
+    "src": "/images/blox-fruits/redeem-codes.webp",
+    "alt": "Blox Fruits gear icon, the Settings window with Redeem DLC Code, and the Redeem Codes box"
+  },
+  "troubleshooting": [
+    {
+      "q": "Typo?",
+      "a": "Codes are case-sensitive, so use the Copy button rather than typing them out."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account, and 2x Experience time stacks if you redeem several."
+    },
+    {
+      "q": "Looking for the gift icon?",
+      "a": "Older guides say to use a gift icon at the bottom left. That's been replaced by the Settings route above."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has expired. Blox Fruits usually drops new ones with big updates and milestones."
+    }
+  ]
 }
