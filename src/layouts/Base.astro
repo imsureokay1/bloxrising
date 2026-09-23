@@ -8,11 +8,73 @@ interface Props {
   title: string;
   description?: string;
   image?: string | null;
+  // Set on pages that are articles (guides, updates) so search engines get a date.
+  updated?: Date | string | null;
+  // The visible page heading, when it differs from the title tag.
+  heading?: string | null;
 }
 
-const { title, description = site.tagline, image } = Astro.props;
+const { title, description = site.tagline, image, updated = null, heading = null } = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
-const canonical = new URL(Astro.url.pathname, site.url).href;
+const path = Astro.url.pathname;
+const canonical = new URL(path, site.url).href;
+const isArticle = path.startsWith('/guides/') && path !== '/guides/';
+const modified = updated ? new Date(updated).toISOString() : null;
+
+// Breadcrumbs built from the URL, matching the ones shown on the page.
+const segmentLabels: Record<string, string> = {
+  codes: 'Codes',
+  games: 'Games',
+  guides: 'Guides',
+  about: 'About',
+  contact: 'Contact',
+  privacy: 'Privacy Policy',
+};
+const segments = path.split('/').filter(Boolean);
+const crumbs = [
+  { name: 'Home', url: site.url + '/' },
+  ...segments.map((seg, i) => ({
+    name:
+      i === segments.length - 1
+        ? heading ?? title
+        : segmentLabels[seg] ?? seg.replace(/-/g, ' '),
+    url: new URL('/' + segments.slice(0, i + 1).join('/') + '/', site.url).href,
+  })),
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: c.url,
+  })),
+};
+
+const articleSchema = isArticle
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: heading ?? title,
+      description,
+      mainEntityOfPage: canonical,
+      ...(modified ? { dateModified: modified } : {}),
+      author: { '@type': 'Organization', name: site.name, url: site.url },
+      publisher: { '@type': 'Organization', name: site.name, url: site.url },
+    }
+  : null;
+
+const siteSchema =
+  path === '/'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: site.name,
+        url: site.url,
+      }
+    : null;
 ---
 <!doctype html>
 <html lang="en">
@@ -29,13 +91,14 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="theme-color" content="#15171C" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={isArticle ? 'article' : 'website'} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(image || '/logo-tile.png', site.url).href} />
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    {modified && <meta property="article:modified_time" content={modified} />}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,6 +106,10 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=JetBrains+Mono:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap"
     />
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+    {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>}
+    {siteSchema && <script type="application/ld+json" set:html={JSON.stringify(siteSchema)}></script>}
 
     {site.adsenseClient && (
       <script
