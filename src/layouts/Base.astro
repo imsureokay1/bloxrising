@@ -12,9 +12,18 @@ interface Props {
   updated?: Date | string | null;
   // The visible page heading, when it differs from the title tag.
   heading?: string | null;
+  // Keep a page out of search results while it has nothing useful on it yet.
+  noindex?: boolean;
 }
 
-const { title, description = site.tagline, image, updated = null, heading = null } = Astro.props;
+const {
+  title,
+  description = site.tagline,
+  image,
+  updated = null,
+  heading = null,
+  noindex = false,
+} = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
 const path = Astro.url.pathname;
 const canonical = new URL(path, site.url).href;
@@ -84,6 +93,7 @@ const siteSchema =
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/favicon-512.png" />
