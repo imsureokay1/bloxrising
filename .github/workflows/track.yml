@@ -21,14 +21,16 @@ jobs:
         with:
           node-version: 20
       - name: Check games on Roblox
-      - name: Refresh the top 10
-        run: node scripts/top-games.mjs
         run: node scripts/track.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_CODES_WEBHOOK_URL: ${{ secrets.DISCORD_CODES_WEBHOOK_URL }}
+          DISCORD_UPDATES_WEBHOOK_URL: ${{ secrets.DISCORD_UPDATES_WEBHOOK_URL }}
+      - name: Refresh the top 10
+        run: node scripts/top-games.mjs
       - name: Save changes
         run: |
           git config user.name "earlyspawn-bot"
           git config user.email "bot@earlyspawn.com"
           git add src/data data
-          git diff --cached --quiet || (git commit -m "Update player counts and rising games" && git push)
+          git diff --cached --quiet || (git commit -m "Update player counts and top games" && git push)
