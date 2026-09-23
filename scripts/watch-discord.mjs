@@ -23,25 +23,55 @@ if (!token || watch.length === 0) {
   process.exit(0);
 }
 
+// Words that look like codes but never are.
 const IGNORE = new Set([
-  'CODE', 'CODES', 'UPDATE', 'UPDATES', 'ROBLOX', 'DISCORD', 'GROUP', 'JOIN', 'LIKE', 'FREE', 'NEW',
-  'REWARD', 'REWARDS', 'REDEEM', 'ACTIVE', 'EXPIRED', 'EVERYONE', 'HERE', 'ANNOUNCEMENT', 'PLAY',
-  'THANKS', 'SERVER', 'GAME', 'PATCH', 'NOTES', 'SOON', 'HTTPS', 'ROBUX', 'GIVEAWAY',
+  'CODE', 'CODES', 'UPDATE', 'UPDATES', 'UPDATED', 'ROBLOX', 'DISCORD', 'GROUP', 'JOIN', 'LIKE',
+  'LIKES', 'FREE', 'NEW', 'REWARD', 'REWARDS', 'REDEEM', 'ACTIVE', 'EXPIRED', 'EVERYONE', 'HERE',
+  'ANNOUNCEMENT', 'ANNOUNCEMENTS', 'PLAY', 'PLAYING', 'THANKS', 'THANK', 'SERVER', 'SERVERS',
+  'GAME', 'GAMES', 'PATCH', 'NOTES', 'SOON', 'HTTPS', 'HTTP', 'ROBUX', 'GIVEAWAY', 'GIVEAWAYS',
+  'RELEASE', 'RELEASED', 'EVENT', 'EVENTS', 'SHUTDOWN', 'MAINTENANCE', 'FIXED', 'FIXES', 'BUGS',
+  'BUFFED', 'NERFED', 'ADDED', 'REMOVED', 'COMING', 'VOTE', 'VOTED', 'ROLE', 'ROLES', 'BOOST',
+  'CHANGELOG', 'VERSION', 'BETA', 'ALPHA', 'PART', 'SEASON', 'WEEK', 'TODAY', 'TOMORROW',
 ]);
 
-function codesIn(text = '') {
+// Strips links, mentions, channel links, custom emoji and markdown noise.
+function clean(text) {
+  return text
+    .replace(/https?:\/\/\S+/g, ' ')
+    .replace(/<a?:\w+:\d+>/g, ' ')
+    .replace(/<[@#&!][^>]*>/g, ' ')
+    .replace(/[*_~`>|]/g, ' ');
+}
+
+function looksLikeCode(tok) {
+  const up = tok.toUpperCase();
+  if (IGNORE.has(up.replace(/!/g, ''))) return false;
+  if (tok.length < 4 || tok.length > 30) return false;
+  const hasLetter = /[A-Za-z]/.test(tok);
+  if (!hasLetter) return false;
+  const allCaps = tok === up && tok.length >= 5;
+  const hasDigit = /\d/.test(tok);
+  const camel = /[a-z][A-Z]/.test(tok) && tok.length >= 6;
+  // ALLCAPS with a number ("RELEASE26", "50KLIKES") is the classic code shape.
+  if (allCaps && hasDigit) return true;
+  if (camel) return true;
+  // "50KLIKES!" counts, "OUT!" and "points!" don't.
+  if ((tok.includes('!') || tok.includes('_')) && tok.length >= 6 && tok === up) return true;
+  return allCaps && !tok.endsWith('!');
+}
+
+// Codes can appear anywhere in an announcement, so read the whole message.
+// If it mentions codes at all, every ALL-CAPS-ish word is a candidate.
+// If it doesn't, only the strongest shapes count, to keep the noise down.
+function codesIn(raw = '') {
+  const text = clean(raw);
+  // "use", "enter" and "type" catch posts that hand out a code without the word "code".
+  const mentionsCodes = /\b(code|codes|redeem|use|using|enter|type)\b/i.test(text);
   const found = new Set();
-  for (const line of text.split(/\r?\n/)) {
-    if (!/code/i.test(line)) continue;
-    const after = line.includes(':') ? line.slice(line.indexOf(':') + 1) : line;
-    for (const tok of after.match(/[A-Za-z0-9_!]{4,30}/g) ?? []) {
-      const up = tok.toUpperCase();
-      if (IGNORE.has(up.replace(/!/g, ''))) continue;
-      const hasDigit = /\d/.test(tok) && /[A-Za-z]/.test(tok);
-      const allCaps = tok.length >= 5 && tok === up && /[A-Z]/.test(tok);
-      const mixed = /[a-z][A-Z]/.test(tok) && tok.length >= 6;
-      if (hasDigit || allCaps || mixed || tok.includes('!')) found.add(tok);
-    }
+  for (const tok of text.match(/[A-Za-z0-9_!]{4,30}/g) ?? []) {
+    if (!looksLikeCode(tok)) continue;
+    const strong = /\d/.test(tok) && tok === tok.toUpperCase();
+    if (mentionsCodes || strong) found.add(tok);
   }
   return [...found];
 }
@@ -101,8 +131,10 @@ for (const { channel, game } of watch) {
     if (!text) continue;
     const fresh = codesIn(text).filter((c) => !known.has(c.toUpperCase()));
     if (fresh.length) {
+      const preview = text.replace(/\s+/g, ' ').slice(0, 300);
       codeAlerts.push(
         `🎁 **${label}** posted possible codes: ${fresh.map((c) => `\`${c}\``).join(', ')}\n` +
+          `> ${preview}\n` +
           `Check them in-game, then run the "Add a code" action${game ? ` with game \`${game}\`` : ''}.`
       );
     } else if (/update|patch|release|out now/i.test(text)) {
