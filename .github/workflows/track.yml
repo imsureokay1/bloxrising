@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: 20
       - name: Check games on Roblox
+      - name: Refresh the top 10
+        run: node scripts/top-games.mjs
         run: node scripts/track.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
