@@ -65,12 +65,6 @@
       "reward": "",
       "expires": null,
       "status": "expired"
-    },
-    {
-      "code": "TESTCODE",
-      "reward": "",
-      "expires": null,
-      "status": "expired"
     }
   ],
   "redeemSteps": [
