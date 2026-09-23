@@ -1,0 +1,40 @@
+name: Add a watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'discord or youtube'
+        required: true
+        default: 'discord'
+      id:
+        description: 'Channel ID'
+        required: true
+      game:
+        description: 'Game file name'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/add-watch.mjs
+        env:
+          SOURCE: ${{ inputs.source }}
+          ID: ${{ inputs.id }}
+          GAME: ${{ inputs.game }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_UPDATES_WEBHOOK_URL: ${{ secrets.DISCORD_UPDATES_WEBHOOK_URL }}
+      - name: Save changes
+        run: |
+          git config user.name "earlyspawn-bot"
+          git config user.email "bot@earlyspawn.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "Update watch list" && git push)
