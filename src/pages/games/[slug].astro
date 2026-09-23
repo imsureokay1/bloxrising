@@ -48,7 +48,9 @@ const byline = game
 {listed && !game ? (
   <Base
     title={`${listed.name}: Player Count and Codes`}
+    heading={listed.name}
     description={`${listed.name} is one of the most played Roblox games right now. Here's what we know, and what we're working on.`}
+    noindex={true}
   >
     <div class="wrap page">
       <nav class="crumbs" aria-label="Breadcrumb">
@@ -103,6 +105,7 @@ const byline = game
 {game ? (
   <Base
     image={game.data.cover}
+    heading={game.data.name}
     title={`${game.data.name}${game.data.altName ? ` (${game.data.altName})` : ''}: Codes, Guides and Game Info`}
     description={`Everything for ${game.data.name} on Roblox: working codes, beginner guides, and what the game is about.`}
   >
