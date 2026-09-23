@@ -5,6 +5,9 @@ export const site = {
   tagline: 'Rising games, spotted early. Codes, guides, and game info, updated daily.',
   email: 'contact@earlyspawn.com',
 
+  // Shown as the byline on codes pages and guides.
+  editor: 'the EarlySpawn Team',
+
   // Your social links. Leave '' to hide one.
   socials: {
     tiktok: 'https://www.tiktok.com/@earlyspawn',
