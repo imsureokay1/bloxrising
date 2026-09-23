@@ -2,6 +2,9 @@
 //   DISCORD_APP_ID=... DISCORD_BOT_TOKEN=... node scripts/register-commands.mjs
 const appId = process.env.DISCORD_APP_ID;
 const token = process.env.DISCORD_BOT_TOKEN;
+// Setting DISCORD_GUILD_ID registers to that one server, which shows up instantly.
+// Without it, commands register globally and can take up to an hour to appear.
+const guildId = (process.env.DISCORD_GUILD_ID || '').trim();
 if (!appId || !token) {
   console.error('Need DISCORD_APP_ID and DISCORD_BOT_TOKEN.');
   process.exit(1);
@@ -52,9 +55,14 @@ const commands = [
   },
 ];
 
-const res = await fetch(`https://discord.com/api/v10/applications/${appId}/commands`, {
+const endpoint = guildId
+  ? `https://discord.com/api/v10/applications/${appId}/guilds/${guildId}/commands`
+  : `https://discord.com/api/v10/applications/${appId}/commands`;
+
+const res = await fetch(endpoint, {
   method: 'PUT',
   headers: { authorization: `Bot ${token}`, 'content-type': 'application/json' },
   body: JSON.stringify(commands),
 });
+console.log(guildId ? `Registered to server ${guildId}` : 'Registered globally');
 console.log(res.status, (await res.text()).slice(0, 400));
