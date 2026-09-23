@@ -20,9 +20,23 @@ const checked = formatDate(d.lastChecked);
 const related = (await getCollection('guides')).filter((g) => g.data.game === game.id);
 const title = `${d.name} Codes (${monthYear(d.lastChecked)})`;
 const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.lastChecked)}` : title;
+
+// FAQ markup, only when the page actually shows the questions and answers.
+const faqSchema = d.faq.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: d.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
 ---
 <Base image={d.cover} title={searchTitle} heading={title} description={`All working ${d.name} codes, checked in-game. ${d.summary}`}>
   <div class="wrap page">
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{d.name}</a><span aria-hidden="true">/</span><span>Codes</span>
     </nav>
@@ -68,6 +82,17 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
     )}
 
     <AdSlot size="rect" />
+
+    {d.faq.length > 0 && (
+      <section class="block" aria-labelledby="faq-title">
+        <h2 id="faq-title">{d.name} codes FAQ</h2>
+        <dl class="fixes list-card">
+          {d.faq.map((f) => (
+            <div><dt>{f.q}</dt><dd>{f.a}</dd></div>
+          ))}
+        </dl>
+      </section>
+    )}
 
     <section class="block" aria-labelledby="more-title">
       <h2 id="more-title">More {d.name}</h2>
