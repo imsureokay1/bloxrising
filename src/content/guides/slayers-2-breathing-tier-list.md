@@ -6,8 +6,6 @@ kind: "tier-list"
 updated: 2026-09-23
 ---
 
-![Slayers 2 Breathing Style guide](/images/slayers-2/breathing-tier-list.jpg)
-
 Thunder Breathing was the obvious pick until last week's update. It got hit in four places, Water got a buff in the same patch, and the rankings shifted.
 
 This list reflects how the styles are performing after the nerf. It's a judgement call based on one experienced player's testing rather than a community vote, so treat the ordering inside each tier as opinion, not settled fact.
