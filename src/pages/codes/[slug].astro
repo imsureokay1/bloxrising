@@ -3,6 +3,8 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import CodeList from '../../components/CodeList.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import ShareButton from '../../components/ShareButton.astro';
+import MoreReading from '../../components/MoreReading.astro';
 import { formatDate, monthYear } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -30,6 +32,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
         ? <span class="checked">Last checked {checked}</span>
         : <span class="checked is-pending">Codes not checked in-game yet</span>}
       <p class="lede">{d.summary}</p>
+      <ShareButton title={title} />
     </header>
 
     <AdSlot size="banner" />
@@ -74,6 +77,8 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
         <a class="btn btn-ghost" href={d.robloxUrl} rel="noopener">Play {d.name} on Roblox</a>
       </div>
     </section>
+
+    <MoreReading game={game.id} />
   </div>
 </Base>
 

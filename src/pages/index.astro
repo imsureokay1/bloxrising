@@ -3,9 +3,9 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import GameRow from '../components/GameRow.astro';
 import GameCard from '../components/GameCard.astro';
-import { kindLabel } from '../lib/kinds';
-import RisingBoard from '../components/RisingBoard.astro';
+import TopGames from '../components/TopGames.astro';
 import AdSlot from '../components/AdSlot.astro';
+import { kindLabel } from '../lib/kinds';
 import { site } from '../site.config';
 import { formatDate } from '../lib/format';
 
@@ -58,7 +58,7 @@ const featured = [...games]
     </section>
 
     <aside class="section">
-      <RisingBoard games={games} />
+      <TopGames />
       <AdSlot size="rect" />
     </aside>
   </div>
