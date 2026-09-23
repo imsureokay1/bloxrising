@@ -1,0 +1,54 @@
+---
+// Share button: uses the phone's native share sheet, falls back to copying the link.
+interface Props { title?: string }
+const { title = '' } = Astro.props;
+---
+<button class="share" type="button" data-share-title={title} aria-label="Share this page">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle>
+    <line x1="8.6" y1="10.5" x2="15.4" y2="6.5"></line><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"></line>
+  </svg>
+  <span>Share</span>
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('button.share').forEach((btn) => {
+    const label = btn.querySelector('span');
+    btn.addEventListener('click', async () => {
+      const url = window.location.href;
+      const title = btn.dataset.shareTitle || document.title;
+      if (navigator.share) {
+        try {
+          await navigator.share({ title, url });
+          return;
+        } catch {
+          // cancelled, or not allowed: fall through to copying
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        const t = document.createElement('textarea');
+        t.value = url;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        t.remove();
+      }
+      if (label) {
+        label.textContent = 'Link copied';
+        setTimeout(() => (label.textContent = 'Share'), 2000);
+      }
+    });
+  });
+</script>
+
+<style>
+  .share {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 44px; padding: 0 16px; border-radius: 10px;
+    border: 1.5px solid var(--ink); background: transparent; color: var(--ink);
+    font-family: var(--body); font-weight: 700; font-size: 15px; cursor: pointer;
+  }
+  .share:hover { background: var(--ink); color: var(--ground); }
+</style>
