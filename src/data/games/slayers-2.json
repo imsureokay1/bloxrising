@@ -40,35 +40,45 @@
       "code": "SKILLTREERESET",
       "reward": "Skill tree points reset",
       "expires": "2026-09-28",
-      "status": "active"
+      "status": "active",
+      "verified": "2026-09-22",
+      "source": "In-game code list"
     },
     {
       "code": "RELEASE26",
       "reward": "100 Wen, 30 Spins, 1 Refinement Ore",
       "expires": "2026-09-25",
-      "status": "active"
+      "status": "active",
+      "verified": "2026-09-22",
+      "source": "In-game code list"
     },
     {
       "code": "EVILARTSPINS",
       "reward": "",
       "expires": null,
-      "status": "expired"
+      "status": "expired",
+      "verified": null,
+      "source": ""
     },
     {
       "code": "SORRYFORSHUTDOWN",
       "reward": "",
       "expires": null,
-      "status": "expired"
+      "status": "expired",
+      "verified": null,
+      "source": ""
     },
     {
       "code": "POINTSRESET",
       "reward": "",
       "expires": null,
-      "status": "expired"
+      "status": "expired",
+      "verified": null,
+      "source": ""
     }
   ],
   "redeemSteps": [
-    "Join the Ouw Productions group on Roblox. RELEASE26 needs it, and the game checks it for you.",
+    "Join the Ouw Productions group on Roblox. The game checks your membership for you.",
     "Fully close and reopen Slayers 2.",
     "On the main menu, find the code list and the \"Enter a code\" box at the bottom.",
     "Type or paste a code and press Enter. Redeemed codes turn green and get crossed out."
@@ -89,6 +99,32 @@
     {
       "q": "Still failing?",
       "a": "The code has probably expired. Check back after the next update."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Where do you enter codes in Slayers 2?",
+      "a": "On the main menu, not in the world. The code list sits above an \"Enter a code\" box at the bottom of the screen, as shown in the screenshot on this page. Type the code and press Enter."
+    },
+    {
+      "q": "How do I know if a code is still live?",
+      "a": "The game itself shows a countdown next to each code in that menu, which is where the expiry dates on this page come from. If a code is gone from the in-game list, it's dead."
+    },
+    {
+      "q": "Do I have to join the group?",
+      "a": "Yes, join Ouw Productions on Roblox first, then fully close and reopen the game. The game checks your membership itself, and codes fail until it sees you in the group."
+    },
+    {
+      "q": "Are Slayers 2 codes case-sensitive?",
+      "a": "Enter them exactly as listed. The in-game list shows them in capitals, and the Copy button on this page avoids typos."
+    },
+    {
+      "q": "Is this the same as Project Slayers 2?",
+      "a": "Yes. The Roblox page calls it Slayers 2 and the in-game logo says Project Slayers 2, so both names refer to this game."
+    },
+    {
+      "q": "Do codes carry over from the first Project Slayers?",
+      "a": "No. Slayers 2 has its own codes, and your levels, gear and Wen from the first game don't transfer either."
     }
   ],
   "redeemImage": {
