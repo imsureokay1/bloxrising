@@ -32,7 +32,7 @@
       "value": "Level 25"
     }
   ],
-  "lastChecked": "2026-09-22",
+  "lastChecked": "2026-09-23",
   "rising": 1,
   "players": "119K playing",
   "codes": [
@@ -62,6 +62,12 @@
     },
     {
       "code": "POINTSRESET",
+      "reward": "",
+      "expires": null,
+      "status": "expired"
+    },
+    {
+      "code": "TESTCODE",
       "reward": "",
       "expires": null,
       "status": "expired"
