@@ -10,14 +10,26 @@
   "cover": "/images/build-the-pyramid/cover.webp",
   "released": null,
   "quickFacts": [
-    { "label": "Developer", "value": "Janitors Studios" },
-    { "label": "Genre", "value": "Building simulator" },
-    { "label": "Codes menu", "value": "Gear icon, top left" },
-    { "label": "Upgrades", "value": "Walk speed and capacity" }
+    {
+      "label": "Developer",
+      "value": "Janitors Studios"
+    },
+    {
+      "label": "Genre",
+      "value": "Building simulator"
+    },
+    {
+      "label": "Codes menu",
+      "value": "Gear icon, top left"
+    },
+    {
+      "label": "Upgrades",
+      "value": "Walk speed and capacity"
+    }
   ],
   "lastChecked": "2026-09-23",
-  "rising": null,
-  "players": "6.1K playing",
+  "rising": 4,
+  "players": "6.4K playing",
   "codes": [
     {
       "code": "DISCORD2K",
