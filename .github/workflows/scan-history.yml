@@ -1,0 +1,32 @@
+name: Scan channel history
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'Discord channel ID to scan'
+        required: true
+      game:
+        description: 'Game file name (optional)'
+        required: false
+      limit:
+        description: 'How many messages to read back (default 300)'
+        required: false
+        default: '300'
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/scan-history.mjs
+        env:
+          CHANNEL: ${{ inputs.channel }}
+          GAME: ${{ inputs.game }}
+          LIMIT: ${{ inputs.limit }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_CODES_WEBHOOK_URL: ${{ secrets.DISCORD_CODES_WEBHOOK_URL }}
