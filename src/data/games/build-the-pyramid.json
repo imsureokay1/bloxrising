@@ -3,25 +3,91 @@
   "altName": "",
   "developer": "Janitors Studios",
   "robloxUrl": "https://www.roblox.com/games/123720558354386",
-  "summary": "Codes, guides, and game info for Build the Pyramid! on Roblox.",
-  "about": "",
-  "genre": "",
+  "summary": "All working Build the Pyramid! codes for free coins and boosts, checked in-game, plus where to find the code box.",
+  "about": "Build the Pyramid! is a Roblox building game by Janitors Studios. You haul blocks across the desert and stack them up into a pyramid, earning coins as you go.\n\nCoins go back into upgrades: more walk speed to make each run faster, and more carry capacity so you can move bigger loads at once. Codes give you a head start on both.",
+  "genre": "Building simulator",
   "icon": "/images/build-the-pyramid/icon.png",
-  "cover": null,
+  "cover": "/images/build-the-pyramid/cover.webp",
   "released": null,
-  "quickFacts": [],
+  "quickFacts": [
+    { "label": "Developer", "value": "Janitors Studios" },
+    { "label": "Genre", "value": "Building simulator" },
+    { "label": "Codes menu", "value": "Gear icon, top left" },
+    { "label": "Upgrades", "value": "Walk speed and capacity" }
+  ],
   "lastChecked": "2026-09-23",
   "rising": null,
   "players": "6.1K playing",
   "codes": [
     {
+      "code": "DISCORD2K",
+      "reward": "Limited to the first 2,000 players to redeem it",
+      "expires": null,
+      "status": "active"
+    },
+    {
+      "code": "UPGRADES5K",
+      "reward": "5,000 coins",
+      "expires": null,
+      "status": "active"
+    },
+    {
       "code": "UPANDCOMINGPC1",
       "reward": "Limited to the first 1,000 players to redeem it",
       "expires": null,
       "status": "active"
+    },
+    {
+      "code": "UPDATE15",
+      "reward": "",
+      "expires": null,
+      "status": "active"
+    },
+    {
+      "code": "SORRYFORUPDATEBUG",
+      "reward": "",
+      "expires": null,
+      "status": "active"
+    },
+    {
+      "code": "FREECODE",
+      "reward": "",
+      "expires": null,
+      "status": "active"
+    },
+    {
+      "code": "WELCOME",
+      "reward": "",
+      "expires": null,
+      "status": "active"
     }
   ],
-  "redeemSteps": [],
-  "redeemImage": null,
-  "troubleshooting": []
+  "redeemSteps": [
+    "Look at the row of icons in the top-left corner of the screen.",
+    "Click the gear icon to open the menu shown below.",
+    "Pick Codes, then click the \"ENTER CODE\" box.",
+    "Type or paste a code and press Redeem."
+  ],
+  "redeemImage": {
+    "src": "/images/build-the-pyramid/redeem-codes.webp",
+    "alt": "Build the Pyramid gear icon in the top-left menu bar, and the Codes window with the Enter Code box and Redeem button"
+  },
+  "troubleshooting": [
+    {
+      "q": "Typo?",
+      "a": "Codes are usually case-sensitive, so use the Copy button instead of typing them out."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account."
+    },
+    {
+      "q": "Limited code?",
+      "a": "Some codes only work for the first few thousand players, so they run out rather than expire."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has probably expired. Check back after the next update."
+    }
+  ]
 }
