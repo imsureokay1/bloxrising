@@ -2,124 +2,212 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import ShareButton from '../../components/ShareButton.astro';
+import MoreReading from '../../components/MoreReading.astro';
+import { site } from '../../site.config';
 import { formatDate, tileColor } from '../../lib/format';
 import { kindLabel } from '../../lib/kinds';
+import top from '../../data/top-games.json';
 
 export async function getStaticPaths() {
   const games = await getCollection('games');
-  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+  const covered = new Set(games.map((g) => g.id));
+  const paths = games.map((game) => ({ params: { slug: game.id }, props: { game, listed: null } }));
+
+  // Every game in the top 10 gets a page, even the ones we haven't written up yet.
+  for (const entry of top.games ?? []) {
+    if (!entry.slug || covered.has(entry.slug)) continue;
+    covered.add(entry.slug);
+    paths.push({ params: { slug: entry.slug }, props: { game: null, listed: entry } });
+  }
+  return paths;
 }
 
-interface Props { game: CollectionEntry<'games'> }
-const { game } = Astro.props;
-const d = game.data;
-const active = d.codes.filter((c) => c.status === 'active');
-const posts = (await getCollection('guides'))
-  .filter((g) => g.data.game === game.id)
-  .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime());
-const paragraphs = d.about.split(/\n\s*\n/).filter(Boolean);
-const checked = formatDate(d.lastChecked);
-const byline = [
-  d.developer && `By ${d.developer}`,
-  d.genre,
-  d.released && `released ${formatDate(d.released)}`,
-].filter(Boolean).join(', ');
+interface Props {
+  game: CollectionEntry<'games'> | null;
+  listed: { name: string; developer?: string; players?: string; icon?: string | null; placeId?: string; rank?: number } | null;
+}
+
+const { game, listed } = Astro.props;
+
+// Worked out up front, since expressions in the markup can't await.
+const guides = game
+  ? (await getCollection('guides'))
+      .filter((g) => g.data.game === game.id)
+      .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime())
+  : [];
+const activeCodes = game ? game.data.codes.filter((c) => c.status === 'active') : [];
+const byline = game
+  ? [
+      game.data.developer && `By ${game.data.developer}`,
+      game.data.genre,
+      game.data.released && `released ${formatDate(game.data.released)}`,
+    ].filter(Boolean).join(', ')
+  : '';
 ---
-<Base image={d.cover} title={`${d.name}${d.altName ? ` (${d.altName})` : ''}: Codes, Guides and Game Info`} description={`Everything for ${d.name} on Roblox: working codes, beginner guides, and what the game is about.`}>
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{d.name}</span>
-    </nav>
+{listed && !game ? (
+  <Base
+    title={`${listed.name}: Player Count and Codes`}
+    description={`${listed.name} is one of the most played Roblox games right now. Here's what we know, and what we're working on.`}
+  >
+    <div class="wrap page">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{listed.name}</span>
+      </nav>
 
-    {d.cover && (
-      <img class="cover" src={d.cover} alt={`${d.name} cover art`} width="1200" height="675" />
-    )}
-
-    <header class="hub-head">
-      {d.icon
-        ? <img class="tile" src={d.icon} alt="" width="72" height="72" />
-        : <span class="tile" style={`background:${tileColor(d.name)}`} aria-hidden="true">{d.name.charAt(0)}</span>}
-      <div class="titles">
-        <h1>{d.name}</h1>
-        {d.altName && <p class="aka">Also called {d.altName}</p>}
-        {byline && <p class="by">{byline}</p>}
-      </div>
-      <a class="btn" href={d.robloxUrl} rel="noopener">Play on Roblox</a>
-    </header>
-
-    <nav class="jump" aria-label="On this page">
-      <a href="#codes">Codes</a>
-      {posts.length > 0 && <a href="#guides">Guides</a>}
-      {paragraphs.length > 0 && <a href="#about">About the game</a>}
-    </nav>
-
-    <div class="hub-grid">
-      <div class="main-col">
-        <section id="codes" class="card codes-card" aria-labelledby="codes-title">
-          <div class="card-head">
-            <h2 id="codes-title">Codes</h2>
-            {checked
-              ? <span class="checked">Checked {checked}</span>
-              : <span class="checked is-pending">Not checked yet</span>}
-          </div>
-          {active.length === 0 ? (
-            <p>No working codes right now.</p>
-          ) : (
-            <ul class="mini-codes">
-              {active.slice(0, 3).map((c) => (
-                <li><span class="code">{c.code}</span><span class="reward">{c.reward || 'Reward not confirmed yet'}</span></li>
-              ))}
-            </ul>
+      <header class="hub-head">
+        {listed.icon
+          ? <img class="tile" src={listed.icon} alt="" width="72" height="72" />
+          : <span class="tile blank" style={`background:${tileColor(listed.name)}`} aria-hidden="true">{listed.name.charAt(0)}</span>}
+        <div class="titles">
+          <h1>{listed.name}</h1>
+          <p class="by">
+            {listed.rank ? `#${listed.rank} by players right now` : 'Currently in the top 10 by players'}
+            {listed.players ? `, ${listed.players}` : ''}
+            {listed.developer ? `, by ${listed.developer}` : ''}
+          </p>
+        </div>
+        <div class="actions">
+          {listed.placeId && (
+            <a class="btn" href={`https://www.roblox.com/games/${listed.placeId}`} rel="noopener">Play on Roblox</a>
           )}
-          <a class="btn btn-ghost" href={`/codes/${game.id}/`}>
-            {active.length > 3 ? `See all ${active.length} codes` : 'Copy codes and how to redeem'}
-          </a>
-        </section>
+          <ShareButton title={listed.name} />
+        </div>
+      </header>
 
-        {posts.length > 0 && (
-          <section id="guides" class="section" aria-labelledby="guides-title">
-            <h2 id="guides-title">Guides and news</h2>
-            <div class="posts">
-              {posts.map((p) => (
-                <a class="list-card post" href={`/guides/${p.id}/`}>
-                  <span class="kind">{kindLabel[p.data.kind]}</span>
-                  <span class="t">{p.data.title}</span>
-                  <span class="desc">{p.data.description}</span>
-                </a>
-              ))}
+      <section class="card">
+        <h2>We haven't covered this one yet</h2>
+        <p>
+          {listed.name} showed up in our top 10 by player count, so it has a page here. We just
+          haven't written up its codes and guides yet.
+        </p>
+        <p>
+          Games get covered fastest when people ask for them. If you play {listed.name} and want
+          its codes tracked, email <a href={`mailto:${site.email}`}>{site.email}</a> and it moves up the list.
+        </p>
+      </section>
+
+      <AdSlot size="rect" />
+
+      <section class="card">
+        <h2>Games we do cover</h2>
+        <p>Working codes, checked in-game, with guides.</p>
+        <p><a class="btn btn-ghost" href="/games/">See all games</a></p>
+      </section>
+
+      <MoreReading />
+    </div>
+  </Base>
+) : null}
+
+{game ? (
+  <Base
+    image={game.data.cover}
+    title={`${game.data.name}${game.data.altName ? ` (${game.data.altName})` : ''}: Codes, Guides and Game Info`}
+    description={`Everything for ${game.data.name} on Roblox: working codes, beginner guides, and what the game is about.`}
+  >
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{game.data.name}</span>
+      </nav>
+
+      {game.data.cover && (
+        <img class="cover" src={game.data.cover} alt={`${game.data.name} cover art`} width="1200" height="675" />
+      )}
+
+      <header class="hub-head">
+        {game.data.icon
+          ? <img class="tile" src={game.data.icon} alt="" width="72" height="72" />
+          : <span class="tile blank" style={`background:${tileColor(game.data.name)}`} aria-hidden="true">{game.data.name.charAt(0)}</span>}
+        <div class="titles">
+          <h1>{game.data.name}</h1>
+          {game.data.altName && <p class="aka">Also called {game.data.altName}</p>}
+          {byline && <p class="by">{byline}</p>}
+        </div>
+        <div class="actions">
+          <a class="btn" href={game.data.robloxUrl} rel="noopener">Play on Roblox</a>
+          <ShareButton title={game.data.name} />
+        </div>
+      </header>
+
+      <nav class="jump" aria-label="On this page">
+        <a href="#codes">Codes</a>
+        {guides.length > 0 && <a href="#guides">Guides</a>}
+        {game.data.about && <a href="#about">About the game</a>}
+      </nav>
+
+      <div class="hub-grid">
+        <div class="main-col">
+          <section id="codes" class="card codes-card" aria-labelledby="codes-title">
+            <div class="card-head">
+              <h2 id="codes-title">Codes</h2>
+              {game.data.lastChecked
+                ? <span class="checked">Checked {formatDate(game.data.lastChecked)}</span>
+                : <span class="checked is-pending">Not checked yet</span>}
             </div>
+            {activeCodes.length === 0 ? (
+              <p>{game.data.codesNote ? game.data.codesNote.split(/\n\s*\n/)[0] : 'No working codes right now.'}</p>
+            ) : (
+              <ul class="mini-codes">
+                {activeCodes.slice(0, 3).map((c) => (
+                  <li><span class="code">{c.code}</span><span class="reward">{c.reward || 'Reward not confirmed yet'}</span></li>
+                ))}
+              </ul>
+            )}
+            <a class="btn btn-ghost" href={`/codes/${game.id}/`}>
+              {activeCodes.length > 3 ? `See all ${activeCodes.length} codes` : 'Copy codes and how to redeem'}
+            </a>
           </section>
-        )}
 
-        {paragraphs.length > 0 && (
-          <section id="about" class="section prose" aria-labelledby="about-title">
-            <h2 id="about-title">About {d.name}</h2>
-            {paragraphs.map((p) => <p>{p}</p>)}
-          </section>
-        )}
+          {guides.length > 0 && (
+            <section id="guides" class="section" aria-labelledby="guides-title">
+              <h2 id="guides-title">Guides and news</h2>
+              <div class="posts">
+                {guides.map((p) => (
+                  <a class="list-card post" href={`/guides/${p.id}/`}>
+                    <span class="kind">{kindLabel[p.data.kind]}</span>
+                    <span class="t">{p.data.title}</span>
+                    <span class="desc">{p.data.description}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {game.data.about && (
+            <section id="about" class="section prose" aria-labelledby="about-title">
+              <h2 id="about-title">About {game.data.name}</h2>
+              {game.data.about.split(/\n\s*\n/).filter(Boolean).map((p) => <p>{p}</p>)}
+            </section>
+          )}
+        </div>
+
+        <aside class="side-col">
+          {game.data.quickFacts.length > 0 && (
+            <section class="card facts" aria-labelledby="facts-title">
+              <h2 id="facts-title">Quick facts</h2>
+              <dl>
+                {game.data.quickFacts.map((f) => (<div><dt>{f.label}</dt><dd>{f.value}</dd></div>))}
+              </dl>
+            </section>
+          )}
+          <AdSlot size="rect" />
+        </aside>
       </div>
 
-      <aside class="side-col">
-        {d.quickFacts.length > 0 && (
-          <section class="card facts" aria-labelledby="facts-title">
-            <h2 id="facts-title">Quick facts</h2>
-            <dl>
-              {d.quickFacts.map((f) => (<div><dt>{f.label}</dt><dd>{f.value}</dd></div>))}
-            </dl>
-          </section>
-        )}
-        <AdSlot size="rect" />
-      </aside>
+      <MoreReading game={game.id} />
     </div>
-  </div>
-</Base>
+  </Base>
+) : null}
 
 <style>
+  .page { max-width: 760px; }
   .cover { width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: 360px; object-fit: cover; border-radius: 20px; margin-top: 18px; }
-  img.tile { object-fit: cover; }
   .hub-head { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; padding-top: 18px; }
-  .tile { width: 72px; height: 72px; border-radius: 18px; color: #fff; font-family: var(--display); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .tile { width: 72px; height: 72px; border-radius: 18px; object-fit: cover; flex-shrink: 0; }
+  .tile.blank { color: #fff; font-family: var(--display); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
   .titles { flex: 1; min-width: 200px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
   .by { margin: 6px 0 0; color: var(--muted); }
   .aka { margin: 6px 0 0; font-weight: 600; color: var(--ink-2); }
   .jump { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
@@ -128,12 +216,15 @@ const byline = [
   .hub-grid { display: grid; gap: 0 32px; grid-template-columns: 1fr; }
   @media (min-width: 900px) { .hub-grid { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; } }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; margin-top: 24px; }
+  .card h2 { margin-bottom: 10px; }
+  .card p { margin: 0 0 12px; line-height: 1.55; }
   .card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
   .codes-card { border: 2px solid var(--ink); }
   .mini-codes { list-style: none; margin: 0 0 16px; padding: 0; }
   .mini-codes li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 10px 0; border-top: 1px solid var(--line); }
   .code { font-family: var(--mono); font-weight: 700; }
   .reward { color: var(--muted); font-size: 14px; }
+  .section { margin-top: 32px; }
   .section h2 { margin-bottom: 14px; }
   .posts { display: flex; flex-direction: column; gap: 10px; }
   .post { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; color: var(--ink); }
