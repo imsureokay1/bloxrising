@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import MoreReading from '../../components/MoreReading.astro';
+import { site } from '../../site.config';
 import { formatDate } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -16,7 +17,12 @@ const { guide } = Astro.props;
 const { Content } = await render(guide);
 const game = (await getCollection('games')).find((g) => g.id === guide.data.game);
 ---
-<Base title={guide.data.title} description={guide.data.description}>
+<Base
+  title={guide.data.title}
+  heading={guide.data.title}
+  description={guide.data.description}
+  updated={guide.data.updated}
+>
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a>
@@ -25,7 +31,7 @@ const game = (await getCollection('games')).find((g) => g.id === guide.data.game
     <article>
       <header class="head">
         <h1>{guide.data.title}</h1>
-        <p class="date">Updated {formatDate(guide.data.updated)}</p>
+        <p class="byline">By {site.editor} · Updated {formatDate(guide.data.updated)}</p>
         <p class="share-row"><ShareButton title={guide.data.title} /></p>
       </header>
       <AdSlot size="banner" />
@@ -47,7 +53,7 @@ const game = (await getCollection('games')).find((g) => g.id === guide.data.game
 <style>
   .head { padding-top: 14px; }
   .head h1 { max-width: 22ch; }
-  .date { color: var(--muted); margin: 10px 0 0; }
+  .byline { color: var(--muted); margin: 10px 0 0; }
   .cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
   .share-row { margin: 14px 0 0; }
 </style>

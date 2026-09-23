@@ -5,6 +5,7 @@ import CodeList from '../../components/CodeList.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import MoreReading from '../../components/MoreReading.astro';
+import { site } from '../../site.config';
 import { formatDate, monthYear } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -20,7 +21,7 @@ const related = (await getCollection('guides')).filter((g) => g.data.game === ga
 const title = `${d.name} Codes (${monthYear(d.lastChecked)})`;
 const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.lastChecked)}` : title;
 ---
-<Base image={d.cover} title={searchTitle} description={`All working ${d.name} codes, checked in-game. ${d.summary}`}>
+<Base image={d.cover} title={searchTitle} heading={title} description={`All working ${d.name} codes, checked in-game. ${d.summary}`}>
   <div class="wrap page">
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{d.name}</a><span aria-hidden="true">/</span><span>Codes</span>
@@ -31,6 +32,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
       {checked
         ? <span class="checked">Last checked {checked}</span>
         : <span class="checked is-pending">Codes not checked in-game yet</span>}
+      <p class="byline">Checked by {site.editor}</p>
       <p class="lede">{d.summary}</p>
       <ShareButton title={title} />
     </header>
@@ -85,6 +87,7 @@ const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.l
 <style>
   .page { max-width: 760px; }
   .head { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 14px; }
+  .byline { margin: -6px 0 0; color: var(--muted); font-size: 14px; }
   .block { margin-top: 40px; }
   .block h2 { margin-bottom: 14px; }
   .steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
