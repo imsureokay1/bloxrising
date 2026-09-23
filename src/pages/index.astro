@@ -47,7 +47,12 @@ const featured = [...games]
   </div>
 
   <div class="wrap grid">
-    <section class="section" aria-labelledby="updated-title">
+    <aside class="section side">
+      <TopGames />
+      <AdSlot size="rect" />
+    </aside>
+
+    <section class="section main" aria-labelledby="updated-title">
       <div class="section-head">
         <h2 id="updated-title">Latest codes</h2>
         <a href="/codes/">All games</a>
@@ -56,11 +61,6 @@ const featured = [...games]
         {recent.map((g) => <GameRow game={g} />)}
       </div>
     </section>
-
-    <aside class="section">
-      <TopGames />
-      <AdSlot size="rect" />
-    </aside>
   </div>
 
   <div class="wrap">
@@ -86,9 +86,12 @@ const featured = [...games]
   .hero { padding: 44px 0 8px; }
   .hero h1 { max-width: 14ch; }
   .hero .search { margin-top: 22px; }
+  /* On phones the top 10 comes first; on wide screens it sits in the sidebar. */
   .grid { display: grid; gap: 0 32px; grid-template-columns: 1fr; }
   @media (min-width: 900px) {
     .grid { grid-template-columns: minmax(0, 1fr) 360px; align-items: start; }
+    .main { grid-column: 1; grid-row: 1; }
+    .side { grid-column: 2; grid-row: 1; }
   }
   .rows { display: flex; flex-direction: column; gap: 10px; }
   .cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
