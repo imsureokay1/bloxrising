@@ -1,15 +1,21 @@
 // Reads new messages from your own Discord channels and looks for codes.
-// Point it at channels where game announcements land (use Discord's "Follow"
-// button on a game's announcement channel to pipe its posts into your server).
+// Channels come from the /watch command, or from the WATCH_CHANNELS secret.
+// Use Discord's "Follow" button on a game's announcement channel to pipe its
+// posts into your server, then point this at that channel.
 //
-// Needs two repository secrets:
-//   DISCORD_BOT_TOKEN  - a bot invited to your server with Read Messages + Read Message History
-//   WATCH_CHANNELS     - comma-separated "channelId:game-slug" pairs, e.g. 123456:slayers-2,987654:ride-a-pet
+// Needs the DISCORD_BOT_TOKEN secret: a bot invited to your server with
+// Read Messages and Read Message History.
 import { GAMES_DIR, readJson, writeJson, sendDiscord } from './roblox.mjs';
 
 const STATE = 'data/discord-state.json';
+const WATCH_FILE = 'data/watch.json';
 const token = process.env.DISCORD_BOT_TOKEN;
-const watch = (process.env.WATCH_CHANNELS || '')
+
+const fromFile = ((await readJson(WATCH_FILE, {})).discord ?? []).map((w) => ({
+  channel: String(w.id),
+  game: w.game ?? '',
+}));
+const fromSecret = (process.env.WATCH_CHANNELS || '')
   .split(',')
   .map((pair) => pair.trim())
   .filter(Boolean)
@@ -17,6 +23,9 @@ const watch = (process.env.WATCH_CHANNELS || '')
     const [channel, game] = pair.split(':');
     return { channel: channel.trim(), game: (game || '').trim() };
   });
+const watch = [...fromFile, ...fromSecret].filter(
+  (w, i, all) => w.channel && all.findIndex((o) => o.channel === w.channel) === i
+);
 
 if (!token || watch.length === 0) {
   console.log('No bot token or no channels to watch. Nothing to do.');
@@ -47,8 +56,7 @@ function looksLikeCode(tok) {
   const up = tok.toUpperCase();
   if (IGNORE.has(up.replace(/!/g, ''))) return false;
   if (tok.length < 4 || tok.length > 30) return false;
-  const hasLetter = /[A-Za-z]/.test(tok);
-  if (!hasLetter) return false;
+  if (!/[A-Za-z]/.test(tok)) return false;
   const allCaps = tok === up && tok.length >= 5;
   const hasDigit = /\d/.test(tok);
   const camel = /[a-z][A-Z]/.test(tok) && tok.length >= 6;
@@ -61,8 +69,6 @@ function looksLikeCode(tok) {
 }
 
 // Codes can appear anywhere in an announcement, so read the whole message.
-// If it mentions codes at all, every ALL-CAPS-ish word is a candidate.
-// If it doesn't, only the strongest shapes count, to keep the noise down.
 function codesIn(raw = '') {
   const text = clean(raw);
   // "use", "enter" and "type" catch posts that hand out a code without the word "code".
@@ -96,7 +102,7 @@ async function messagesSince(channel, afterId) {
     await new Promise((r) => setTimeout(r, wait));
     return messagesSince(channel, afterId);
   }
-  if (!res.ok) throw new Error(`Channel ${channel}: ${res.status} ${await res.text()}`);
+  if (!res.ok) throw new Error(`Channel ${channel}: ${res.status} ${(await res.text()).slice(0, 120)}`);
   return (await res.json()).reverse(); // oldest first
 }
 
@@ -124,18 +130,22 @@ for (const { channel, game } of watch) {
 
   const data = game ? await readJson(`${GAMES_DIR}/${game}.json`, null) : null;
   const known = new Set((data?.codes ?? []).map((c) => c.code.toUpperCase()));
+  // Words from the game's own name aren't codes.
+  const nameWords = new Set((data?.name ?? '').toUpperCase().split(/[^A-Z0-9]+/).filter(Boolean));
   const label = data?.name ?? `channel ${channel}`;
 
   for (const msg of messages) {
     const text = textOf(msg);
     if (!text) continue;
-    const fresh = codesIn(text).filter((c) => !known.has(c.toUpperCase()));
+    const fresh = codesIn(text).filter(
+      (c) => !known.has(c.toUpperCase()) && !nameWords.has(c.toUpperCase())
+    );
     if (fresh.length) {
       const preview = text.replace(/\s+/g, ' ').slice(0, 300);
       codeAlerts.push(
         `🎁 **${label}** posted possible codes: ${fresh.map((c) => `\`${c}\``).join(', ')}\n` +
           `> ${preview}\n` +
-          `Check them in-game, then run the "Add a code" action${game ? ` with game \`${game}\`` : ''}.`
+          `Check them in-game, then run \`/code\`${game ? ` with game \`${game}\`` : ''}.`
       );
     } else if (/update|patch|release|out now/i.test(text)) {
       updateAlerts.push(`🔄 **${label}** posted an update. Worth checking for new codes.`);

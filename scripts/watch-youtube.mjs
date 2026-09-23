@@ -1,14 +1,18 @@
 // Watches game developers' YouTube channels for new videos, using the free RSS
 // feed every channel has (no API key, no quota).
 //
-// Secret WATCH_YOUTUBE: comma-separated "channelId:game-slug" pairs, e.g.
-//   UCxxxxxxxxxxxxxxxxxxxxxx:slayers-2,UCyyyyyyyyyyyyyyyyyyyyyy:ride-a-pet
-// Find a channel ID in the page source of the channel, or from a link like
-// youtube.com/channel/UC....
+// Channels come from the /watch command (data/watch.json), or from the
+// WATCH_YOUTUBE secret as "channelId:game-slug" pairs.
 import { GAMES_DIR, readJson, writeJson, sendDiscord } from './roblox.mjs';
 
 const STATE = 'data/youtube-state.json';
-const watch = (process.env.WATCH_YOUTUBE || '')
+const WATCH_FILE = 'data/watch.json';
+
+const fromFile = ((await readJson(WATCH_FILE, {})).youtube ?? []).map((w) => ({
+  channel: String(w.id),
+  game: w.game ?? '',
+}));
+const fromSecret = (process.env.WATCH_YOUTUBE || '')
   .split(',')
   .map((p) => p.trim())
   .filter(Boolean)
@@ -16,6 +20,9 @@ const watch = (process.env.WATCH_YOUTUBE || '')
     const [channel, game] = p.split(':');
     return { channel: channel.trim(), game: (game || '').trim() };
   });
+const watch = [...fromFile, ...fromSecret].filter(
+  (w, i, all) => w.channel && all.findIndex((o) => o.channel === w.channel) === i
+);
 
 if (watch.length === 0) {
   console.log('No YouTube channels to watch. Nothing to do.');
@@ -99,9 +106,7 @@ for (const { channel, game } of watch) {
   const data = game ? await readJson(`${GAMES_DIR}/${game}.json`, null) : null;
   const known = new Set((data?.codes ?? []).map((c) => c.code.toUpperCase()));
   // Words from the game's own name aren't codes ("SLAYERS 2 UPDATE IS HERE").
-  const nameWords = new Set(
-    (data?.name ?? '').toUpperCase().split(/[^A-Z0-9]+/).filter(Boolean)
-  );
+  const nameWords = new Set((data?.name ?? '').toUpperCase().split(/[^A-Z0-9]+/).filter(Boolean));
   const label = data?.name ?? channel;
 
   for (const v of fresh) {
@@ -116,7 +121,7 @@ for (const { channel, game } of watch) {
       codeAlerts.push(
         `🎁 **${label}** dev video mentions possible codes: ${codes.map((c) => `\`${c}\``).join(', ')}\n` +
           `${v.title}\n${link}\n` +
-          `Check them in-game, then run the "Add a code" action${game ? ` with game \`${game}\`` : ''}.`
+          `Check them in-game, then run \`/code\`${game ? ` with game \`${game}\`` : ''}.`
       );
     } else {
       updateAlerts.push(`📺 **${label}** dev posted a video: ${v.title}\n${link}`);
