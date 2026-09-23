@@ -51,25 +51,25 @@
     },
     {
       "code": "UPDATE15",
-      "reward": "",
+      "reward": "Works, but the reward isn't stated by the developer",
       "expires": null,
       "status": "active"
     },
     {
       "code": "SORRYFORUPDATEBUG",
-      "reward": "",
+      "reward": "Works, but the reward isn't stated by the developer",
       "expires": null,
       "status": "active"
     },
     {
       "code": "FREECODE",
-      "reward": "",
+      "reward": "Works, but the reward isn't stated by the developer",
       "expires": null,
       "status": "active"
     },
     {
       "code": "WELCOME",
-      "reward": "",
+      "reward": "Works, but the reward isn't stated by the developer",
       "expires": null,
       "status": "active"
     }
@@ -85,6 +85,10 @@
     "alt": "Build the Pyramid gear icon in the top-left menu bar, and the Codes window with the Enter Code box and Redeem button"
   },
   "troubleshooting": [
+    {
+      "q": "Why don't some codes list a reward?",
+      "a": "Build the Pyramid doesn't show what a code gives when you redeem it, and the developer hasn't listed the rewards in their Discord. Rather than guess, we only state the rewards we can confirm. Watch your coin counter before and after redeeming to see what you got."
+    },
     {
       "q": "Typo?",
       "a": "Codes are usually case-sensitive, so use the Copy button instead of typing them out."
