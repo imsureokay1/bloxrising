@@ -6,6 +6,7 @@ interface Code {
   expires?: string | null;
   status: 'active' | 'expired';
   verified?: string | null;
+  // Kept in the data for our own reference; not shown on the page.
   source?: string;
 }
 interface Props { codes: Code[]; note?: string }
@@ -32,7 +33,6 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
               {c.verified
                 ? <span class="ok">Redeemed by us on {formatDate(c.verified)}</span>
                 : <span class="untested">Not tested by us yet</span>}
-              {c.source && <span class="src">Source: {c.source}</span>}
               {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
             </span>
           </span>
@@ -94,7 +94,6 @@ const expired = Astro.props.codes.filter((c) => c.status === 'expired');
   .status { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; }
   .ok { font-weight: 700; color: var(--green); }
   .untested { font-weight: 700; color: var(--amber-ink); }
-  .src { color: var(--muted); }
   .expires { font-weight: 700; color: var(--amber-ink); }
   .copy { min-width: 88px; flex-shrink: 0; }
   :global(.copy.is-copied) { background: var(--ink); }
