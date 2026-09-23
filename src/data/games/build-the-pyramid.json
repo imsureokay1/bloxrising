@@ -10,10 +10,17 @@
   "cover": null,
   "released": null,
   "quickFacts": [],
-  "lastChecked": null,
+  "lastChecked": "2026-09-23",
   "rising": null,
   "players": "6.1K playing",
-  "codes": [],
+  "codes": [
+    {
+      "code": "UPANDCOMINGPC1",
+      "reward": "Limited to the first 1,000 players to redeem it",
+      "expires": null,
+      "status": "active"
+    }
+  ],
   "redeemSteps": [],
   "redeemImage": null,
   "troubleshooting": []
