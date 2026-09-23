@@ -46,5 +46,16 @@
       }
     ],
     "descHash": "6bfac972b9185abff4a97d2a6da0f541144d4c03"
+  },
+  "build-the-pyramid": {
+    "placeId": "123720558354386",
+    "universeId": "10765012427",
+    "updated": "2026-09-22T23:51:03.28683Z",
+    "history": [
+      {
+        "t": 1790140675849,
+        "p": 6110
+      }
+    ]
   }
 }
