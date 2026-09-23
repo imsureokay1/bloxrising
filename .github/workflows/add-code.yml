@@ -48,6 +48,7 @@ jobs:
           EXPIRES: ${{ inputs.expires }}
           STATUS: ${{ inputs.status }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_CODES_WEBHOOK_URL: ${{ secrets.DISCORD_CODES_WEBHOOK_URL }}
       - name: Save changes
         run: |
           git config user.name "earlyspawn-bot"
