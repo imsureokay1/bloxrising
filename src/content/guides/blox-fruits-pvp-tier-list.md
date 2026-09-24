@@ -4,6 +4,7 @@ description: "The best PvP fruits in Blox Fruits ranked on combos, mobility, stu
 game: "blox-fruits"
 kind: "tier-list"
 updated: 2026-09-24
+image: "/images/banners/blox-fruits-pvp.webp"
 ---
 
 PvP rankings aren't damage rankings. What decides fights is whether a fruit can start a combo, control space, and punish movement. This list weighs combo potential, mobility, stun, range, hitbox size, and how each fruit holds up against players who already know what you're trying to do.
