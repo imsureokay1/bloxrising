@@ -4,6 +4,7 @@ description: "The 10 strongest pets in Ride A Pet, ranked on real speed, jump an
 game: "ride-a-pet"
 kind: "tier-list"
 updated: 2026-09-24
+image: "/images/banners/ride-a-pet-best-pets.webp"
 ---
 
 Ranking pets by how rare they look gets you the wrong answer. The pet with the best income isn't the fastest, the highest jump doesn't belong to the rarest pet, and one of the top ten has worse odds than the pet above it. This list uses the actual stats.
