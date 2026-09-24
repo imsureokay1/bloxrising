@@ -1,13 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
+import SuggestForm from '../components/SuggestForm.astro';
 import { site } from '../site.config';
 ---
-<Base title="Contact" description="Contact EarlySpawn for code tips, corrections, or sponsorships.">
-  <div class="wrap prose page">
-    <h1>Contact</h1>
-    <p>For new codes, corrections, sponsorships, or developer questions, email us at:</p>
-    <p class="email"><a href={`mailto:${site.email}`}>{site.email}</a></p>
-    <p>Developers: if you'd like your game covered, include the game link and any codes you're launching with.</p>
+<Base title="Contact" description="Suggest a game or guide for EarlySpawn, or reach us about business enquiries.">
+  <div class="wrap page">
+    <div class="prose">
+      <h1>Contact</h1>
+      <p>Want a game covered, a guide written, or spotted a code that's wrong? The form below is the fastest way to reach us, and it goes straight to the person who writes the pages.</p>
+    </div>
+
+    <SuggestForm />
+
+    <div class="prose">
+      <h2>Business enquiries</h2>
+      <p>For sponsorships, partnerships, press, or anything from a game developer, email <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+      <p>That address is for business only. Game requests, guide requests and corrections go through the form above, so they don't get lost.</p>
+    </div>
   </div>
 </Base>
-<style>.page { padding-top: 36px; } .page h1 { margin-bottom: 18px; } .email { font-size: 1.3rem; font-weight: 700; }</style>
+<style>.page { padding-top: 36px; } .page h1 { margin-bottom: 18px; }</style>

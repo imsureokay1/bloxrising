@@ -9,6 +9,9 @@ const socials = [
 ---
 <footer class="site-footer">
   <div class="wrap">
+    <p class="ask">
+      Want a game or guide covered? <a href="/about/#suggest">Send us a suggestion</a> and we'll take a look.
+    </p>
     <nav aria-label="Footer">
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
@@ -18,3 +21,8 @@ const socials = [
     <p>© {new Date().getFullYear()} {site.name}. Not affiliated with or endorsed by Roblox Corporation. Game names belong to their creators.</p>
   </div>
 </footer>
+
+<style>
+  .ask { font-size: 15px; color: var(--ground); margin: 0 0 4px; }
+  .ask a { color: var(--green-bright); font-weight: 700; }
+</style>
