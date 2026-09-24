@@ -1,0 +1,86 @@
+---
+// Suggestion form. Posts to /api/suggest, which forwards to Discord.
+---
+<section id="suggest" class="suggest" aria-labelledby="suggest-title">
+  <h2 id="suggest-title">Suggest a game or guide</h2>
+  <p>
+    Playing something we don't cover, or stuck on something a guide should explain? Tell us here.
+    Requests are how we decide what to write next, and they go straight to the person who writes it.
+  </p>
+
+  <form id="suggest-form" novalidate>
+    <label for="subject">Which game or guide?</label>
+    <input id="subject" name="subject" type="text" maxlength="120" required
+      placeholder="e.g. Grow a Garden codes, or a Slayers 2 clan guide" />
+
+    <label for="details">Anything else? <span class="opt">Optional</span></label>
+    <textarea id="details" name="details" rows="4" maxlength="1200"
+      placeholder="What you're stuck on, a code you've found, or what the other sites get wrong."></textarea>
+
+    <label for="contact">Your Discord or email <span class="opt">Optional, if you want a reply</span></label>
+    <input id="contact" name="contact" type="text" maxlength="120" placeholder="yourname#0000" />
+
+    <div class="hp" aria-hidden="true">
+      <label for="website">Leave this empty</label>
+      <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <button class="btn" type="submit">Send suggestion</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('suggest-form') as HTMLFormElement | null;
+  if (form) {
+    const status = form.querySelector('.status') as HTMLElement;
+    const button = form.querySelector('button') as HTMLButtonElement;
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      if (!String(data.subject ?? '').trim()) {
+        status.textContent = 'Tell us which game or guide you mean.';
+        return;
+      }
+      button.disabled = true;
+      status.textContent = 'Sending…';
+      try {
+        const res = await fetch('/api/suggest', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (res.ok && body.ok) {
+          form.reset();
+          status.textContent = 'Thanks, that came through. We read every one.';
+        } else {
+          status.textContent = body.error ?? "That didn't send. Try again in a minute.";
+        }
+      } catch {
+        status.textContent = "That didn't send. Check your connection and try again.";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+</script>
+
+<style>
+  .suggest { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; margin: 32px 0; }
+  .suggest h2 { margin-bottom: 10px; }
+  .suggest > p { margin: 0 0 18px; line-height: 1.55; }
+  form { display: flex; flex-direction: column; gap: 6px; }
+  label { font-weight: 700; font-size: 15px; margin-top: 10px; }
+  .opt { font-weight: 400; color: var(--muted); font-size: 14px; }
+  input, textarea {
+    font: inherit; font-size: 16px; color: var(--ink); background: var(--ground);
+    border: 1.5px solid #D9D6CC; border-radius: 12px; padding: 12px 14px; width: 100%;
+  }
+  input { min-height: 48px; }
+  input:focus, textarea:focus { border-color: var(--green); outline: none; box-shadow: 0 0 0 3px var(--green-soft); }
+  textarea { resize: vertical; }
+  button { align-self: flex-start; margin-top: 16px; }
+  .status { margin: 10px 0 0; font-size: 15px; color: var(--ink-2); min-height: 1.4em; }
+  .hp { position: absolute; left: -9999px; }
+</style>
