@@ -7,7 +7,7 @@ import TopGames from '../components/TopGames.astro';
 import AdSlot from '../components/AdSlot.astro';
 import { kindLabel } from '../lib/kinds';
 import { site } from '../site.config';
-import { formatDate } from '../lib/format';
+import { formatDate, tileColor } from '../lib/format';
 
 const games = await getCollection('games');
 const recent = [...games]
@@ -16,7 +16,10 @@ const recent = [...games]
 const guides = (await getCollection('guides'))
   .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime())
   .slice(0, 4);
-const nameFor = (id: string) => games.find((g) => g.id === id)?.data.name ?? '';
+const gameFor = (id: string) => games.find((g) => g.id === id);
+const nameFor = (id: string) => gameFor(id)?.data.name ?? '';
+// Guides can set their own thumbnail; otherwise the game's icon stands in.
+const thumbFor = (g: (typeof guides)[number]) => g.data.image ?? gameFor(g.data.game)?.data.icon ?? null;
 const featured = [...games]
   .sort((a, b) => (a.data.rising ?? 99) - (b.data.rising ?? 99) || a.data.name.localeCompare(b.data.name))
   .slice(0, 6);
@@ -70,13 +73,20 @@ const featured = [...games]
         <a href="/guides/">All guides</a>
       </div>
       <div class="guides">
-        {guides.map((g) => (
-          <a class="guide list-card" href={`/guides/${g.id}/`}>
-            <span class="kind">{nameFor(g.data.game)} {kindLabel[g.data.kind].toLowerCase()}</span>
-            <span class="title">{g.data.title}</span>
-            <span class="date">Updated {formatDate(g.data.updated)}</span>
-          </a>
-        ))}
+        {guides.map((g) => {
+          const thumb = thumbFor(g);
+          const name = nameFor(g.data.game);
+          return (
+            <a class="guide list-card" href={`/guides/${g.id}/`}>
+              {thumb
+                ? <img class="thumb" src={thumb} alt="" width="56" height="56" loading="lazy" />
+                : <span class="thumb blank" style={`background:${tileColor(name || g.data.title)}`} aria-hidden="true">{(name || g.data.title).charAt(0)}</span>}
+              <span class="kind">{name} {kindLabel[g.data.kind].toLowerCase()}</span>
+              <span class="title">{g.data.title}</span>
+              <span class="date">Updated {formatDate(g.data.updated)}</span>
+            </a>
+          );
+        })}
       </div>
     </section>
   </div>
@@ -98,6 +108,8 @@ const featured = [...games]
   .guides { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .guide { display: flex; flex-direction: column; gap: 6px; padding: 18px; color: var(--ink); }
   .guide:hover { border-color: var(--green); text-decoration: none; color: var(--ink); }
+  .thumb { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; margin-bottom: 4px; }
+  .thumb.blank { color: #fff; font-family: var(--display); font-weight: 800; font-size: 26px; display: flex; align-items: center; justify-content: center; }
   .kind { font-size: 14px; font-weight: 700; color: var(--green); }
   .title { font-weight: 700; font-size: 17px; line-height: 1.3; }
   .date { font-size: 14px; color: var(--muted); }
