@@ -61,6 +61,8 @@ const guides = defineCollection({
     game: z.string(), // must match a game file name, e.g. "slayers-2"
     kind: z.enum(['guide', 'spotlight', 'update', 'tier-list']),
     updated: z.coerce.date(),
+    // Thumbnail for guide listings. Leave it out and the game's icon is used instead.
+    image: z.string().nullable().default(null),
   }),
 });
 
