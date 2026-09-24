@@ -4,6 +4,7 @@ description: "New to Slayers 2? The fastest path from your first spawn to your B
 game: "slayers-2"
 kind: "guide"
 updated: 2026-09-21
+image: "/images/banners/slayers-2-beginner.webp"
 ---
 
 Slayers 2 drops you into a big open world with almost no tutorial. This guide covers what to do in your first few hours so you don't waste Wen or wander into zones you can't handle.
