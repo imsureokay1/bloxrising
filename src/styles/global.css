@@ -108,6 +108,10 @@ h3 { font-size: 1.15rem; }
 .prose h3 { margin: 1.6rem 0 0.5rem; }
 .prose p, .prose ul, .prose ol { margin: 0 0 1rem; }
 .prose li { margin-bottom: 0.4rem; }
+.prose img { border-radius: 12px; margin: 0 0 1.2rem; }
+/* Pet and fruit art comes from small in-game sources, so cap the display size
+   instead of stretching it across the column and showing every pixel. */
+.prose img[src*="/pets/"], .prose img[src*="/pvp/"] { max-width: 240px; }
 .prose table { display: block; overflow-x: auto; border-collapse: collapse; width: max-content; max-width: 100%; margin: 0 0 1.2rem; background: var(--card); border-radius: 12px; overflow: hidden; }
 .prose th, .prose td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .prose th { background: var(--ground-2); font-size: 14px; }
