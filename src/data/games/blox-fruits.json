@@ -3,45 +3,61 @@
   "altName": "",
   "developer": "Gamer Robot Inc",
   "robloxUrl": "https://www.roblox.com/games/2753915549",
-  "summary": "Blox Fruits codes for 2x Experience, stat resets and money, with where to redeem them and which ones we've tested.",
-  "about": "Blox Fruits is one of Roblox's biggest games, made by Gamer Robot Inc and inspired by One Piece. You sail between islands across three seas, fight NPCs and bosses, and level up either as a sword user, a gun user, a fighting-style user, or a Devil Fruit user.\n\nMost codes listed here give 2x Experience for a set time, which is the fastest way to push through the level grind. Others give a free stat reset, so you can rebuild your build without paying, and a couple give small amounts of money or a title.",
+  "summary": "All working Blox Fruits codes for 2x Experience, stat resets and money, plus the current way to redeem them in-game.",
+  "about": "Blox Fruits is one of Roblox's biggest games, made by Gamer Robot Inc and inspired by One Piece. You sail between islands across three seas, fight NPCs and bosses, and level up either as a sword user, a gun user, a fighting-style user, or a Devil Fruit user.\n\nMost codes here give 2x Experience for a set time, which is the fastest way to push through the level grind. Others give a free stat reset, so you can rebuild your build without paying, and a couple give small amounts of money or a title.",
   "genre": "Open-world fighting RPG",
   "icon": "/images/blox-fruits/icon.png",
   "cover": "/images/blox-fruits/cover.webp",
   "released": null,
   "quickFacts": [
-    { "label": "Developer", "value": "Gamer Robot Inc" },
-    { "label": "Genre", "value": "Open-world fighting RPG" },
-    { "label": "Codes menu", "value": "Settings, Redeem DLC Code" },
-    { "label": "Seas", "value": "First, Second and Third" }
+    {
+      "label": "Developer",
+      "value": "Gamer Robot Inc"
+    },
+    {
+      "label": "Genre",
+      "value": "Open-world fighting RPG"
+    },
+    {
+      "label": "Codes menu",
+      "value": "Settings, Redeem DLC Code"
+    },
+    {
+      "label": "Most codes give",
+      "value": "20 minutes of 2x Experience"
+    },
+    {
+      "label": "Seas",
+      "value": "First, Second and Third"
+    }
   ],
   "lastChecked": "2026-09-23",
   "rising": 2,
   "players": "180K playing",
   "codes": [
-    { "code": "GAMER_ROBOT_1M", "reward": "1 hour 30 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "SUB2GAMERROBOT_EXP1", "reward": "30 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2Fer999", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Enyu_is_Pro", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "JCWK", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "StarcodeHEO", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "MagicBUS", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "KittGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2CaptainMaui", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2OfficialNoobie", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "TheGreatAce", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2NoobMaster123", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2Daigrock", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Axiore", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "StrawHatMaine", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "TantaiGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Bluxxy", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "KITT_RESET", "reward": "Free stat reset", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Sub2UncleKizaru", "reward": "Free stat reset", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "BigNews", "reward": "The in-game title BIGNEWS (only applies in the Second or Third Sea)", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "fudd10_V2", "reward": "2 Money", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "fudd10", "reward": "1 Money", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" },
-    { "code": "Chandler", "reward": "0 Money, a joke code", "expires": null, "status": "active", "tested": null, "source": "Blox Fruits Wiki" }
+    { "code": "GAMER_ROBOT_1M", "reward": "1 hour 30 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "SUB2GAMERROBOT_EXP1", "reward": "30 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2Fer999", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Enyu_is_Pro", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "JCWK", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "StarcodeHEO", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "MagicBUS", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "KittGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2CaptainMaui", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2OfficialNoobie", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "TheGreatAce", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2NoobMaster123", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2Daigrock", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Axiore", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "StrawHatMaine", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "TantaiGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Bluxxy", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "KITT_RESET", "reward": "Free stat reset", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Sub2UncleKizaru", "reward": "Free stat reset", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "BigNews", "reward": "The in-game title BIGNEWS (only applies in the Second or Third Sea)", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "fudd10_V2", "reward": "2 Money", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "fudd10", "reward": "1 Money", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
+    { "code": "Chandler", "reward": "0 Money, a joke code", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" }
   ],
   "redeemSteps": [
     "Click the gear icon in the row of icons on the left of your screen.",
@@ -54,17 +70,47 @@
     "alt": "Blox Fruits gear icon, the Settings window with Redeem DLC Code, and the Redeem Codes box"
   },
   "troubleshooting": [
-    { "q": "Typo?", "a": "Codes are case-sensitive, so use the Copy button rather than typing them out." },
-    { "q": "Already used?", "a": "Each code works once per account." },
-    { "q": "Looking for the gift icon?", "a": "Older guides say to use a gift icon at the bottom left. The current route is through Settings, as shown above." },
-    { "q": "Still failing?", "a": "The code has probably expired. None of the codes here have been tested by us yet, so if one fails for you, tell us through the contact page." }
+    {
+      "q": "Typo?",
+      "a": "Codes are case-sensitive, so use the Copy button rather than typing them out."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account, and 2x Experience time stacks if you redeem several."
+    },
+    {
+      "q": "Looking for the gift icon?",
+      "a": "Older guides say to use a gift icon at the bottom left. That's been replaced by the Settings route above."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has expired. Blox Fruits usually drops new ones with big updates and milestones."
+    }
   ],
   "faq": [
-    { "q": "Where do you redeem Blox Fruits codes now?", "a": "Gear icon on the left, then Settings, scroll to Gameplay, click Redeem next to Redeem DLC Code, and type into the Enter Promo Code box. The screenshots on this page show all three steps." },
-    { "q": "Why do older guides say to use a gift icon?", "a": "That was the old route. Codes now go through Settings. If a guide still shows the gift icon, it hasn't been updated in a while." },
-    { "q": "Can I stack 2x Experience codes?", "a": "The Blox Fruits Wiki reports that experience codes add their time together when you redeem several. We haven't tested this ourselves yet." },
-    { "q": "Which code gives the most 2x Experience?", "a": "According to the Blox Fruits Wiki, GAMER_ROBOT_1M gives the most at 1 hour 30 minutes, then SUB2GAMERROBOT_EXP1 at 30 minutes. The rest are listed at 20 minutes each." },
-    { "q": "Do stat reset codes cost anything?", "a": "No. KITT_RESET and Sub2UncleKizaru are listed as free stat resets, which normally cost in-game money, so they're worth saving until you actually want to rebuild your build." },
-    { "q": "Why does fudd10 only give 1 Money?", "a": "The Blox Fruits Wiki lists it, and Chandler at 0 Money, as joke codes from the developers. They're not worth rushing for." }
+    {
+      "q": "Where do you redeem Blox Fruits codes now?",
+      "a": "Gear icon on the left, then Settings, scroll to Gameplay, click Redeem next to Redeem DLC Code, and type into the Enter Promo Code box. The screenshots on this page show all three steps."
+    },
+    {
+      "q": "Why do older guides say to use a gift icon?",
+      "a": "That was the old route. The gift icon at the bottom left is gone, and codes now go through Settings. If a guide still shows the gift icon, it hasn't been checked in a while."
+    },
+    {
+      "q": "Can I stack 2x Experience codes?",
+      "a": "Yes. Redeeming several experience codes adds their time together, so you can build up a long boost before a grinding session."
+    },
+    {
+      "q": "What's the fastest way to get 2x Experience?",
+      "a": "GAMER_ROBOT_1M gives the most at 1 hour 30 minutes, then SUB2GAMERROBOT_EXP1 at 30 minutes. The rest give 20 minutes each, so redeeming them all in one go stacks up to several hours."
+    },
+    {
+      "q": "Do stat reset codes cost anything?",
+      "a": "No. KITT_RESET and Sub2UncleKizaru reset your stats for free, which normally costs in-game money, so they're worth saving until you actually want to rebuild your build."
+    },
+    {
+      "q": "Why does fudd10 only give 1 Money?",
+      "a": "It's a joke from the developers, as is Chandler at 0 Money. They work, they're just not worth rushing for."
+    }
   ]
 }

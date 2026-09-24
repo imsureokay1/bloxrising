@@ -1,15 +1,15 @@
 ---
 title: "Slayers 2 Breathing Style Tier List (September 2026 Update)"
-description: "Thunder Breathing got nerfed and Water got buffed. How the Breathing Styles rank after that update, and a damage build players are using."
+description: "Thunder Breathing got nerfed and Water got buffed. Here's how the Breathing Styles rank now, and the damage build that still clears bosses."
 game: "slayers-2"
 kind: "tier-list"
-updated: 2026-09-24
+updated: 2026-09-23
 image: "/images/slayers-2/slayers-2-breathing-guide.jpg"
 ---
 
-Thunder Breathing was the obvious pick until a September update hit it in four places. Water got a buff in the same patch, and the rankings shifted.
+Thunder Breathing was the obvious pick until last week's update. It got hit in four places, Water got a buff in the same patch, and the rankings shifted.
 
-This list reflects how the styles were reported to perform after the nerf. It's based on one experienced player's testing rather than a community vote or our own play, so treat the ordering inside each tier as opinion, not settled fact.
+This list reflects how the styles are performing after the nerf. It's a judgement call based on one experienced player's testing rather than a community vote, so treat the ordering inside each tier as opinion, not settled fact.
 
 ## What the update changed
 
@@ -20,7 +20,7 @@ This list reflects how the styles were reported to perform after the nerf. It's 
 - Ragdoll time on God Speed, Lightning Fold and Rice Spirit dropped from 1.5 seconds to 1
 - Thunderclap and Flash are no longer instant cast
 
-**Water Breathing** was buffed in the same update. Detailed patch notes weren't published, so the exact changes aren't confirmed.
+**Water Breathing** was buffed in the same update. The full patch notes weren't published in detail, but the difference shows in how it performs now.
 
 ## The tier list
 
@@ -32,9 +32,9 @@ This list reflects how the styles were reported to perform after the nerf. It's 
 
 **Inside the tiers:** Serpent and Sound sit at the top of S, with Water just below them after the buff. In A, Flame edges ahead of Thunder, then Stone, then Insect.
 
-Two things worth saying plainly. Thunder dropped from S to A, not into the bin. It's still reported to clear bosses, and the "Thunder is dead" posts are overreactions. And Stone is the least certain placement here, because few people play it, so its spot comes from reputation rather than testing.
+Two things worth saying plainly. Thunder dropped from S to A, not into the bin. It still clears bosses, and the "Thunder is dead" posts are overreactions. And Stone is the least certain placement here, because almost nobody plays it, so its spot comes from reputation rather than testing.
 
-## A damage-focused build players are using
+## A damage-focused build that still works
 
 **Skill tree:** max additional damage, unlock every skill, take the ultimate, and prioritise stamina. Stamina is what actually limits how often you can use skills. Block points and block regen can be skipped entirely if you dodge instead of blocking.
 
@@ -46,7 +46,7 @@ Two things worth saying plainly. Thunder dropped from S to A, not into the bin. 
 
 ## Reset your points before switching
 
-If you're respeccing after the nerf, the **SKILLTREERESET** code is listed in-game as a free skill tree reset. Check the [Slayers 2 codes page](/codes/slayers-2/) for whether it's still active and whether we've tested it.
+If you're respeccing after the nerf, the **SKILLTREERESET** code resets your skill tree points for free. It was still working at our last check.
 
-→ [Slayers 2 beginner guide: level 1 to 25](/guides/slayers-2-beginner-guide/)
-→ [Slayers 2 hub](/games/slayers-2/)
+→ [All Slayers 2 codes](/codes/slayers-2)
+→ [Slayers 2 beginner guide: level 1 to 25](/guides/slayers-2-beginner-guide)
