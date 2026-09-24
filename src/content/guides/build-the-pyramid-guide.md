@@ -4,6 +4,7 @@ description: "The pyramid goal changes per server and the gym unlocks by pyramid
 game: "build-the-pyramid"
 kind: "guide"
 updated: 2026-09-24
+image: "/images/banners/build-the-pyramid-guide.webp"
 ---
 
 Most guides say the pyramid needs a fixed number of blocks. It doesn't. The goal changes from server to server, the reward for finishing changes too, and the gym multipliers come from pyramids you've completed yourself.
@@ -58,7 +59,7 @@ You can **AFK at the gym** and keep training, so leave your character working wh
 
 The stations are the point. The free one at the left trains slowly, and further along they run at 2x, then higher tiers up to 25x, 50x and 75x. Each is locked behind a number of **pyramids you have personally completed**, not your server's count, so that progress follows you from server to server.
 
-**The exact requirement for each tier isn't confirmed yet.** If you know what each station needs, [tell us](mailto:contact@earlyspawn.com) and we'll add it.
+**The exact requirement for each tier isn't confirmed yet.** If you know what each station needs, [tell us](/contact/) and we'll add it.
 
 ## Claim the free gift first
 
