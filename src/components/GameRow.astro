@@ -6,7 +6,7 @@ interface Props { game: CollectionEntry<'games'> }
 const { game } = Astro.props;
 const { name, codes, lastChecked, icon } = game.data;
 const active = codes.filter((c) => c.status === 'active').length;
-const checked = formatDate(lastChecked);
+const reviewed = formatDate(lastChecked);
 ---
 <a class="game-row list-card" href={`/codes/${game.id}/`} data-name={name.toLowerCase()}>
   {icon
@@ -15,7 +15,7 @@ const checked = formatDate(lastChecked);
   <span class="info">
     <span class="name">{name}</span>
     <span class="meta">
-      {active} active {active === 1 ? 'code' : 'codes'}{checked ? `, checked ${checked}` : ', not checked yet'}
+      {active} active {active === 1 ? 'code' : 'codes'}{reviewed ? `, list reviewed ${reviewed}` : ', not reviewed yet'}
     </span>
   </span>
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
