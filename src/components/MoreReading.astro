@@ -27,7 +27,10 @@ const guides = (await getCollection('guides'))
   })
   .slice(0, 4);
 
-const gameName = (id: string) => allGames.find((g) => g.id === id)?.data.name ?? '';
+const gameFor = (id: string) => allGames.find((g) => g.id === id);
+const gameName = (id: string) => gameFor(id)?.data.name ?? '';
+// Guides can set their own thumbnail; otherwise the game's icon stands in.
+const thumbFor = (g: (typeof guides)[number]) => g.data.image ?? gameFor(g.data.game)?.data.icon ?? null;
 ---
 {(games.length > 0 || guides.length > 0) && (
   <div class="more-reading">
@@ -60,14 +63,21 @@ const gameName = (id: string) => allGames.find((g) => g.id === id)?.data.name ??
       <section aria-labelledby="more-guides">
         <h2 id="more-guides">Guides you might like</h2>
         <div class="list">
-          {guides.map((g) => (
-            <a class="row list-card" href={`/guides/${g.id}/`}>
-              <span class="text">
-                <span class="kind">{gameName(g.data.game)} {kindLabel[g.data.kind].toLowerCase()}</span>
-                <span class="name">{g.data.title}</span>
-              </span>
-            </a>
-          ))}
+          {guides.map((g) => {
+            const thumb = thumbFor(g);
+            const name = gameName(g.data.game);
+            return (
+              <a class="row list-card" href={`/guides/${g.id}/`}>
+                {thumb
+                  ? <img src={thumb} alt="" width="40" height="40" loading="lazy" />
+                  : <span class="tile" style={`background:${tileColor(name || g.data.title)}`} aria-hidden="true">{(name || g.data.title).charAt(0)}</span>}
+                <span class="text">
+                  <span class="kind">{name} {kindLabel[g.data.kind].toLowerCase()}</span>
+                  <span class="name">{g.data.title}</span>
+                </span>
+              </a>
+            );
+          })}
         </div>
       </section>
     )}
