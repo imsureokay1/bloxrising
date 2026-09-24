@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import MoreReading from '../../components/MoreReading.astro';
 import { site } from '../../site.config';
@@ -18,39 +19,63 @@ const { Content } = await render(guide);
 const game = (await getCollection('games')).find((g) => g.id === guide.data.game);
 // The guide's own banner, or the game's cover art as a fallback.
 const banner = guide.data.image ?? game?.data.cover ?? null;
+const { tested, sources } = guide.data;
 ---
 <Base
   title={guide.data.title}
   heading={guide.data.title}
   description={guide.data.description}
+  published={guide.data.published}
   updated={guide.data.updated}
   image={banner}
 >
   <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a>
-      {game && (<><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{game.data.name}</a></>)}
-    </nav>
+    <Breadcrumbs items={game
+      ? [
+          { name: 'Games', href: '/games/' },
+          { name: game.data.name, href: `/games/${game.id}/` },
+          { name: guide.data.title },
+        ]
+      : [
+          { name: 'Guides', href: '/guides/' },
+          { name: guide.data.title },
+        ]} />
     <article>
       {banner && (
         <img class="banner" src={banner} alt="" width="1200" height="480" fetchpriority="high" />
       )}
       <header class="head">
         <h1>{guide.data.title}</h1>
-        <p class="byline">By {site.editor} · Updated {formatDate(guide.data.updated)}</p>
+        <p class="byline">
+          By {site.author.name}
+          {guide.data.published && <> · Published {formatDate(guide.data.published)}</>}
+          {' '}· Updated {formatDate(guide.data.updated)}
+        </p>
+        <div class={`sourcing${tested ? ' is-tested' : ''}`}>
+          {tested
+            ? <p><strong>Tested:</strong> we played through what this guide describes ourselves.</p>
+            : <p><strong>Not tested by us yet.</strong> This guide is put together from other players' guides and videos, not our own play. Anything marked unconfirmed hasn't been checked by anyone we can point to.</p>}
+          {sources.length > 0 && (
+            <p>
+              Sources:{' '}
+              {sources.map((s, i) => (
+                <>{i > 0 && ', '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>
+              ))}
+            </p>
+          )}
+        </div>
         <p class="share-row"><ShareButton title={guide.data.title} /></p>
       </header>
-      <AdSlot size="banner" />
       <div class="prose">
         <Content />
       </div>
       {game && (
         <p class="cta">
-          <a class="btn" href={`/codes/${game.id}/`}>Get the latest {game.data.name} codes</a>
+          <a class="btn" href={`/codes/${game.id}/`}>{game.data.name} codes</a>
           <a class="btn btn-ghost" href={`/games/${game.id}/`}>More {game.data.name} guides</a>
         </p>
       )}
-      <AdSlot size="rect" />
+      <AdSlot name="guideEnd" size="rect" />
       <MoreReading game={guide.data.game} guide={guide.id} />
     </article>
   </div>
