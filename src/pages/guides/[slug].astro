@@ -16,12 +16,15 @@ interface Props { guide: CollectionEntry<'guides'> }
 const { guide } = Astro.props;
 const { Content } = await render(guide);
 const game = (await getCollection('games')).find((g) => g.id === guide.data.game);
+// The guide's own banner, or the game's cover art as a fallback.
+const banner = guide.data.image ?? game?.data.cover ?? null;
 ---
 <Base
   title={guide.data.title}
   heading={guide.data.title}
   description={guide.data.description}
   updated={guide.data.updated}
+  image={banner}
 >
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
@@ -29,6 +32,9 @@ const game = (await getCollection('games')).find((g) => g.id === guide.data.game
       {game && (<><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{game.data.name}</a></>)}
     </nav>
     <article>
+      {banner && (
+        <img class="banner" src={banner} alt="" width="1200" height="480" fetchpriority="high" />
+      )}
       <header class="head">
         <h1>{guide.data.title}</h1>
         <p class="byline">By {site.editor} · Updated {formatDate(guide.data.updated)}</p>
@@ -51,7 +57,8 @@ const game = (await getCollection('games')).find((g) => g.id === guide.data.game
 </Base>
 
 <style>
-  .head { padding-top: 14px; }
+  .banner { width: 100%; height: auto; aspect-ratio: 5 / 2; object-fit: cover; border-radius: 20px; margin-top: 18px; }
+  .head { padding-top: 22px; }
   .head h1 { max-width: 22ch; }
   .byline { color: var(--muted); margin: 10px 0 0; }
   .cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
