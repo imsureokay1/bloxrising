@@ -15,7 +15,7 @@ Open **Customize** from the main menu to spin for a clan. Clans come in six rari
 
 Don't chase a Supreme right away. An Uncommon or Rare clan is plenty to start with. Once you land one, tap it and read its skills, passives, and stats, since every clan plays differently.
 
-Redeem the [latest Slayers 2 codes](/codes/slayers-2) first for free spins.
+Redeem the [latest Slayers 2 codes](/codes/slayers-2/) first for free spins.
 
 ## Learn the basics
 
@@ -66,4 +66,4 @@ Talk to NPCs as you explore. Many have side quests with solid XP and Wen rewards
 
 ## Level 25: Breathing Style
 
-At level 25 you can unlock your Breathing Style, the next big step for Slayers.
+At level 25 you can unlock your Breathing Style, the next big step for Slayers. See the [Breathing Style tier list](/guides/slayers-2-breathing-tier-list/) for how the styles compare.
