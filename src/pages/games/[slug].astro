@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import MoreReading from '../../components/MoreReading.astro';
 import { site } from '../../site.config';
@@ -25,7 +26,7 @@ export async function getStaticPaths() {
 
 interface Props {
   game: CollectionEntry<'games'> | null;
-  listed: { name: string; developer?: string; players?: string; icon?: string | null; placeId?: string; rank?: number } | null;
+  listed: { name: string; players?: string; icon?: string | null; placeId?: string; rank?: number } | null;
 }
 
 const { game, listed } = Astro.props;
@@ -37,6 +38,7 @@ const guides = game
       .sort((a, b) => b.data.updated.getTime() - a.data.updated.getTime())
   : [];
 const activeCodes = game ? game.data.codes.filter((c) => c.status === 'active') : [];
+// Developer only shows when a person has filled it in for this game.
 const byline = game
   ? [
       game.data.developer && `By ${game.data.developer}`,
@@ -44,18 +46,17 @@ const byline = game
       game.data.released && `released ${formatDate(game.data.released)}`,
     ].filter(Boolean).join(', ')
   : '';
+const guideCount = guides.length;
 ---
 {listed && !game ? (
   <Base
-    title={`${listed.name}: Player Count and Codes`}
+    title={`${listed.name}: Player Count`}
     heading={listed.name}
-    description={`${listed.name} is one of the most played Roblox games right now. Here's what we know, and what we're working on.`}
+    description={`${listed.name} is one of the most played Roblox games right now. We don't cover it yet.`}
     noindex={true}
   >
     <div class="wrap page">
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{listed.name}</span>
-      </nav>
+      <Breadcrumbs items={[{ name: 'Games', href: '/games/' }, { name: listed.name }]} />
 
       <header class="hub-head">
         {listed.icon
@@ -64,9 +65,8 @@ const byline = game
         <div class="titles">
           <h1>{listed.name}</h1>
           <p class="by">
-            {listed.rank ? `#${listed.rank} by players right now` : 'Currently in the top 10 by players'}
+            {listed.rank ? `#${listed.rank} by players online` : 'In the top 10 by players online'}
             {listed.players ? `, ${listed.players}` : ''}
-            {listed.developer ? `, by ${listed.developer}` : ''}
           </p>
         </div>
         <div class="actions">
@@ -85,15 +85,15 @@ const byline = game
         </p>
         <p>
           Games get covered fastest when people ask for them. If you play {listed.name} and want
-          its codes tracked, email <a href={`mailto:${site.email}`}>{site.email}</a> and it moves up the list.
+          it covered, email <a href={`mailto:${site.email}`}>{site.email}</a> and it moves up the list.
         </p>
       </section>
 
-      <AdSlot size="rect" />
+      <AdSlot name="stub" size="rect" />
 
       <section class="card">
         <h2>Games we do cover</h2>
-        <p>Working codes, checked in-game, with guides.</p>
+        <p>Codes, with where each one came from, plus guides and game info.</p>
         <p><a class="btn btn-ghost" href="/games/">See all games</a></p>
       </section>
 
@@ -106,13 +106,11 @@ const byline = game
   <Base
     image={game.data.cover}
     heading={game.data.name}
-    title={`${game.data.name}${game.data.altName ? ` (${game.data.altName})` : ''}: Codes, Guides and Game Info`}
-    description={`Everything for ${game.data.name} on Roblox: working codes, beginner guides, and what the game is about.`}
+    title={`${game.data.name}${game.data.altName ? ` (${game.data.altName})` : ''} on Roblox: Game Info and Guides`}
+    description={`What ${game.data.name} is and how it plays${guideCount ? `, with ${guideCount} ${guideCount === 1 ? 'guide' : 'guides'}` : ''}, plus a link to the current codes.`}
   >
     <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><span>{game.data.name}</span>
-      </nav>
+      <Breadcrumbs items={[{ name: 'Games', href: '/games/' }, { name: game.data.name }]} />
 
       {game.data.cover && (
         <img class="cover" src={game.data.cover} alt={`${game.data.name} cover art`} width="1200" height="675" />
@@ -134,33 +132,19 @@ const byline = game
       </header>
 
       <nav class="jump" aria-label="On this page">
-        <a href="#codes">Codes</a>
-        {guides.length > 0 && <a href="#guides">Guides</a>}
         {game.data.about && <a href="#about">About the game</a>}
+        {guides.length > 0 && <a href="#guides">Guides</a>}
+        <a href={`/codes/${game.id}/`}>Codes</a>
       </nav>
 
       <div class="hub-grid">
         <div class="main-col">
-          <section id="codes" class="card codes-card" aria-labelledby="codes-title">
-            <div class="card-head">
-              <h2 id="codes-title">Codes</h2>
-              {game.data.lastChecked
-                ? <span class="checked">Checked {formatDate(game.data.lastChecked)}</span>
-                : <span class="checked is-pending">Not checked yet</span>}
-            </div>
-            {activeCodes.length === 0 ? (
-              <p>{game.data.codesNote ? game.data.codesNote.split(/\n\s*\n/)[0] : 'No working codes right now.'}</p>
-            ) : (
-              <ul class="mini-codes">
-                {activeCodes.slice(0, 3).map((c) => (
-                  <li><span class="code">{c.code}</span><span class="reward">{c.reward || 'Reward not confirmed yet'}</span></li>
-                ))}
-              </ul>
-            )}
-            <a class="btn btn-ghost" href={`/codes/${game.id}/`}>
-              {activeCodes.length > 3 ? `See all ${activeCodes.length} codes` : 'Copy codes and how to redeem'}
-            </a>
-          </section>
+          {game.data.about && (
+            <section id="about" class="section prose" aria-labelledby="about-title">
+              <h2 id="about-title">About {game.data.name}</h2>
+              {game.data.about.split(/\n\s*\n/).filter(Boolean).map((p) => <p>{p}</p>)}
+            </section>
+          )}
 
           {guides.length > 0 && (
             <section id="guides" class="section" aria-labelledby="guides-title">
@@ -177,12 +161,20 @@ const byline = game
             </section>
           )}
 
-          {game.data.about && (
-            <section id="about" class="section prose" aria-labelledby="about-title">
-              <h2 id="about-title">About {game.data.name}</h2>
-              {game.data.about.split(/\n\s*\n/).filter(Boolean).map((p) => <p>{p}</p>)}
-            </section>
-          )}
+          <section class="card codes-card" aria-labelledby="codes-title">
+            <div class="card-head">
+              <h2 id="codes-title">Codes</h2>
+              {game.data.lastChecked
+                ? <span class="checked">List reviewed {formatDate(game.data.lastChecked)}</span>
+                : <span class="checked is-pending">Not reviewed yet</span>}
+            </div>
+            <p>
+              {activeCodes.length === 0
+                ? (game.data.codesNote ? game.data.codesNote.split(/\n\s*\n/)[0] : 'No active codes right now.')
+                : `${activeCodes.length} active ${activeCodes.length === 1 ? 'code' : 'codes'}, with rewards, where each came from, and how to redeem them.`}
+            </p>
+            <a class="btn" href={`/codes/${game.id}/`}>{game.data.name} codes</a>
+          </section>
         </div>
 
         <aside class="side-col">
@@ -194,7 +186,7 @@ const byline = game
               </dl>
             </section>
           )}
-          <AdSlot size="rect" />
+          <AdSlot name="hubSide" size="rect" />
         </aside>
       </div>
 
@@ -223,10 +215,6 @@ const byline = game
   .card p { margin: 0 0 12px; line-height: 1.55; }
   .card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
   .codes-card { border: 2px solid var(--ink); }
-  .mini-codes { list-style: none; margin: 0 0 16px; padding: 0; }
-  .mini-codes li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 10px 0; border-top: 1px solid var(--line); }
-  .code { font-family: var(--mono); font-weight: 700; }
-  .reward { color: var(--muted); font-size: 14px; }
   .section { margin-top: 32px; }
   .section h2 { margin-bottom: 14px; }
   .posts { display: flex; flex-direction: column; gap: 10px; }
