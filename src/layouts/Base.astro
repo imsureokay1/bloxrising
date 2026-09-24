@@ -1,8 +1,4 @@
 ---
-import '@fontsource/public-sans/400.css';
-import '@fontsource/public-sans/600.css';
-import '@fontsource/public-sans/700.css';
-import '@fontsource-variable/bricolage-grotesque/wght.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -12,8 +8,7 @@ interface Props {
   title: string;
   description?: string;
   image?: string | null;
-  // Set on guides so search engines get real dates. Leave published out when it isn't known.
-  published?: Date | string | null;
+  // Set on pages that are articles (guides, updates) so search engines get a date.
   updated?: Date | string | null;
   // The visible page heading, when it differs from the title tag.
   heading?: string | null;
@@ -25,21 +20,48 @@ const {
   title,
   description = site.tagline,
   image,
-  published = null,
   updated = null,
   heading = null,
   noindex = false,
 } = Astro.props;
-// Titles that already name the site (like the homepage's) don't get it twice.
-const pageTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
 const path = Astro.url.pathname;
 const canonical = new URL(path, site.url).href;
 const isArticle = path.startsWith('/guides/') && path !== '/guides/';
 const modified = updated ? new Date(updated).toISOString() : null;
-const publishedIso = published ? new Date(published).toISOString() : null;
-const imageUrl = image ? new URL(image, site.url).href : null;
 
-const author = { '@type': site.author.type, name: site.author.name, url: site.author.url };
+// Breadcrumbs built from the URL, matching the ones shown on the page.
+const segmentLabels: Record<string, string> = {
+  codes: 'Codes',
+  games: 'Games',
+  guides: 'Guides',
+  about: 'About',
+  contact: 'Contact',
+  privacy: 'Privacy Policy',
+};
+const segments = path.split('/').filter(Boolean);
+const crumbs = [
+  { name: 'Home', url: site.url + '/' },
+  ...segments.map((seg, i) => ({
+    name:
+      i === segments.length - 1
+        ? heading ?? title
+        : segmentLabels[seg] ?? seg.replace(/-/g, ' '),
+    url: new URL('/' + segments.slice(0, i + 1).join('/') + '/', site.url).href,
+  })),
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: c.url,
+  })),
+};
+
 const articleSchema = isArticle
   ? {
       '@context': 'https://schema.org',
@@ -47,10 +69,8 @@ const articleSchema = isArticle
       headline: heading ?? title,
       description,
       mainEntityOfPage: canonical,
-      ...(publishedIso ? { datePublished: publishedIso } : {}),
       ...(modified ? { dateModified: modified } : {}),
-      ...(imageUrl ? { image: [imageUrl] } : {}),
-      author,
+      author: { '@type': 'Organization', name: site.name, url: site.url },
       publisher: { '@type': 'Organization', name: site.name, url: site.url },
     }
   : null;
@@ -86,11 +106,18 @@ const siteSchema =
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={imageUrl ?? new URL('/logo-tile.png', site.url).href} />
+    <meta property="og:image" content={new URL(image || '/logo-tile.png', site.url).href} />
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
-    {publishedIso && <meta property="article:published_time" content={publishedIso} />}
     {modified && <meta property="article:modified_time" content={modified} />}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=JetBrains+Mono:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap"
+    />
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
     {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>}
     {siteSchema && <script type="application/ld+json" set:html={JSON.stringify(siteSchema)}></script>}
 

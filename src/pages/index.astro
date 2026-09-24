@@ -24,11 +24,11 @@ const featured = [...games]
   .sort((a, b) => (a.data.rising ?? 99) - (b.data.rising ?? 99) || a.data.name.localeCompare(b.data.name))
   .slice(0, 6);
 ---
-<Base title={`${site.name}: Roblox Codes and Guides for Rising Games`} description={site.tagline}>
+<Base title={site.name} description={site.tagline}>
   <div class="hero">
     <div class="wrap">
       <h1>Rising games, spotted early.</h1>
-      <p class="lede">Codes, beginner guides, and game info for Roblox games that are gaining players.</p>
+      <p class="lede">Codes, beginner guides, and game info for the games gaining players fastest right now.</p>
       <form class="search" action="/codes/" method="get" role="search">
         <label for="q">Search a game</label>
         <input id="q" name="q" type="search" placeholder="Search a game, like Slayers 2" autocomplete="off" />
@@ -52,7 +52,7 @@ const featured = [...games]
   <div class="wrap grid">
     <aside class="section side">
       <TopGames />
-      <AdSlot name="home" size="rect" />
+      <AdSlot size="rect" />
     </aside>
 
     <section class="section main" aria-labelledby="updated-title">

@@ -8,7 +8,7 @@ const games = (top.games ?? []).slice(0, 10);
   <section class="top" aria-labelledby="top-title">
     <div class="head">
       <h2 id="top-title">Top 10 games right now</h2>
-      <p>Most players online across Roblox, from Roblox's public data{top.updated ? `, last pulled ${formatDate(top.updated)}` : ''}.</p>
+      <p>Most players online across Roblox{top.updated ? `, checked ${formatDate(top.updated)}` : ''}.</p>
     </div>
     <ol>
       {games.map((g) => (

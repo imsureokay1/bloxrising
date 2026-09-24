@@ -5,7 +5,7 @@ import GameRow from '../../components/GameRow.astro';
 
 const games = (await getCollection('games')).sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
-<Base title="All Roblox Codes" description="Every Roblox game we track, A to Z, with active codes, their rewards, and whether we've tested each one.">
+<Base title="All Roblox Codes" description="Every Roblox game we track, A to Z, with working codes checked in-game.">
   <div class="wrap">
     <h1 class="title">All Roblox codes</h1>
     <p class="lede">Every game we track, A to Z.</p>

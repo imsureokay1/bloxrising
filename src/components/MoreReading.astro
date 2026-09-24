@@ -49,7 +49,7 @@ const thumbFor = (g: (typeof guides)[number]) => g.data.image ?? gameFor(g.data.
                   <span class="name">{g.data.name} codes</span>
                   <span class="meta">
                     {active} active {active === 1 ? 'code' : 'codes'}
-                    {g.data.lastChecked ? `, list reviewed ${formatDate(g.data.lastChecked)}` : ''}
+                    {g.data.lastChecked ? `, checked ${formatDate(g.data.lastChecked)}` : ''}
                   </span>
                 </span>
               </a>

@@ -5,15 +5,15 @@ interface Code {
   reward: string;
   expires?: string | null;
   status: 'active' | 'expired';
-  // Date we redeemed it ourselves. null = not tested.
-  tested?: string | null;
+  // Kept in the data for our own reference; the page shows one "Last checked"
+  // date at the top instead of repeating it on every code.
+  verified?: string | null;
   source?: string;
 }
 interface Props { codes: Code[]; note?: string }
 const note = Astro.props.note ?? '';
 const active = Astro.props.codes.filter((c) => c.status === 'active');
 const expired = Astro.props.codes.filter((c) => c.status === 'expired');
-const anyUntested = active.some((c) => !c.tested);
 ---
 <section class="codes" aria-labelledby="active-title">
   <h2 id="active-title">Active codes</h2>
@@ -21,38 +21,23 @@ const anyUntested = active.some((c) => !c.tested);
     <div class="none">
       {note
         ? note.split(/\n\s*\n/).map((p) => <p>{p}</p>)
-        : <p>There are no active codes right now. New ones usually arrive with updates, so check back soon.</p>}
+        : <p>There are no working codes right now. New ones usually arrive with updates, so check back soon.</p>}
     </div>
   ) : (
-    <>
-      {anyUntested && (
-        <p class="legend">
-          <strong>Tested</strong> means we redeemed the code in Roblox ourselves on that date.
-          <strong>Not tested</strong> means it's listed as active by the source shown, but we haven't redeemed it yet.
-        </p>
-      )}
-      <ul>
-        {active.map((c) => (
-          <li class="list-card">
-            <span class="text">
-              <span class="code">{c.code}</span>
-              <span class="reward">{c.reward || 'Reward not confirmed'}</span>
-              <span class="meta">
-                {c.tested
-                  ? <span class="tag is-tested">Tested {formatDate(c.tested)}</span>
-                  : <span class="tag">Not tested{c.source ? ` · listed by ${c.source}` : ''}</span>}
-                {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
-              </span>
-            </span>
-            <button class="btn copy" type="button" data-code={c.code} aria-label={`Copy code ${c.code}`}>Copy</button>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul>
+      {active.map((c) => (
+        <li class="list-card">
+          <span class="text">
+            <span class="code">{c.code}</span>
+            <span class="reward">{c.reward || 'Reward not confirmed yet'}</span>
+            {c.expires && <span class="expires">Expires {formatDate(c.expires)}</span>}
+          </span>
+          <button class="btn copy" type="button" data-code={c.code} aria-label={`Copy code ${c.code}`}>Copy</button>
+        </li>
+      ))}
+    </ul>
   )}
 </section>
-
-<slot name="after-active" />
 
 {expired.length > 0 && (
   <section class="expired" aria-labelledby="expired-title">
@@ -96,16 +81,12 @@ const anyUntested = active.some((c) => !c.tested);
 <style>
   section { margin-top: 32px; }
   h2 { margin-bottom: 14px; }
-  .legend { color: var(--muted); font-size: 14px; margin: -4px 0 14px; line-height: 1.5; }
   .why { color: var(--muted); margin: -6px 0 14px; font-size: 15px; }
   ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .codes li { display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; }
   .text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
   .code { font-family: var(--mono); font-weight: 700; font-size: 17px; letter-spacing: 0.02em; word-break: break-all; }
   .reward { font-size: 14px; color: var(--ink-2); }
-  .meta { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; margin-top: 2px; }
-  .tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: var(--amber-soft); color: var(--amber-ink); }
-  .tag.is-tested { background: var(--green-soft); color: #0B5E34; }
   .expires { font-size: 13px; font-weight: 700; color: var(--amber-ink); }
   .copy { min-width: 88px; flex-shrink: 0; }
   :global(.copy.is-copied) { background: var(--ink); }

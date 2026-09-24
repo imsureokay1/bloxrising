@@ -7,10 +7,10 @@ const ranked = Astro.props.games
   .slice(0, 5);
 ---
 <section class="rising" aria-labelledby="rising-title">
-  <h2 id="rising-title">Rising in the last 24 hours</h2>
-  <p>Games we cover, ranked by player growth over the past 24 hours. Games without a day of data yet are ranked by current players.</p>
+  <h2 id="rising-title">Rising this week</h2>
+  <p>Games gaining players fastest right now.</p>
   {ranked.length === 0 ? (
-    <p class="empty">No games ranked yet.</p>
+    <p class="empty">No games ranked yet. Add a "rising" number to a game file to list it here.</p>
   ) : (
     <ol>
       {ranked.map((g, i) => (

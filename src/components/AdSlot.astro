@@ -1,15 +1,14 @@
 ---
-import ads from '../data/ads.json';
+import { site } from '../site.config';
 
 interface Props {
-  // Which ad unit, by its key in src/data/ads.json.
-  name: keyof typeof ads.slots;
-  // "rect" = 336x280 box, "banner" = wide strip (only affects the local preview box)
+  // "rect" = 336x280 box, "banner" = wide strip
   size?: 'rect' | 'banner';
+  // The ad unit ID from AdSense (data-ad-slot). Optional until you're approved.
+  slot?: string;
 }
-const { name, size = 'rect' } = Astro.props;
-const slot = ads.slots[name] ?? '';
-const live = Boolean(ads.client && slot);
+const { size = 'rect', slot = '' } = Astro.props;
+const live = Boolean(site.adsenseClient && slot);
 const preview = import.meta.env.DEV && !live;
 ---
 {live && (
@@ -17,7 +16,7 @@ const preview = import.meta.env.DEV && !live;
     <ins
       class="adsbygoogle"
       style="display:block;width:100%"
-      data-ad-client={ads.client}
+      data-ad-client={site.adsenseClient}
       data-ad-slot={slot}
       data-ad-format="auto"
       data-full-width-responsive="true"
@@ -27,6 +26,6 @@ const preview = import.meta.env.DEV && !live;
 )}
 {preview && (
   <div class="ad" aria-hidden="true">
-    <div class={`ad-placeholder ${size}`}>Ad slot preview: {name} (hidden on the live site)</div>
+    <div class={`ad-placeholder ${size}`}>Ad slot preview (hidden on the live site)</div>
   </div>
 )}

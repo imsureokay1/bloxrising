@@ -3,7 +3,6 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import CodeList from '../../components/CodeList.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import MoreReading from '../../components/MoreReading.astro';
 import { site } from '../../site.config';
@@ -17,7 +16,7 @@ export async function getStaticPaths() {
 interface Props { game: CollectionEntry<'games'> }
 const { game } = Astro.props;
 const d = game.data;
-const reviewed = formatDate(d.lastChecked);
+const checked = formatDate(d.lastChecked);
 const related = (await getCollection('guides')).filter((g) => g.data.game === game.id);
 const title = `${d.name} Codes (${monthYear(d.lastChecked)})`;
 const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.lastChecked)}` : title;
@@ -28,8 +27,8 @@ const active = d.codes.filter((c) => c.status === 'active').length;
 const raw =
   d.summary ||
   (active > 0
-    ? `${active} active ${d.name} codes with their rewards, where each one came from, and how to redeem them.`
-    : `Whether ${d.name} has any active codes right now, and where new ones would appear.`);
+    ? `${active} working ${d.name} codes, checked in-game on ${checked}, with rewards and how to redeem them.`
+    : `Whether ${d.name} has any working codes right now, checked in-game.`);
 const description = raw.length > 155 ? `${raw.slice(0, 152).replace(/[\s,.;:]+\S*$/, '')}…` : raw;
 
 // FAQ markup, only when the page actually shows the questions and answers.
@@ -48,25 +47,23 @@ const faqSchema = d.faq.length > 0
 <Base image={d.cover} title={searchTitle} heading={title} description={description}>
   <div class="wrap page">
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
-    <Breadcrumbs items={[
-      { name: 'Games', href: '/games/' },
-      { name: d.name, href: `/games/${game.id}/` },
-      { name: 'Codes' },
-    ]} />
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/games/">Games</a><span aria-hidden="true">/</span><a href={`/games/${game.id}/`}>{d.name}</a><span aria-hidden="true">/</span><span>Codes</span>
+    </nav>
 
     <header class="head">
       <h1>{title}</h1>
-      {reviewed
-        ? <span class="checked">Code list reviewed {reviewed}</span>
-        : <span class="checked is-pending">Code list not reviewed yet</span>}
-      <p class="byline">By {site.author.name}. Each code shows whether we've redeemed it ourselves.</p>
-      {d.summary && <p class="lede">{d.summary}</p>}
+      {checked
+        ? <span class="checked">Last checked {checked}</span>
+        : <span class="checked is-pending">Codes not checked in-game yet</span>}
+      <p class="byline">Checked by {site.editor}</p>
+      <p class="lede">{d.summary}</p>
       <ShareButton title={title} />
     </header>
 
-    <CodeList codes={d.codes} note={d.codesNote}>
-      <AdSlot slot="after-active" name="codesAfterActive" size="banner" />
-    </CodeList>
+    <AdSlot size="banner" />
+
+    <CodeList codes={d.codes} note={d.codesNote} />
 
     {d.redeemSteps.length > 0 && (
     <section class="block" aria-labelledby="redeem-title">
@@ -94,7 +91,7 @@ const faqSchema = d.faq.length > 0
       </section>
     )}
 
-    <AdSlot name="codesEnd" size="rect" />
+    <AdSlot size="rect" />
 
     {d.faq.length > 0 && (
       <section class="block" aria-labelledby="faq-title">
@@ -110,7 +107,7 @@ const faqSchema = d.faq.length > 0
     <section class="block" aria-labelledby="more-title">
       <h2 id="more-title">More {d.name}</h2>
       <div class="more">
-        <a class="list-card more-link" href={`/games/${game.id}/`}>{d.name} hub: game info and all guides</a>
+        <a class="list-card more-link" href={`/games/${game.id}/`}>About {d.name}: game info and all guides</a>
         {related.map((g) => (
           <a class="list-card more-link" href={`/guides/${g.id}/`}>{g.data.title}</a>
         ))}
