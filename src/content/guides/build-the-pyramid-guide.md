@@ -68,7 +68,7 @@ There's a **Free Gift** board at spawn. Like the game, favourite it, and join th
 ![The Free Gift board at spawn](/images/build-the-pyramid/free-gift.webp)
 *The Free Gift board at spawn: like, favourite, and join the group.*
 
-Then redeem the codes for free coins → [Build the Pyramid codes](/codes/build-the-pyramid)
+Then redeem the codes for free coins → [Build the Pyramid codes](/codes/build-the-pyramid/)
 
 ## The short version
 
