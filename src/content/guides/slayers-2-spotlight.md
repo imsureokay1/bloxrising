@@ -1,34 +1,51 @@
 ---
-title: "Slayers 2: Release, Player Count and How to Start"
-description: "Slayers 2 by Ouw Productions is one of Roblox's fastest-rising games. What it is, how big it's gotten, and how to start."
+title: "Slayers 2 Launch: Release Dates, Player Count and What Carries Over"
+description: "When Slayers 2 launched, how big it got (with sources), and what does and doesn't carry over from the original Project Slayers."
 game: "slayers-2"
 kind: "spotlight"
-updated: 2026-09-21
+updated: 2026-09-24
 image: "/images/banners/slayers-2-spotlight.webp"
 ---
 
 ## What it is
 
-Slayers 2 is a free open-world action RPG on Roblox, inspired by Demon Slayer and made by Ouw Productions. You choose between the Slayer path, with Breathing Styles and Final Selection, or the Demon path, serving Muzan and unlocking Blood Demon Arts.
+Slayers 2 is a free open-world action RPG on Roblox, inspired by Demon Slayer and made by Ouw Productions. The Roblox page calls it Slayers 2, while the in-game logo says Project Slayers 2. You choose between the Slayer path, with Breathing Styles and Final Selection, or the Demon path, serving Muzan and unlocking Blood Demon Arts.
 
-## How it launched
+## Release timeline
 
-A limited early access started around September 11, 2026, and the game opened to everyone on September 18. It's the sequel to Project Slayers, which first opened in July 2022.
+| Date | What happened |
+|---|---|
+| July 2022 | The original Project Slayers opens |
+| Around September 11, 2026 | Limited early access, mostly for content creators and giveaway winners |
+| September 18, 2026, 4 PM EDT | Public servers open for everyone |
 
-## How fast it's growing
+## How big it got
 
-Around launch, fan trackers counted roughly 187,000 players online at once, and the game passed about 19.6 million visits within days.
+As of September 22, 2026, the Roblox tracker Rolimon's recorded an all-time peak of about 268,000 players online at once, roughly 38.9 million visits, and a like rating of about 98.6%.
+
+For comparison, the original Project Slayers peaked at around 171,000 concurrent players over its whole life. Slayers 2 beat that within its first week.
+
+These numbers move fast. The [Slayers 2 codes page](/codes/slayers-2) shows the current player count, updated automatically.
 
 ## Coming from Project Slayers?
 
-Your levels, gear, and Wen don't carry over from the first game.
+Slayers 2 is a separate game, not an update, so most things start fresh:
 
-## How to start
+| From the first game | Carries over? |
+|---|---|
+| Levels, gear and Wen | No |
+| Codes | No, Slayers 2 has its own |
+| Rare clans (like Kamado) | Unconfirmed. Players disagree, and Ouw Productions hasn't posted a clear rule |
+| Gamepasses | Unconfirmed. Check Ouw Productions' official channels before buying a pass again |
 
-1. Join the Ouw Productions group on Roblox.
-2. Redeem the [launch codes](/codes/slayers-2).
-3. Pick Slayer or Demon, then roll your clan with the [beginner guide](/guides/slayers-2-beginner-guide).
+Don't wipe or abandon a first-game account based on a screenshot or rumour. We'll update this table if Ouw Productions confirms either way.
 
 ## Servers full?
 
 At peak hours, leave and rejoin from the game page. A full server doesn't mean the game is down.
+
+## Where to go next
+
+- [Slayers 2 codes](/codes/slayers-2) for free spins and Wen
+- [Beginner guide: level 1 to 25](/guides/slayers-2-beginner-guide) for your first few hours
+- [Breathing Style tier list](/guides/slayers-2-breathing-tier-list) once you hit level 25
