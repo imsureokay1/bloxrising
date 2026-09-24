@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.5.0",
-    "@fontsource/bricolage-grotesque": "^5.1.0",
+    "@fontsource-variable/bricolage-grotesque": "^5.2.7",
     "@fontsource/public-sans": "^5.1.0",
     "astro": "^5.13.0"
   }
