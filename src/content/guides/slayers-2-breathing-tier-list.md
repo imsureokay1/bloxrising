@@ -4,9 +4,8 @@ description: "Thunder Breathing got nerfed and Water got buffed. Here's how the 
 game: "slayers-2"
 kind: "tier-list"
 updated: 2026-09-23
+image: "/images/slayers-2/slayers-2-breathing-guide.jpg"
 ---
-
-![Slayers 2 Breathing Style guide](/images/slayers-2/slayers-2-breathing-guide.jpg)
 
 Thunder Breathing was the obvious pick until last week's update. It got hit in four places, Water got a buff in the same patch, and the rankings shifted.
 
