@@ -4,6 +4,7 @@ description: "Slayers 2 by Ouw Productions is one of Roblox's fastest-rising gam
 game: "slayers-2"
 kind: "spotlight"
 updated: 2026-09-21
+image: "/images/banners/slayers-2-spotlight.webp"
 ---
 
 ## What it is
