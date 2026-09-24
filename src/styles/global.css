@@ -13,9 +13,10 @@
   --amber-soft: #FCE9C4;
   --amber-ink: #7A4A00;
 
+  /* Two self-hosted families (see Base.astro). Code text uses the system monospace font. */
   --display: 'Bricolage Grotesque', Georgia, serif;
   --body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 
   --wrap: 1120px;
 }
@@ -101,6 +102,12 @@ h3 { font-size: 1.15rem; }
 .ad-placeholder { border: 1.5px dashed #BDB9AD; border-radius: 12px; color: var(--muted); font-size: 13px; display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; }
 .ad-placeholder.rect { max-width: 336px; height: 280px; }
 .ad-placeholder.banner { height: 100px; }
+
+/* Where a guide's information comes from */
+.sourcing { background: var(--card); border: 1px solid var(--line); border-left: 4px solid #C77700; border-radius: 12px; padding: 12px 16px; margin: 18px 0 0; max-width: 70ch; font-size: 15px; line-height: 1.5; }
+.sourcing.is-tested { border-left-color: var(--green); }
+.sourcing p { margin: 0; }
+.sourcing p + p { margin-top: 6px; }
 
 /* Prose (guides) */
 .prose { max-width: 70ch; font-size: 1.05rem; }

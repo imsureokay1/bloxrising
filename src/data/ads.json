@@ -1,0 +1,13 @@
+{
+  "_help": "After AdSense approves you, paste your publisher ID into client (looks like ca-pub-1234567890123456) and each ad unit's data-ad-slot ID into slots. Empty values mean no ad is shown.",
+  "client": "",
+  "slots": {
+    "codesAfterActive": "",
+    "codesEnd": "",
+    "guideAfterIntro": "",
+    "guideEnd": "",
+    "hubSide": "",
+    "stub": "",
+    "home": ""
+  }
+}
