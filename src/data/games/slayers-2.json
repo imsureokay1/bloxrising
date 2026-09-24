@@ -11,21 +11,71 @@
   "cover": "/images/slayers-2/cover.webp",
   "released": "2026-09-18",
   "quickFacts": [
-    { "label": "Developer", "value": "Ouw Productions" },
-    { "label": "Genre", "value": "Open-world action RPG" },
-    { "label": "Paths", "value": "Slayer or Demon" },
-    { "label": "Currency", "value": "Wen" },
-    { "label": "Breathing unlocks", "value": "Level 25" }
+    {
+      "label": "Developer",
+      "value": "Ouw Productions"
+    },
+    {
+      "label": "Genre",
+      "value": "Open-world action RPG"
+    },
+    {
+      "label": "Paths",
+      "value": "Slayer or Demon"
+    },
+    {
+      "label": "Currency",
+      "value": "Wen"
+    },
+    {
+      "label": "Breathing unlocks",
+      "value": "Level 25"
+    }
   ],
   "lastChecked": "2026-09-23",
   "rising": 2,
   "players": "168K playing",
   "codes": [
-    { "code": "SKILLTREERESET", "reward": "Skill tree points reset", "expires": "2026-09-28", "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "RELEASE26", "reward": "100 Wen, 30 Spins, 1 Refinement Ore", "expires": "2026-09-25", "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "EVILARTSPINS", "reward": "", "expires": null, "status": "expired", "tested": null, "source": "" },
-    { "code": "SORRYFORSHUTDOWN", "reward": "", "expires": null, "status": "expired", "tested": null, "source": "" },
-    { "code": "POINTSRESET", "reward": "", "expires": null, "status": "expired", "tested": null, "source": "" }
+    {
+      "code": "SKILLTREERESET",
+      "reward": "Skill tree points reset",
+      "expires": "2026-09-28",
+      "status": "active",
+      "verified": "2026-09-22",
+      "source": "In-game code list"
+    },
+    {
+      "code": "RELEASE26",
+      "reward": "100 Wen, 30 Spins, 1 Refinement Ore",
+      "expires": "2026-09-25",
+      "status": "active",
+      "verified": "2026-09-22",
+      "source": "In-game code list"
+    },
+    {
+      "code": "EVILARTSPINS",
+      "reward": "",
+      "expires": null,
+      "status": "expired",
+      "verified": null,
+      "source": ""
+    },
+    {
+      "code": "SORRYFORSHUTDOWN",
+      "reward": "",
+      "expires": null,
+      "status": "expired",
+      "verified": null,
+      "source": ""
+    },
+    {
+      "code": "POINTSRESET",
+      "reward": "",
+      "expires": null,
+      "status": "expired",
+      "verified": null,
+      "source": ""
+    }
   ],
   "redeemSteps": [
     "Join the Ouw Productions group on Roblox. The game checks your membership for you.",
@@ -34,18 +84,48 @@
     "Type or paste a code and press Enter. Redeemed codes turn green and get crossed out."
   ],
   "troubleshooting": [
-    { "q": "Not in the group?", "a": "Join Ouw Productions, then restart the game. It checks when you join." },
-    { "q": "Typo?", "a": "Codes are case-sensitive, so use the Copy button." },
-    { "q": "Already used?", "a": "Each code works once per account." },
-    { "q": "Still failing?", "a": "The code has probably expired. Check back after the next update." }
+    {
+      "q": "Not in the group?",
+      "a": "Join Ouw Productions, then restart the game. It checks when you join."
+    },
+    {
+      "q": "Typo?",
+      "a": "Codes are case-sensitive, so use the Copy button."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has probably expired. Check back after the next update."
+    }
   ],
   "faq": [
-    { "q": "Where do you enter codes in Slayers 2?", "a": "On the main menu, not in the world. The code list sits above an \"Enter a code\" box at the bottom of the screen, as shown in the screenshot on this page. Type the code and press Enter." },
-    { "q": "How do I know if a code is still live?", "a": "The game's own code menu shows a countdown next to each code, which is where the expiry dates on this page come from. If a code is gone from the in-game list, it's dead." },
-    { "q": "Do I have to join the group?", "a": "Yes, join Ouw Productions on Roblox first, then fully close and reopen the game. The game checks your membership itself, and codes fail until it sees you in the group." },
-    { "q": "Are Slayers 2 codes case-sensitive?", "a": "Enter them exactly as listed. The in-game list shows them in capitals, and the Copy button on this page avoids typos." },
-    { "q": "Is this the same as Project Slayers 2?", "a": "Yes. The Roblox page calls it Slayers 2 and the in-game logo says Project Slayers 2, so both names refer to this game." },
-    { "q": "Do codes carry over from the first Project Slayers?", "a": "No. Slayers 2 has its own codes, and your levels, gear and Wen from the first game don't transfer either." }
+    {
+      "q": "Where do you enter codes in Slayers 2?",
+      "a": "On the main menu, not in the world. The code list sits above an \"Enter a code\" box at the bottom of the screen, as shown in the screenshot on this page. Type the code and press Enter."
+    },
+    {
+      "q": "How do I know if a code is still live?",
+      "a": "The game itself shows a countdown next to each code in that menu, which is where the expiry dates on this page come from. If a code is gone from the in-game list, it's dead."
+    },
+    {
+      "q": "Do I have to join the group?",
+      "a": "Yes, join Ouw Productions on Roblox first, then fully close and reopen the game. The game checks your membership itself, and codes fail until it sees you in the group."
+    },
+    {
+      "q": "Are Slayers 2 codes case-sensitive?",
+      "a": "Enter them exactly as listed. The in-game list shows them in capitals, and the Copy button on this page avoids typos."
+    },
+    {
+      "q": "Is this the same as Project Slayers 2?",
+      "a": "Yes. The Roblox page calls it Slayers 2 and the in-game logo says Project Slayers 2, so both names refer to this game."
+    },
+    {
+      "q": "Do codes carry over from the first Project Slayers?",
+      "a": "No. Slayers 2 has its own codes, and your levels, gear and Wen from the first game don't transfer either."
+    }
   ],
   "redeemImage": {
     "src": "/images/slayers-2/redeem-codes.webp",

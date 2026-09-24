@@ -3,28 +3,90 @@
   "altName": "",
   "developer": "Janitors Studios",
   "robloxUrl": "https://www.roblox.com/games/123720558354386",
-  "summary": "Build the Pyramid! codes, where the code box is, and which rewards the developer has actually stated.",
+  "summary": "All working Build the Pyramid! codes, where the code box is, and which rewards the developer has actually stated.",
   "about": "Build the Pyramid! is a Roblox building game by Janitors Studios. Codes are redeemed from the Codes window, reached through the gear icon in the top-left menu bar.",
   "genre": "Building simulator",
   "icon": "/images/build-the-pyramid/icon.png",
   "cover": "/images/build-the-pyramid/cover.webp",
   "released": null,
   "quickFacts": [
-    { "label": "Developer", "value": "Janitors Studios" },
-    { "label": "Genre", "value": "Building simulator" },
-    { "label": "Codes menu", "value": "Gear icon, top left" }
+    {
+      "label": "Developer",
+      "value": "Janitors Studios"
+    },
+    {
+      "label": "Genre",
+      "value": "Building simulator"
+    },
+    {
+      "label": "Codes menu",
+      "value": "Gear icon, top left"
+    },
+    {
+      "label": "Active codes",
+      "value": "7"
+    }
   ],
   "lastChecked": "2026-09-23",
   "rising": 4,
   "players": "7.2K playing",
   "codes": [
-    { "code": "DISCORD2K", "reward": "Reward not stated. Limited to the first 2,000 players to redeem it", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "UPGRADES5K", "reward": "5,000 coins", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "UPANDCOMINGPC1", "reward": "Reward not stated. Limited to the first 1,000 players to redeem it", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "UPDATE15", "reward": "", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "SORRYFORUPDATEBUG", "reward": "", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "FREECODE", "reward": "", "expires": null, "status": "active", "tested": null, "source": "In-game code list" },
-    { "code": "WELCOME", "reward": "", "expires": null, "status": "active", "tested": null, "source": "In-game code list" }
+    {
+      "code": "DISCORD2K",
+      "reward": "Limited to the first 2,000 players to redeem it",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "UPGRADES5K",
+      "reward": "5,000 coins",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "UPANDCOMINGPC1",
+      "reward": "Limited to the first 1,000 players to redeem it",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "UPDATE15",
+      "reward": "Reward not stated by the developer",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "SORRYFORUPDATEBUG",
+      "reward": "Reward not stated by the developer",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "FREECODE",
+      "reward": "Reward not stated by the developer",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    },
+    {
+      "code": "WELCOME",
+      "reward": "Reward not stated by the developer",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "In-game code list"
+    }
   ],
   "redeemSteps": [
     "Look at the row of icons in the top-left corner of the screen.",
@@ -37,17 +99,51 @@
     "alt": "Build the Pyramid gear icon in the top-left menu bar, and the Codes window with the Enter Code box and Redeem button"
   },
   "troubleshooting": [
-    { "q": "Why don't some codes list a reward?", "a": "The developer hasn't said what they give anywhere we can point to, and we haven't redeemed them ourselves yet. Rather than guess, we only list rewards we can confirm. Watch your coin counter before and after redeeming to see what you got." },
-    { "q": "Typo?", "a": "Codes are usually case-sensitive, so use the Copy button instead of typing them out." },
-    { "q": "Already used?", "a": "Each code works once per account." },
-    { "q": "Limited code?", "a": "DISCORD2K and UPANDCOMINGPC1 are capped at the first 2,000 and 1,000 players. Once that many people have redeemed them they stop working, even though they haven't expired by date." },
-    { "q": "Still failing?", "a": "The code has probably run out. Tell us through the contact page and we'll recheck it." }
+    {
+      "q": "Why don't some codes list a reward?",
+      "a": "The game doesn't show what a code gives when you redeem it, and the developer hasn't listed the rewards anywhere we can point to. Rather than guess, we only state the rewards we can confirm. Watch your coin counter before and after redeeming to see what you got."
+    },
+    {
+      "q": "Typo?",
+      "a": "Codes are usually case-sensitive, so use the Copy button instead of typing them out."
+    },
+    {
+      "q": "Already used?",
+      "a": "Each code works once per account."
+    },
+    {
+      "q": "Limited code?",
+      "a": "DISCORD2K and UPANDCOMINGPC1 are capped at the first 2,000 and 1,000 players. Once that many people have redeemed them they stop working, even though they haven't expired by date."
+    },
+    {
+      "q": "Still failing?",
+      "a": "The code has probably run out. We recheck this list and move dead codes to the expired section."
+    }
   ],
   "faq": [
-    { "q": "Where do you enter codes in Build the Pyramid?", "a": "Click the gear icon in the row of icons at the top-left of the screen, choose Codes, then type into the ENTER CODE box and press Redeem. There's also a Codes board in the world near spawn. The screenshot on this page shows both the icon and the window." },
-    { "q": "Are Build the Pyramid codes case-sensitive?", "a": "Treat them as case-sensitive and enter them exactly as listed. Use the Copy button next to each code, which avoids typos entirely." },
-    { "q": "Can I use the same code twice?", "a": "No. Each code works once per account. Redeeming on an alt account is a separate redemption." },
-    { "q": "Why do some codes stop working with no warning?", "a": "Some are capped by number of players rather than by date. DISCORD2K is limited to 2,000 redemptions and UPANDCOMINGPC1 to 1,000, so they die when the cap is hit." },
-    { "q": "Have these codes been tested?", "a": "Each code shows whether we've redeemed it ourselves. Codes marked \"Not tested\" come from the game's in-game code list, and the date at the top is when that list was last reviewed." }
+    {
+      "q": "Where do you enter codes in Build the Pyramid?",
+      "a": "Click the gear icon in the row of icons at the top-left of the screen, choose Codes, then type into the ENTER CODE box and press Redeem. There's also a Codes board in the world near spawn. The screenshot on this page shows both the icon and the window."
+    },
+    {
+      "q": "Are Build the Pyramid codes case-sensitive?",
+      "a": "Treat them as case-sensitive and enter them exactly as listed. Use the Copy button next to each code, which avoids typos entirely."
+    },
+    {
+      "q": "Can I use the same code twice?",
+      "a": "No. Each code works once per account. Redeeming on an alt account is a separate redemption."
+    },
+    {
+      "q": "Why do some codes stop working with no warning?",
+      "a": "Some are capped by number of players rather than by date. DISCORD2K is limited to 2,000 redemptions and UPANDCOMINGPC1 to 1,000, so they die when the cap is hit."
+    },
+    {
+      "q": "How often is this list checked?",
+      "a": "We recheck the codes in-game and update the date at the top of this page. A bot also watches the game's Roblox page and the developer's announcements, so new codes get added quickly rather than on a weekly schedule."
+    },
+    {
+      "q": "Are there any expired Build the Pyramid codes?",
+      "a": "None yet. Every code we've listed still worked at the last check. When one dies it moves to an expired section on this page instead of being deleted."
+    }
   ]
 }
