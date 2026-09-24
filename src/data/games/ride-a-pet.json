@@ -10,55 +10,25 @@
   "cover": null,
   "released": null,
   "quickFacts": [
-    {
-      "label": "Developer",
-      "value": "this game is gud"
-    },
-    {
-      "label": "Genre",
-      "value": "Pet collecting"
-    },
-    {
-      "label": "Codes menu",
-      "value": "Not in the game yet"
-    },
-    {
-      "label": "Main loop",
-      "value": "Steal eggs, hatch, ride"
-    },
-    {
-      "label": "Steal timer",
-      "value": "20 or 30 seconds"
-    }
+    { "label": "Developer", "value": "this game is gud" },
+    { "label": "Genre", "value": "Pet collecting" },
+    { "label": "Codes menu", "value": "Not in the game yet" },
+    { "label": "Main loop", "value": "Steal eggs, hatch, ride" },
+    { "label": "Steal timer", "value": "20 or 30 seconds" }
   ],
   "lastChecked": "2026-09-23",
   "rising": 3,
   "players": "90K playing",
   "codes": [],
-  "codesNote": "Ride A Pet has no working codes right now, and that isn't because we couldn't find any. The game doesn't have a code redemption menu yet, so there's nowhere to type one even if it existed.\n\nPlenty of Roblox games launch without one and add it later as they grow, so codes may well arrive in a future update. When they do, they'll be announced in the game's Discord or on its Roblox page first, and this page will be updated the same day.\n\nIn the meantime, ignore any site or video listing \"working codes\" for this game, and stay away from scripts promising free cash or auto-farming. Those are exploits, they break Roblox's rules, and they can get your account banned.",
+  "codesNote": "Ride A Pet has no working codes right now, and that isn't because we couldn't find any. The game doesn't have a code redemption menu yet, so there's nowhere to type one even if it existed.\n\nPlenty of Roblox games launch without one and add it later as they grow, so codes may well arrive in a future update. When they do, they'll be announced in the game's Discord or on its Roblox page first, and this page will be updated as soon as we see them.\n\nIn the meantime, ignore any site or video listing \"working codes\" for this game, and stay away from scripts promising free cash or auto-farming. Those are exploits, they break Roblox's rules, and they can get your account banned.",
   "redeemSteps": [],
   "redeemImage": null,
   "troubleshooting": [],
   "faq": [
-    {
-      "q": "Does Ride A Pet have codes?",
-      "a": "Not yet. There's no code redemption menu anywhere in the game, so there's nowhere to enter one. Any list of \"working Ride A Pet codes\" you see elsewhere is guesswork."
-    },
-    {
-      "q": "Where will codes appear first if they get added?",
-      "a": "In the game's Discord or on its Roblox page, which is where the developers post updates. We watch both and update this page when something appears."
-    },
-    {
-      "q": "What can I do instead of codes?",
-      "a": "Claim your Index rewards as you collect pets, join the event at spawn for a free 2x money boost, and join the group and like the game for free meat daily. Our beginner guide covers all three, plus the egg spawn locations."
-    },
-    {
-      "q": "Are the free cash scripts safe?",
-      "a": "No. Scripts advertised for auto-farming or free cash are exploits, they break Roblox's rules, and they can get your account permanently banned. Nothing in this game is worth that."
-    },
-    {
-      "q": "How often do you check this page?",
-      "a": "The game's Roblox page and announcements are watched automatically, and the date above updates when we recheck. If a code menu is added, that shows up here quickly."
-    }
+    { "q": "Does Ride A Pet have codes?", "a": "Not yet. There's no code redemption menu anywhere in the game, so there's nowhere to enter one. Any list of \"working Ride A Pet codes\" you see elsewhere is guesswork." },
+    { "q": "Where will codes appear first if they get added?", "a": "In the game's Discord or on its Roblox page, which is where the developers post updates. Our tracker watches the Roblox page automatically and flags changes to us." },
+    { "q": "What can I do instead of codes?", "a": "Community guides point to three freebies: Index rewards as you collect pets, the event at spawn for a 2x money boost, and joining the group and liking the game for daily food. Our beginner guide covers them, plus the reported egg spawn locations." },
+    { "q": "Are the free cash scripts safe?", "a": "No. Scripts advertised for auto-farming or free cash are exploits, they break Roblox's rules, and they can get your account permanently banned. Nothing in this game is worth that." },
+    { "q": "How often do you check this page?", "a": "The game's Roblox page is watched automatically, and the date above changes only when a person reviews this page." }
   ]
 }
