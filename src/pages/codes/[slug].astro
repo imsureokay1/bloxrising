@@ -21,6 +21,16 @@ const related = (await getCollection('guides')).filter((g) => g.data.game === ga
 const title = `${d.name} Codes (${monthYear(d.lastChecked)})`;
 const searchTitle = d.altName ? `${d.name} (${d.altName}) Codes, ${monthYear(d.lastChecked)}` : title;
 
+// Meta description: the game's own summary, trimmed to what Google shows,
+// falling back to a plain line when a game has no summary yet.
+const active = d.codes.filter((c) => c.status === 'active').length;
+const raw =
+  d.summary ||
+  (active > 0
+    ? `${active} working ${d.name} codes, checked in-game on ${checked}, with rewards and how to redeem them.`
+    : `Whether ${d.name} has any working codes right now, checked in-game.`);
+const description = raw.length > 155 ? `${raw.slice(0, 152).replace(/[\s,.;:]+\S*$/, '')}…` : raw;
+
 // FAQ markup, only when the page actually shows the questions and answers.
 const faqSchema = d.faq.length > 0
   ? {
@@ -34,7 +44,7 @@ const faqSchema = d.faq.length > 0
     }
   : null;
 ---
-<Base image={d.cover} title={searchTitle} heading={title} description={`All working ${d.name} codes, checked in-game. ${d.summary}`}>
+<Base image={d.cover} title={searchTitle} heading={title} description={description}>
   <div class="wrap page">
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
     <nav class="crumbs" aria-label="Breadcrumb">
