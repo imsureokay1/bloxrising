@@ -14,7 +14,7 @@
   --amber-ink: #7A4A00;
 
   /* Two self-hosted families (see Base.astro). Code text uses the system monospace font. */
-  --display: 'Bricolage Grotesque', Georgia, serif;
+  --display: 'Bricolage Grotesque Variable', Georgia, serif;
   --body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 
