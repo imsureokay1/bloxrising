@@ -1,32 +1,25 @@
 ---
 import Base from '../layouts/Base.astro';
-import SuggestForm from '../components/SuggestForm.astro';
 import { site } from '../site.config';
 ---
-<Base title="About" description="Who writes EarlySpawn, how we check codes, and how to suggest a game or guide.">
-  <div class="wrap page">
-    <div class="prose">
-      <h1>About {site.name}</h1>
-      <p>{site.name} covers the games gaining players fastest, with codes, beginner guides, and game info in one place. We cover new games early, often before the bigger sites get to them.</p>
+<Base title="About" description="Who writes EarlySpawn, how we check codes, and how to reach us.">
+  <div class="wrap prose page">
+    <h1>About {site.name}</h1>
+    <p>{site.name} covers the games gaining players fastest, with codes, beginner guides, and game info in one place. We cover new games early, often before the bigger sites get to them.</p>
 
-      <h2>Who writes this</h2>
-      <p>Pages are written and maintained by {site.editor}. We use AI tools to help draft and keep pages up to date, and every page is checked by a person before it goes live. We'd rather say "we don't know yet" than guess.</p>
+    <h2>Who writes this</h2>
+    <p>Pages are written and maintained by {site.editor}. We use AI tools to help draft and keep pages up to date, and every page is checked by a person before it goes live. We'd rather say "we don't know yet" than guess.</p>
 
-      <h2>How we check codes</h2>
-      <p>Codes come from the game's own announcements, its Roblox page, or the developer's Discord, and we redeem them in-game before listing them. Every codes page shows the date it was last checked. Codes that stop working move to the expired list instead of quietly disappearing, and when a game has no working codes we say so and explain why.</p>
-    </div>
+    <h2>How we check codes</h2>
+    <p>Codes come from the game's own announcements, its Roblox page, or the developer's Discord, and we redeem them in-game before listing them. Every codes page shows the date it was last checked. Codes that stop working move to the expired list instead of quietly disappearing, and when a game has no working codes we say so and explain why.</p>
 
-    <SuggestForm />
+    <h2>Suggestions and corrections</h2>
+    <p>Want a game covered, a guide written, or spotted something wrong? Send it through the <a href="/contact/">contact page</a> and it reaches the person who writes the pages.</p>
 
-    <div class="prose">
-      <h2>Corrections</h2>
-      <p>Found something wrong or out of date? Use the form above and we'll fix it. Same for new codes you've found.</p>
+    <h2>Business enquiries</h2>
+    <p>For sponsorships, partnerships, press, or anything from a game developer, email <a href={`mailto:${site.email}`}>{site.email}</a>. That address is for business only.</p>
 
-      <h2>Business enquiries</h2>
-      <p>For sponsorships, partnerships, press, or anything from a game developer, email <a href={`mailto:${site.email}`}>{site.email}</a>. That address is for business only, so game and guide requests go through the form.</p>
-
-      <p>{site.name} is a fan site. It isn't affiliated with or endorsed by Roblox Corporation or any game developer.</p>
-    </div>
+    <p>{site.name} is a fan site. It isn't affiliated with or endorsed by Roblox Corporation or any game developer.</p>
   </div>
 </Base>
 <style>.page { padding-top: 36px; } .page h1 { margin-bottom: 18px; }</style>
