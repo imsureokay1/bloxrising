@@ -6,7 +6,7 @@ kind: "guide"
 updated: 2026-09-24
 ---
 
-Most guides say the pyramid needs a fixed number of blocks. It doesn't. The goal changes from server to server, and the real reward isn't the pyramid itself, it's what completing pyramids unlocks at the gym.
+Most guides say the pyramid needs a fixed number of blocks. It doesn't. The goal changes from server to server, the reward for finishing changes too, and the gym multipliers come from pyramids you've completed yourself.
 
 ## The loop
 
@@ -22,6 +22,15 @@ A fresh server starts at roughly **170,000 blocks**. Every pyramid a server comp
 The whole server shares one bar, so a busy server finishes far faster than a quiet one. If you join an empty server with a huge target, you'll be grinding it alone.
 
 The bar also shows a **2X COINS** indicator when that's active, and the buttons underneath let you buy blocks with Robux. Those are optional and you can ignore them.
+
+## The reward changes too
+
+Completing the pyramid opens it up, and what you get inside depends on the server. Reported rewards include **2x coins**, **2x strength**, **5x strength** and **10x training**, so two servers that look identical can pay out very differently.
+
+Check the reward before committing to a long grind. The blocks cost you the same either way, so a server offering 10x training is worth far more of your time than one offering 2x coins.
+
+![Inside a finished pyramid, players training at the Waters of Nu pool](/images/build-the-pyramid/inside-pyramid.webp)
+*One example of what's inside: the Waters of Nu, handing out repeated +4 speed and +4 strength. Other servers give different boosts.*
 
 ## Two upgrades come first
 
@@ -47,16 +56,9 @@ You can **AFK at the gym** and keep training, so leave your character working wh
 ![The gym, with training stations at increasing multipliers](/images/build-the-pyramid/gym.webp)
 *Each station trains faster than the last, and the higher ones are locked until you've completed enough pyramids.*
 
-The stations are the point. The free one at the left trains slowly, and further along they run at 2x, then higher tiers up to 25x, 50x and 75x. Each is locked behind a number of **pyramids you have personally completed**, not your server's count, so the grind carries across servers with you.
+The stations are the point. The free one at the left trains slowly, and further along they run at 2x, then higher tiers up to 25x, 50x and 75x. Each is locked behind a number of **pyramids you have personally completed**, not your server's count, so that progress follows you from server to server.
 
 **The exact requirement for each tier isn't confirmed yet.** If you know what each station needs, [tell us](mailto:contact@earlyspawn.com) and we'll add it.
-
-## Inside the pyramid
-
-Finish the pyramid and you can go inside, where there's a pool called the **Waters of Nu**. Standing in it gives repeated **+4 speed** and **+4 strength** boosts, and the level-up messages come constantly.
-
-![Inside the finished pyramid, players training in the Waters of Nu pool](/images/build-the-pyramid/inside-pyramid.webp)
-*Inside a completed pyramid: the Waters of Nu, giving +4 speed and +4 strength.*
 
 ## Claim the free gift first
 
@@ -73,4 +75,5 @@ Then redeem the codes for free coins → [Build the Pyramid codes](/codes/build-
 2. Redeem the codes for starting coins
 3. Max Bulk Pickup and Bulk Place before any other upgrade
 4. Train at the gym between runs, and AFK there when you stop playing
-5. Join busy servers, since the goal is shared and the target grows with each pyramid completed
+5. Check the server's goal and its reward before you commit, since both vary
+6. Join busy servers, since everyone shares the same bar
