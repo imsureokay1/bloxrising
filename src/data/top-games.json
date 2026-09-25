@@ -9,7 +9,7 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 2104187,
+      "playing": 2079702,
       "players": "2.1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-cba7c8e29858bdd95488b8bf286fab6b/256/256/Image/Png/noFilter"
     },
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 371721,
-      "players": "372K playing",
+      "playing": 449065,
+      "players": "449K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-43d4bb37a6510ac613989cefb77168fd/256/256/Image/Png/noFilter"
     },
     {
@@ -33,21 +33,21 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 266252,
-      "players": "266K playing",
+      "playing": 291115,
+      "players": "291K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "Ride A Pet",
-      "slug": "ride-a-pet",
-      "covered": true,
-      "developer": "this game is gud",
-      "placeId": "124216119978534",
-      "universeId": "10035204815",
-      "playing": 259645,
-      "players": "260K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c755a60786d092560f219b1bb7b18d3f/256/256/Image/Png/noFilter"
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
+      "covered": false,
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 261946,
+      "players": "262K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,8 +57,8 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 219928,
-      "players": "220K playing",
+      "playing": 244188,
+      "players": "244K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6701a2f63cda85f3f0ebfc9545a3f82f/256/256/Image/Png/noFilter"
     },
     {
@@ -69,33 +69,33 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 197999,
-      "players": "198K playing",
+      "playing": 214587,
+      "players": "215K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
-      "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 197891,
-      "players": "198K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
+      "name": "Ride A Pet",
+      "slug": "ride-a-pet",
+      "covered": true,
+      "developer": "this game is gud",
+      "placeId": "124216119978534",
+      "universeId": "10035204815",
+      "playing": 212447,
+      "players": "212K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-1874605065ff585a0f02a7d84adc34e3/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "1 Speed Keyboard Escape Candy & Chocolate",
-      "slug": "1-speed-keyboard-escape-candy-chocolate",
+      "name": "Adopt Me!",
+      "slug": "adopt-me",
       "covered": false,
-      "developer": "SecretVerse Studio",
-      "placeId": "95082159892680",
-      "universeId": "9584852943",
-      "playing": 153019,
-      "players": "153K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c72d5b07c148e331ed33be9e2430fb39/256/256/Image/Png/noFilter"
+      "developer": "Uplift Games",
+      "placeId": "920587237",
+      "universeId": "383310974",
+      "playing": 191990,
+      "players": "192K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-6f591acc3a781d2feeca7e678d19588d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,21 +105,21 @@
       "developer": "Ouw Productions",
       "placeId": "16205713724",
       "universeId": "5595353122",
-      "playing": 139998,
-      "players": "140K playing",
+      "playing": 171095,
+      "players": "171K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Adopt Me!",
-      "slug": "adopt-me",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "Uplift Games",
-      "placeId": "920587237",
-      "universeId": "383310974",
-      "playing": 123964,
-      "players": "124K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-7ac2868925623e2c0e8f7f9c4f6f988f/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 146199,
+      "players": "146K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     }
   ]
 }
