@@ -33,31 +33,192 @@
   ],
   "lastChecked": "2026-09-23",
   "rising": 2,
-  "players": "180K playing",
+  "players": "189K playing",
   "codes": [
-    { "code": "GAMER_ROBOT_1M", "reward": "1 hour 30 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "SUB2GAMERROBOT_EXP1", "reward": "30 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2Fer999", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Enyu_is_Pro", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "JCWK", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "StarcodeHEO", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "MagicBUS", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "KittGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2CaptainMaui", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2OfficialNoobie", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "TheGreatAce", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2NoobMaster123", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2Daigrock", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Axiore", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "StrawHatMaine", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "TantaiGaming", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Bluxxy", "reward": "20 minutes of 2x Experience", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "KITT_RESET", "reward": "Free stat reset", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Sub2UncleKizaru", "reward": "Free stat reset", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "BigNews", "reward": "The in-game title BIGNEWS (only applies in the Second or Third Sea)", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "fudd10_V2", "reward": "2 Money", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "fudd10", "reward": "1 Money", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" },
-    { "code": "Chandler", "reward": "0 Money, a joke code", "expires": null, "status": "active", "verified": "2026-09-23", "source": "Blox Fruits Wiki, checked in-game" }
+    {
+      "code": "GAMER_ROBOT_1M",
+      "reward": "1 hour 30 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "SUB2GAMERROBOT_EXP1",
+      "reward": "30 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2Fer999",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Enyu_is_Pro",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "JCWK",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "StarcodeHEO",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "MagicBUS",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "KittGaming",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2CaptainMaui",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2OfficialNoobie",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "TheGreatAce",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2NoobMaster123",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2Daigrock",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Axiore",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "StrawHatMaine",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "TantaiGaming",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Bluxxy",
+      "reward": "20 minutes of 2x Experience",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "KITT_RESET",
+      "reward": "Free stat reset",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Sub2UncleKizaru",
+      "reward": "Free stat reset",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "BigNews",
+      "reward": "The in-game title BIGNEWS (only applies in the Second or Third Sea)",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "fudd10_V2",
+      "reward": "2 Money",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "fudd10",
+      "reward": "1 Money",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    },
+    {
+      "code": "Chandler",
+      "reward": "0 Money, a joke code",
+      "expires": null,
+      "status": "active",
+      "verified": "2026-09-23",
+      "source": "Blox Fruits Wiki, checked in-game"
+    }
   ],
   "redeemSteps": [
     "Click the gear icon in the row of icons on the left of your screen.",
