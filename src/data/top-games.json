@@ -9,9 +9,9 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 2079702,
-      "players": "2.1M playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-cba7c8e29858bdd95488b8bf286fab6b/256/256/Image/Png/noFilter"
+      "playing": 1706533,
+      "players": "1.7M playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-832721ae1ae750f68569ce89eb65175d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 2,
@@ -21,33 +21,33 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 449065,
-      "players": "449K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-43d4bb37a6510ac613989cefb77168fd/256/256/Image/Png/noFilter"
+      "playing": 571449,
+      "players": "571K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-5c2b750e21e3a16d7bc1355d9ba3cb9d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 291115,
-      "players": "291K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 4,
       "name": "Murder Mystery 2",
       "slug": "murder-mystery-2",
       "covered": false,
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 261946,
-      "players": "262K playing",
+      "playing": 307389,
+      "players": "307K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 4,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 250143,
+      "players": "250K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,8 +57,8 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 244188,
-      "players": "244K playing",
+      "playing": 211301,
+      "players": "211K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6701a2f63cda85f3f0ebfc9545a3f82f/256/256/Image/Png/noFilter"
     },
     {
@@ -69,21 +69,21 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 214587,
-      "players": "215K playing",
+      "playing": 200522,
+      "players": "201K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "Ride A Pet",
-      "slug": "ride-a-pet",
+      "name": "Slayers 2",
+      "slug": "slayers-2",
       "covered": true,
-      "developer": "this game is gud",
-      "placeId": "124216119978534",
-      "universeId": "10035204815",
-      "playing": 212447,
-      "players": "212K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-1874605065ff585a0f02a7d84adc34e3/256/256/Image/Png/noFilter"
+      "developer": "Ouw Productions",
+      "placeId": "16205713724",
+      "universeId": "5595353122",
+      "playing": 172372,
+      "players": "172K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 191990,
-      "players": "192K playing",
+      "playing": 167705,
+      "players": "168K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6f591acc3a781d2feeca7e678d19588d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Slayers 2",
-      "slug": "slayers-2",
-      "covered": true,
-      "developer": "Ouw Productions",
-      "placeId": "16205713724",
-      "universeId": "5595353122",
-      "playing": 171095,
-      "players": "171K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
       "name": "Jujutsu Shenanigans",
       "slug": "jujutsu-shenanigans",
       "covered": false,
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 146199,
-      "players": "146K playing",
+      "playing": 151214,
+      "players": "151K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Ride A Pet",
+      "slug": "ride-a-pet",
+      "covered": true,
+      "developer": "this game is gud",
+      "placeId": "124216119978534",
+      "universeId": "10035204815",
+      "playing": 140051,
+      "players": "140K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-1874605065ff585a0f02a7d84adc34e3/256/256/Image/Png/noFilter"
     }
   ]
 }
