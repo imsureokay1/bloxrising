@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1706533,
-      "players": "1.7M playing",
+      "playing": 1485967,
+      "players": "1.5M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-832721ae1ae750f68569ce89eb65175d/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 571449,
-      "players": "571K playing",
+      "playing": 434034,
+      "players": "434K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c2b750e21e3a16d7bc1355d9ba3cb9d/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 307389,
-      "players": "307K playing",
+      "playing": 244761,
+      "players": "245K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
     },
     {
@@ -45,8 +45,8 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 250143,
-      "players": "250K playing",
+      "playing": 218910,
+      "players": "219K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
@@ -57,33 +57,33 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 211301,
-      "players": "211K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-6701a2f63cda85f3f0ebfc9545a3f82f/256/256/Image/Png/noFilter"
+      "playing": 187177,
+      "players": "187K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
-      "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 200522,
-      "players": "201K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
       "name": "Slayers 2",
       "slug": "slayers-2",
       "covered": true,
       "developer": "Ouw Productions",
       "placeId": "16205713724",
       "universeId": "5595353122",
-      "playing": 172372,
-      "players": "172K playing",
+      "playing": 165760,
+      "players": "166K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
+      "covered": false,
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 160642,
+      "players": "161K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 167705,
-      "players": "168K playing",
+      "playing": 149053,
+      "players": "149K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6f591acc3a781d2feeca7e678d19588d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
       "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 151214,
-      "players": "151K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 139693,
+      "players": "140K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Ride A Pet",
-      "slug": "ride-a-pet",
-      "covered": true,
-      "developer": "this game is gud",
-      "placeId": "124216119978534",
-      "universeId": "10035204815",
-      "playing": 140051,
-      "players": "140K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-1874605065ff585a0f02a7d84adc34e3/256/256/Image/Png/noFilter"
+      "name": "X15 1 Speed Keyboard Escape Candy & Chocolate",
+      "slug": "x15-1-speed-keyboard-escape-candy-chocolate",
+      "covered": false,
+      "developer": "SecretVerse Studio",
+      "placeId": "95082159892680",
+      "universeId": "9584852943",
+      "playing": 115673,
+      "players": "116K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c72d5b07c148e331ed33be9e2430fb39/256/256/Image/Png/noFilter"
     }
   ]
 }
