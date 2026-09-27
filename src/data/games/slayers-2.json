@@ -37,6 +37,12 @@
   "players": "190K playing",
   "codes": [
     {
+      "code": "BREATHRESET",
+      "reward": "Breathing reset",
+      "expires": null,
+      "status": "active"
+    },
+    {
       "code": "SkillTreeReset - Reset your skill tree points\nBREATHRESET - Breathing reset\nARTRESET - Evil Art Reset\nSPINS50 - 50 Spins\nANIM4L - 50 Spins, 5 Ores",
       "reward": "",
       "expires": null,
