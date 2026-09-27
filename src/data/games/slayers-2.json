@@ -32,10 +32,16 @@
       "value": "Level 25"
     }
   ],
-  "lastChecked": "2026-09-23",
+  "lastChecked": "2026-09-27",
   "rising": 2,
   "players": "190K playing",
   "codes": [
+    {
+      "code": "SkillTreeReset - Reset your skill tree points\nBREATHRESET - Breathing reset\nARTRESET - Evil Art Reset\nSPINS50 - 50 Spins\nANIM4L - 50 Spins, 5 Ores",
+      "reward": "",
+      "expires": null,
+      "status": "active"
+    },
     {
       "code": "SKILLTREERESET",
       "reward": "Skill tree points reset",
