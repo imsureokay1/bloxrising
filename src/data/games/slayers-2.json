@@ -37,6 +37,12 @@
   "players": "190K playing",
   "codes": [
     {
+      "code": "ARTRESET",
+      "reward": "Evil Art Reset",
+      "expires": null,
+      "status": "active"
+    },
+    {
       "code": "BREATHRESET",
       "reward": "Breathing reset",
       "expires": null,
