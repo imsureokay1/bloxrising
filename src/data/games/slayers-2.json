@@ -37,6 +37,12 @@
   "players": "190K playing",
   "codes": [
     {
+      "code": "ANIM4L",
+      "reward": "50 Spins, 5 Ores",
+      "expires": null,
+      "status": "active"
+    },
+    {
       "code": "SPINS50",
       "reward": "50 Spins",
       "expires": null,
