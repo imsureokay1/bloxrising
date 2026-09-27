@@ -37,6 +37,12 @@
   "players": "190K playing",
   "codes": [
     {
+      "code": "SPINS50",
+      "reward": "50 Spins",
+      "expires": null,
+      "status": "active"
+    },
+    {
       "code": "ARTRESET",
       "reward": "Evil Art Reset",
       "expires": null,
