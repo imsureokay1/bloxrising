@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "games": [
     {
       "rank": 1,
@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1077627,
-      "players": "1.1M playing",
+      "playing": 1181272,
+      "players": "1.2M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-a56ad1001428fe2c0c5c8345d85c881a/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 421289,
-      "players": "421K playing",
+      "playing": 363875,
+      "players": "364K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c2b750e21e3a16d7bc1355d9ba3cb9d/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 258119,
-      "players": "258K playing",
+      "playing": 239059,
+      "players": "239K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
     },
     {
@@ -45,33 +45,33 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 226256,
-      "players": "226K playing",
+      "playing": 198469,
+      "players": "198K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
-      "name": "Slayers 2",
-      "slug": "slayers-2",
-      "covered": true,
-      "developer": "Ouw Productions",
-      "placeId": "16205713724",
-      "universeId": "5595353122",
-      "playing": 190825,
-      "players": "191K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 6,
       "name": "RIVALS",
       "slug": "rivals",
       "covered": false,
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 184994,
-      "players": "185K playing",
+      "playing": 189240,
+      "players": "189K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 6,
+      "name": "Slayers 2",
+      "slug": "slayers-2",
+      "covered": true,
+      "developer": "Ouw Productions",
+      "placeId": "16205713724",
+      "universeId": "5595353122",
+      "playing": 164609,
+      "players": "165K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
@@ -81,45 +81,45 @@
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 169521,
-      "players": "170K playing",
+      "playing": 152694,
+      "players": "153K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "Adopt Me!",
-      "slug": "adopt-me",
-      "covered": false,
-      "developer": "Uplift Games",
-      "placeId": "920587237",
-      "universeId": "383310974",
-      "playing": 161682,
-      "players": "162K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-6f591acc3a781d2feeca7e678d19588d/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 9,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
-      "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 157668,
-      "players": "158K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
       "name": "Ride A Pet",
       "slug": "ride-a-pet",
       "covered": true,
       "developer": "this game is gud",
       "placeId": "124216119978534",
       "universeId": "10035204815",
-      "playing": 138010,
-      "players": "138K playing",
+      "playing": 147501,
+      "players": "148K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-7482a4560f36aa89ecc8c5b7746106e6/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
+      "name": "Adopt Me!",
+      "slug": "adopt-me",
+      "covered": false,
+      "developer": "Uplift Games",
+      "placeId": "920587237",
+      "universeId": "383310974",
+      "playing": 129190,
+      "players": "129K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-6f591acc3a781d2feeca7e678d19588d/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
+      "covered": false,
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 126965,
+      "players": "127K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-7d1d7a0d438f14019276b06aadeb8608/256/256/Image/Png/noFilter"
     }
   ]
 }
