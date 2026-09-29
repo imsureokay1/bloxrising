@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1437525,
-      "players": "1.4M playing",
+      "playing": 1115840,
+      "players": "1.1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-a56ad1001428fe2c0c5c8345d85c881a/256/256/Image/Png/noFilter"
     },
     {
@@ -21,33 +21,33 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 328149,
+      "playing": 327894,
       "players": "328K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c2b750e21e3a16d7bc1355d9ba3cb9d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 245598,
-      "players": "246K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 4,
       "name": "Murder Mystery 2",
       "slug": "murder-mystery-2",
       "covered": false,
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 205920,
-      "players": "206K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8603d08ec7942e5f200c6b20dbdcdd6b/256/256/Image/Png/noFilter"
+      "playing": 227122,
+      "players": "227K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 4,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 197192,
+      "players": "197K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,9 +57,9 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 184988,
-      "players": "185K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c8b47b2a1e1cc8a405615b21976e7717/256/256/Image/Png/noFilter"
+      "playing": 159213,
+      "players": "159K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-f6cc8a94434eb8708aaab2f7732bac01/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
@@ -69,21 +69,21 @@
       "developer": "this game is gud",
       "placeId": "124216119978534",
       "universeId": "10035204815",
-      "playing": 179968,
-      "players": "180K playing",
+      "playing": 135290,
+      "players": "135K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-7482a4560f36aa89ecc8c5b7746106e6/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "RIVALS",
-      "slug": "rivals",
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
       "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 156012,
-      "players": "156K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 127675,
+      "players": "128K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-4512781e3fac8fe8350c3cf59fb94f08/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,8 +93,8 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 144689,
-      "players": "145K playing",
+      "playing": 125339,
+      "players": "125K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
     },
     {
@@ -105,21 +105,21 @@
       "developer": "Ouw Productions",
       "placeId": "16205713724",
       "universeId": "5595353122",
-      "playing": 125487,
-      "players": "125K playing",
+      "playing": 124104,
+      "players": "124K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Steal a Brainrot",
-      "slug": "steal-a-brainrot",
+      "name": "RIVALS",
+      "slug": "rivals",
       "covered": false,
-      "developer": "BRAZILIAN SPYDER",
-      "placeId": "109983668079237",
-      "universeId": "7709344486",
-      "playing": 124634,
-      "players": "125K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-7d1d7a0d438f14019276b06aadeb8608/256/256/Image/Png/noFilter"
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 121525,
+      "players": "122K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     }
   ]
 }
