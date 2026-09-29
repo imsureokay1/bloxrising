@@ -33,8 +33,8 @@
     }
   ],
   "lastChecked": "2026-09-27",
-  "rising": 5,
-  "players": "140K playing",
+  "rising": 4,
+  "players": "142K playing",
   "codes": [
     {
       "code": "ANIM4L",
@@ -64,7 +64,7 @@
       "code": "SKILLTREERESET",
       "reward": "Skill tree points reset",
       "expires": "2026-09-28",
-      "status": "active",
+      "status": "expired",
       "verified": "2026-09-22",
       "source": "In-game code list"
     },
