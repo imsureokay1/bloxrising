@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1165197,
-      "players": "1.2M playing",
+      "playing": 1369614,
+      "players": "1.4M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-a56ad1001428fe2c0c5c8345d85c881a/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 170521,
-      "players": "171K playing",
+      "playing": 196216,
+      "players": "196K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c2b750e21e3a16d7bc1355d9ba3cb9d/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "this game is gud",
       "placeId": "124216119978534",
       "universeId": "10035204815",
-      "playing": 159492,
-      "players": "159K playing",
+      "playing": 182555,
+      "players": "183K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-7482a4560f36aa89ecc8c5b7746106e6/256/256/Image/Png/noFilter"
     },
     {
@@ -45,21 +45,21 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 139346,
-      "players": "139K playing",
+      "playing": 171108,
+      "players": "171K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
-      "name": "Adopt Me!",
-      "slug": "adopt-me",
+      "name": "RIVALS",
+      "slug": "rivals",
       "covered": false,
-      "developer": "Uplift Games",
-      "placeId": "920587237",
-      "universeId": "383310974",
-      "playing": 96492,
-      "players": "96K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-f6cc8a94434eb8708aaab2f7732bac01/256/256/Image/Png/noFilter"
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 119533,
+      "players": "120K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
@@ -69,33 +69,33 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 93237,
-      "players": "93K playing",
+      "playing": 105729,
+      "players": "106K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
+      "name": "Adopt Me!",
+      "slug": "adopt-me",
+      "covered": false,
+      "developer": "Uplift Games",
+      "placeId": "920587237",
+      "universeId": "383310974",
+      "playing": 103959,
+      "players": "104K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-f6cc8a94434eb8708aaab2f7732bac01/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 8,
       "name": "99 Nights in the Forest",
       "slug": "99-nights-in-the-forest",
       "covered": false,
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 86172,
-      "players": "86K playing",
+      "playing": 101769,
+      "players": "102K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 8,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 80465,
-      "players": "80K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,21 +105,21 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 77844,
-      "players": "78K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2396005a78199b35c634bd967677c48b/256/256/Image/Png/noFilter"
+      "playing": 88328,
+      "players": "88K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-7d1d7a0d438f14019276b06aadeb8608/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Slayers 2",
-      "slug": "slayers-2",
-      "covered": true,
-      "developer": "Ouw Productions",
-      "placeId": "16205713724",
-      "universeId": "5595353122",
-      "playing": 76366,
-      "players": "76K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/256/256/Image/Png/noFilter"
+      "name": "1 Speed Keyboard Escape Candy & Chocolate",
+      "slug": "1-speed-keyboard-escape-candy-chocolate",
+      "covered": false,
+      "developer": "SecretVerse Studio",
+      "placeId": "95082159892680",
+      "universeId": "9584852943",
+      "playing": 84315,
+      "players": "84K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-0c89fc3d2a62922abe78e302220bca07/256/256/Image/Png/noFilter"
     }
   ]
 }
