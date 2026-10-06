@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1794037,
-      "players": "1.8M playing",
+      "playing": 1431063,
+      "players": "1.4M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-198dbfc17c1250782a90323f95aae502/256/256/Image/Png/noFilter"
     },
     {
@@ -21,45 +21,45 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 279936,
-      "players": "280K playing",
+      "playing": 320830,
+      "players": "321K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-eb78f2abb7cb21ca195816fc6ece1fc6/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
-      "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 203461,
-      "players": "203K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 4,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 187567,
-      "players": "188K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 174842,
-      "players": "175K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d4c045930673aab553e7ed4ade0cc1b8/256/256/Image/Png/noFilter"
+      "playing": 239712,
+      "players": "240K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c8b47b2a1e1cc8a405615b21976e7717/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 4,
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
+      "covered": false,
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 218244,
+      "players": "218K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 5,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 200168,
+      "players": "200K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
@@ -69,8 +69,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 153870,
-      "players": "154K playing",
+      "playing": 195148,
+      "players": "195K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
     },
     {
@@ -81,33 +81,33 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 137895,
-      "players": "138K playing",
+      "playing": 144655,
+      "players": "145K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "Ride A Pet",
-      "slug": "ride-a-pet",
-      "covered": true,
-      "developer": "this game is gud",
-      "placeId": "124216119978534",
-      "universeId": "10035204815",
-      "playing": 126080,
-      "players": "126K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-83a1736af5f1fdf525a5b024910181e6/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 9,
       "name": "Dandy's World",
       "slug": "dandy-s-world",
       "covered": false,
       "developer": "BlushCrunch Studio",
       "placeId": "16116270224",
       "universeId": "5569032992",
-      "playing": 114801,
-      "players": "115K playing",
+      "playing": 125208,
+      "players": "125K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-2da9ea69cd070cc242a9ebc66bce0b7e/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
+      "covered": false,
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 113060,
+      "players": "113K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
@@ -117,8 +117,8 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 108339,
-      "players": "108K playing",
+      "playing": 111698,
+      "players": "112K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-cc5bb1397a8e7b53f77e866de8077696/256/256/Image/Png/noFilter"
     }
   ]
