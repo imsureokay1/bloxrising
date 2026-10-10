@@ -9,9 +9,9 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 2364530,
-      "players": "2.4M playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-eed7fe1cfc380f8e4ec925a68d7fe602/256/256/Image/Png/noFilter"
+      "playing": 12047713,
+      "players": "12M playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e91be1353339798efb6cb2d6e5dc333c/256/256/Image/Png/noFilter"
     },
     {
       "rank": 2,
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 540140,
-      "players": "540K playing",
+      "playing": 594000,
+      "players": "594K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-01fa54388131d629ec74c042784454c5/256/256/Image/Png/noFilter"
     },
     {
@@ -33,93 +33,93 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 343840,
-      "players": "344K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-e556270b0160aaf9149c0afcd28841f2/256/256/Image/Png/noFilter"
+      "playing": 438101,
+      "players": "438K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-4931b647aa5e6901325c132ea4bda63a/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
+      "name": "Fisch",
+      "slug": "fisch",
+      "covered": false,
+      "developer": "Fisching",
+      "placeId": "16732694052",
+      "universeId": "5750914919",
+      "playing": 412553,
+      "players": "413K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3fdda21ae570f75100a4015b9f1d62d8/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 5,
       "name": "99 Nights in the Forest",
       "slug": "99-nights-in-the-forest",
       "covered": false,
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 339411,
-      "players": "339K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-96937de20a21742a1df21899603edd99/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 257740,
-      "players": "258K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
+      "playing": 330768,
+      "players": "331K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-09eae96ceb7b0cae957e6fa57485d9c1/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 234537,
-      "players": "235K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
-      "name": "Ride A Pet",
-      "slug": "ride-a-pet",
-      "covered": true,
-      "developer": "this game is gud",
-      "placeId": "124216119978534",
-      "universeId": "10035204815",
-      "playing": 222468,
-      "players": "222K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-560c2c6085cc575285afe34cce723376/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 8,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
-      "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 221672,
-      "players": "222K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 9,
       "name": "Dandy's World",
       "slug": "dandy-s-world",
       "covered": false,
       "developer": "BlushCrunch Studio",
       "placeId": "16116270224",
       "universeId": "5569032992",
-      "playing": 217714,
-      "players": "218K playing",
+      "playing": 260791,
+      "players": "261K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-59bcefc503668676f6fc405e7e2b8a7f/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 10,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
+      "rank": 7,
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
       "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 166429,
-      "players": "166K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-dabb58d3f2a9ec56d8cdbee91a39e2a6/256/256/Image/Png/noFilter"
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 251591,
+      "players": "252K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 8,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 246531,
+      "players": "247K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 191813,
+      "players": "192K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
+      "covered": false,
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 176942,
+      "players": "177K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     }
   ]
 }
