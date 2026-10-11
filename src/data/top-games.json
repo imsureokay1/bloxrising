@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1325961,
-      "players": "1.3M playing",
+      "playing": 955437,
+      "players": "955K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6e20c32d815e10f133df868ce114a928/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 606109,
-      "players": "606K playing",
+      "playing": 434424,
+      "players": "434K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-01fa54388131d629ec74c042784454c5/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 427415,
-      "players": "427K playing",
+      "playing": 347429,
+      "players": "347K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-fd05afa91e29a7895178342064489a36/256/256/Image/Png/noFilter"
     },
     {
@@ -45,8 +45,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 327026,
-      "players": "327K playing",
+      "playing": 233381,
+      "players": "233K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
     },
     {
@@ -57,57 +57,57 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 326566,
-      "players": "327K playing",
+      "playing": 217330,
+      "players": "217K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 238967,
-      "players": "239K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
       "name": "Dandy's World",
       "slug": "dandy-s-world",
       "covered": false,
       "developer": "BlushCrunch Studio",
       "placeId": "16116270224",
       "universeId": "5569032992",
-      "playing": 226426,
-      "players": "226K playing",
+      "playing": 176686,
+      "players": "177K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-59bcefc503668676f6fc405e7e2b8a7f/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 8,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 209876,
-      "players": "210K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
+      "rank": 7,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 174844,
+      "players": "175K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Jujutsu Shenanigans",
       "slug": "jujutsu-shenanigans",
       "covered": false,
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 203594,
-      "players": "204K playing",
+      "playing": 166600,
+      "players": "167K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 147770,
+      "players": "148K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
@@ -117,8 +117,8 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 161564,
-      "players": "162K playing",
+      "playing": 140359,
+      "players": "140K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-9fc7a9422d693a7176527f02c21bc361/256/256/Image/Png/noFilter"
     }
   ]
