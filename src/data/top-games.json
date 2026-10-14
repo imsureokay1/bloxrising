@@ -9,33 +9,33 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1241502,
-      "players": "1.2M playing",
+      "playing": 1466399,
+      "players": "1.5M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6e20c32d815e10f133df868ce114a928/256/256/Image/Png/noFilter"
     },
     {
       "rank": 2,
-      "name": "Adopt Me!",
-      "slug": "adopt-me",
-      "covered": false,
-      "developer": "Uplift Games",
-      "placeId": "920587237",
-      "universeId": "383310974",
-      "playing": 239120,
-      "players": "239K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-fd05afa91e29a7895178342064489a36/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 3,
       "name": "Brookhaven RP",
       "slug": "brookhaven-rp",
       "covered": false,
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 225237,
-      "players": "225K playing",
+      "playing": 339783,
+      "players": "340K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-01fa54388131d629ec74c042784454c5/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 3,
+      "name": "Adopt Me!",
+      "slug": "adopt-me",
+      "covered": false,
+      "developer": "Uplift Games",
+      "placeId": "920587237",
+      "universeId": "383310974",
+      "playing": 274499,
+      "players": "274K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-fd05afa91e29a7895178342064489a36/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
@@ -45,8 +45,8 @@
       "developer": "ILGames x Eggs",
       "placeId": "114326934417838",
       "universeId": "10765288803",
-      "playing": 167581,
-      "players": "168K playing",
+      "playing": 212774,
+      "players": "213K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-d4f7aea44aeb7018aefbd45d11062e63/256/256/Image/Png/noFilter"
     },
     {
@@ -57,8 +57,8 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 148624,
-      "players": "149K playing",
+      "playing": 196123,
+      "players": "196K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
@@ -69,33 +69,33 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 140036,
-      "players": "140K playing",
+      "playing": 183318,
+      "players": "183K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 132166,
-      "players": "132K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 8,
       "name": "Murder Mystery 2",
       "slug": "murder-mystery-2",
       "covered": false,
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 104389,
-      "players": "104K playing",
+      "playing": 162353,
+      "players": "162K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 8,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 157829,
+      "players": "158K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,21 +105,21 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 78402,
-      "players": "78K playing",
+      "playing": 109298,
+      "players": "109K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-fcdec94c7542627c9b5947a3102a0b6c/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Fish It!",
-      "slug": "fish-it",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "Fish Atelier",
-      "placeId": "121864768012064",
-      "universeId": "6701277882",
-      "playing": 71135,
-      "players": "71K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-04de559cdc617b844f0c4448e0f79e5c/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 106317,
+      "players": "106K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     }
   ]
 }
