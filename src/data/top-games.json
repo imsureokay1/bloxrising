@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1465516,
-      "players": "1.5M playing",
+      "playing": 1034680,
+      "players": "1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6e20c32d815e10f133df868ce114a928/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 376567,
-      "players": "377K playing",
+      "playing": 373452,
+      "players": "373K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-01fa54388131d629ec74c042784454c5/256/256/Image/Png/noFilter"
     },
     {
@@ -33,33 +33,33 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 269284,
-      "players": "269K playing",
+      "playing": 289181,
+      "players": "289K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-fd05afa91e29a7895178342064489a36/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
+      "covered": false,
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 219596,
+      "players": "220K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 5,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 210106,
-      "players": "210K playing",
+      "playing": 171384,
+      "players": "171K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
-      "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 196596,
-      "players": "197K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d4f7aea44aeb7018aefbd45d11062e63/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
@@ -69,21 +69,21 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 193254,
-      "players": "193K playing",
+      "playing": 163835,
+      "players": "164K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 186953,
-      "players": "187K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 129918,
+      "players": "130K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 149304,
-      "players": "149K playing",
+      "playing": 120395,
+      "players": "120K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
-      "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 121407,
-      "players": "121K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
       "name": "Steal a Brainrot",
       "slug": "steal-a-brainrot",
       "covered": false,
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 106547,
+      "playing": 106552,
       "players": "107K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-fcdec94c7542627c9b5947a3102a0b6c/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Dandy's World",
+      "slug": "dandy-s-world",
+      "covered": false,
+      "developer": "BlushCrunch Studio",
+      "placeId": "16116270224",
+      "universeId": "5569032992",
+      "playing": 102161,
+      "players": "102K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8b2bfa5d917a55580f89e4cabbe6129c/256/256/Image/Png/noFilter"
     }
   ]
 }
