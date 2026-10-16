@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1480244,
-      "players": "1.5M playing",
+      "playing": 1582030,
+      "players": "1.6M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6e20c32d815e10f133df868ce114a928/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 306545,
-      "players": "307K playing",
+      "playing": 478862,
+      "players": "479K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-01fa54388131d629ec74c042784454c5/256/256/Image/Png/noFilter"
     },
     {
@@ -33,21 +33,21 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 229845,
-      "players": "230K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-501aba5b035ce5ec5ac3c63c3a6be60e/256/256/Image/Png/noFilter"
+      "playing": 382813,
+      "players": "383K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-b8643902ddd894dc03f124cffc7d69af/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
       "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 206086,
-      "players": "206K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d4f7aea44aeb7018aefbd45d11062e63/256/256/Image/Png/noFilter"
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 257182,
+      "players": "257K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,8 +57,8 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 178445,
-      "players": "178K playing",
+      "playing": 249431,
+      "players": "249K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-384fc6072a05d56c9885b3a612f8e981/256/256/Image/Png/noFilter"
     },
     {
@@ -69,8 +69,8 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 170574,
-      "players": "171K playing",
+      "playing": 219820,
+      "players": "220K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
@@ -81,45 +81,45 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 165129,
-      "players": "165K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/256/256/Image/Png/noFilter"
+      "playing": 203226,
+      "players": "203K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-6028ed83235d8561b456e7e28f1b647b/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
-      "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 145141,
-      "players": "145K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 9,
       "name": "Jujutsu Shenanigans",
       "slug": "jujutsu-shenanigans",
       "covered": false,
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 97598,
-      "players": "98K playing",
+      "playing": 152230,
+      "players": "152K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 10,
-      "name": "1 Speed Keyboard Escape Candy & Chocolate",
-      "slug": "1-speed-keyboard-escape-candy-chocolate",
+      "rank": 9,
+      "name": "Break and Steal an Egg",
+      "slug": "break-and-steal-an-egg",
       "covered": false,
-      "developer": "SecretVerse Studio",
-      "placeId": "95082159892680",
-      "universeId": "9584852943",
-      "playing": 93122,
-      "players": "93K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c011a406bde32ae7936ce71b2bcf3a3c/256/256/Image/Png/noFilter"
+      "developer": "ILGames x Eggs",
+      "placeId": "114326934417838",
+      "universeId": "10765288803",
+      "playing": 138572,
+      "players": "139K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d4f7aea44aeb7018aefbd45d11062e63/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Dandy's World",
+      "slug": "dandy-s-world",
+      "covered": false,
+      "developer": "BlushCrunch Studio",
+      "placeId": "16116270224",
+      "universeId": "5569032992",
+      "playing": 134957,
+      "players": "135K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8b2bfa5d917a55580f89e4cabbe6129c/256/256/Image/Png/noFilter"
     }
   ]
 }
