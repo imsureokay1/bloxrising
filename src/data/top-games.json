@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1539415,
-      "players": "1.5M playing",
+      "playing": 774953,
+      "players": "775K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-85e9ac0f8158c31b99a1bf4363814ef1/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 456525,
-      "players": "457K playing",
+      "playing": 505221,
+      "players": "505K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
@@ -33,57 +33,57 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 360123,
-      "players": "360K playing",
+      "playing": 314972,
+      "players": "315K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-245d78e6940e8cce07af3874cb58f021/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
-      "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 215846,
-      "players": "216K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
-      "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 205281,
-      "players": "205K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-91a61b892e4b4a0323614c4ec8fcbbde/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 6,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 196878,
-      "players": "197K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 194293,
-      "players": "194K playing",
+      "playing": 228484,
+      "players": "228K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-b8643902ddd894dc03f124cffc7d69af/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 5,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 144313,
+      "players": "144K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 6,
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
+      "covered": false,
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 140009,
+      "players": "140K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-cf0839bf50666c083139830527020a88/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
+      "covered": false,
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 139255,
+      "players": "139K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 184091,
-      "players": "184K playing",
+      "playing": 124502,
+      "players": "125K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Dress To Impress",
-      "slug": "dress-to-impress",
-      "covered": false,
-      "developer": "Dress To Impress Group",
-      "placeId": "15101393044",
-      "universeId": "5203828273",
-      "playing": 105867,
-      "players": "106K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-929ff39bc1d926f3de0298cdf3470b41/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
       "name": "Jujutsu Shenanigans",
       "slug": "jujutsu-shenanigans",
       "covered": false,
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 102979,
-      "players": "103K playing",
+      "playing": 111821,
+      "players": "112K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-4befc0d01c70ccc293d30a131ebacefb/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Dress To Impress",
+      "slug": "dress-to-impress",
+      "covered": false,
+      "developer": "Dress To Impress Group",
+      "placeId": "15101393044",
+      "universeId": "5203828273",
+      "playing": 107077,
+      "players": "107K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-929ff39bc1d926f3de0298cdf3470b41/256/256/Image/Png/noFilter"
     }
   ]
 }
