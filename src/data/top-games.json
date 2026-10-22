@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1330915,
-      "players": "1.3M playing",
+      "playing": 1122359,
+      "players": "1.1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-85e9ac0f8158c31b99a1bf4363814ef1/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 602285,
-      "players": "602K playing",
+      "playing": 657290,
+      "players": "657K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
@@ -33,21 +33,21 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 311407,
-      "players": "311K playing",
+      "playing": 384484,
+      "players": "384K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-245d78e6940e8cce07af3874cb58f021/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "RIVALS",
-      "slug": "rivals",
+      "name": "Adopt Me!",
+      "slug": "adopt-me",
       "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 182722,
-      "players": "183K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/256/256/Image/Png/noFilter"
+      "developer": "Uplift Games",
+      "placeId": "920587237",
+      "universeId": "383310974",
+      "playing": 204249,
+      "players": "204K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-b8643902ddd894dc03f124cffc7d69af/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,45 +57,45 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 173710,
-      "players": "174K playing",
+      "playing": 189257,
+      "players": "189K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 169990,
+      "players": "170K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 160254,
-      "players": "160K playing",
+      "playing": 163154,
+      "players": "163K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 7,
-      "name": "Adopt Me!",
-      "slug": "adopt-me",
-      "covered": false,
-      "developer": "Uplift Games",
-      "placeId": "920587237",
-      "universeId": "383310974",
-      "playing": 143422,
-      "players": "143K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-b8643902ddd894dc03f124cffc7d69af/256/256/Image/Png/noFilter"
-    },
-    {
       "rank": 8,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 139051,
-      "players": "139K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-91a61b892e4b4a0323614c4ec8fcbbde/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 120041,
+      "players": "120K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-4befc0d01c70ccc293d30a131ebacefb/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,21 +105,21 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 100175,
-      "players": "100K playing",
+      "playing": 109670,
+      "players": "110K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-09aa780a140d0d38e45b6e5b8b85317d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
+      "name": "Dress To Impress",
+      "slug": "dress-to-impress",
       "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 97587,
+      "developer": "Dress To Impress Group",
+      "placeId": "15101393044",
+      "universeId": "5203828273",
+      "playing": 98281,
       "players": "98K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-4befc0d01c70ccc293d30a131ebacefb/256/256/Image/Png/noFilter"
+      "icon": "https://tr.rbxcdn.com/180DAY-929ff39bc1d926f3de0298cdf3470b41/256/256/Image/Png/noFilter"
     }
   ]
 }
