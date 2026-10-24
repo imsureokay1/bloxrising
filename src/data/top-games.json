@@ -9,7 +9,7 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 1590407,
+      "playing": 1571399,
       "players": "1.6M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
@@ -21,8 +21,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 959335,
-      "players": "959K playing",
+      "playing": 1039069,
+      "players": "1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-02351c6dea8f18de5c6fbe3311834287/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 506203,
-      "players": "506K playing",
+      "playing": 420602,
+      "players": "421K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
     },
     {
@@ -45,8 +45,8 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 336204,
-      "players": "336K playing",
+      "playing": 254586,
+      "players": "255K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac8bc815065c53cd8aa417f9a78d896/256/256/Image/Png/noFilter"
     },
     {
@@ -57,69 +57,69 @@
       "developer": "Tze's Shenanigans",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 289887,
-      "players": "290K playing",
+      "playing": 236298,
+      "players": "236K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
+      "name": "The Hollow",
+      "slug": "the-hollow",
+      "covered": false,
+      "developer": "Roblox Presents",
+      "placeId": "116463962153167",
+      "universeId": "10770728771",
+      "playing": 218120,
+      "players": "218K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c8b65636fafc702eb1c7e0499367d09a/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 249326,
-      "players": "249K playing",
+      "playing": 191766,
+      "players": "192K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-4dd71502e99ee8c47cbafec4c95c442d/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "RIVALS",
       "slug": "rivals",
       "covered": false,
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 202226,
-      "players": "202K playing",
+      "playing": 172715,
+      "players": "173K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "99 Nights in the Forest",
       "slug": "99-nights-in-the-forest",
       "covered": false,
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 201114,
-      "players": "201K playing",
+      "playing": 161211,
+      "players": "161K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 169100,
-      "players": "169K playing",
+      "playing": 149713,
+      "players": "150K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
-      "name": "Dress To Impress",
-      "slug": "dress-to-impress",
-      "covered": false,
-      "developer": "Dress To Impress Group",
-      "placeId": "15101393044",
-      "universeId": "5203828273",
-      "playing": 164239,
-      "players": "164K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-300a8c319bcffed13b5120cdb98d1213/256/256/Image/Png/noFilter"
     }
   ]
 }
