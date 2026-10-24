@@ -9,9 +9,9 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1271792,
-      "players": "1.3M playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-be822439a615e49decd848a4464be649/256/256/Image/Png/noFilter"
+      "playing": 1615687,
+      "players": "1.6M playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-141184fe98c337ba96a8db1b8bb4dd1d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 2,
@@ -21,8 +21,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 1257630,
-      "players": "1.3M playing",
+      "playing": 1443831,
+      "players": "1.4M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
@@ -33,81 +33,81 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 402964,
-      "players": "403K playing",
+      "playing": 490612,
+      "players": "491K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
-      "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 286501,
-      "players": "287K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
       "name": "99 Nights in the Forest",
       "slug": "99-nights-in-the-forest",
       "covered": false,
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 191413,
-      "players": "191K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
+      "playing": 260304,
+      "players": "260K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-96937de20a21742a1df21899603edd99/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 187653,
-      "players": "188K playing",
+      "playing": 242928,
+      "players": "243K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-4dd71502e99ee8c47cbafec4c95c442d/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "RIVALS",
       "slug": "rivals",
       "covered": false,
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 186247,
-      "players": "186K playing",
+      "playing": 234981,
+      "players": "235K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 8,
-      "name": "Steal a Brainrot",
-      "slug": "steal-a-brainrot",
+      "rank": 7,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "BRAZILIAN SPYDER",
-      "placeId": "109983668079237",
-      "universeId": "7709344486",
-      "playing": 159955,
-      "players": "160K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-09aa780a140d0d38e45b6e5b8b85317d/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 233896,
+      "players": "234K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 152809,
-      "players": "153K playing",
+      "playing": 189349,
+      "players": "189K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
+      "covered": false,
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 138298,
+      "players": "138K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-84ab9af0a0d57d1a15b72ecc69548f9b/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
@@ -117,8 +117,8 @@
       "developer": "ILGames x Eggs",
       "placeId": "114326934417838",
       "universeId": "10765288803",
-      "playing": 134819,
-      "players": "135K playing",
+      "playing": 116626,
+      "players": "117K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-91a61b892e4b4a0323614c4ec8fcbbde/256/256/Image/Png/noFilter"
     }
   ]
