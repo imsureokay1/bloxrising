@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 976706,
-      "players": "977K playing",
+      "playing": 1158352,
+      "players": "1.2M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-02351c6dea8f18de5c6fbe3311834287/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 255697,
-      "players": "256K playing",
+      "playing": 359846,
+      "players": "360K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 219028,
-      "players": "219K playing",
+      "playing": 344025,
+      "players": "344K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
@@ -45,9 +45,9 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 180934,
-      "players": "181K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-4dd71502e99ee8c47cbafec4c95c442d/256/256/Image/Png/noFilter"
+      "playing": 211679,
+      "players": "212K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c8b47b2a1e1cc8a405615b21976e7717/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,8 +57,8 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 173227,
-      "players": "173K playing",
+      "playing": 196121,
+      "players": "196K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac8bc815065c53cd8aa417f9a78d896/256/256/Image/Png/noFilter"
     },
     {
@@ -69,57 +69,57 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 169764,
-      "players": "170K playing",
+      "playing": 193305,
+      "players": "193K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6fea21af78ed824cf3e2e998f63b687c/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 131484,
-      "players": "131K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 8,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 123192,
-      "players": "123K playing",
+      "playing": 168618,
+      "players": "169K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
+      "rank": 8,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 164774,
+      "players": "165K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
+    },
+    {
       "rank": 9,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
+      "covered": false,
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 118561,
+      "players": "119K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
       "name": "Break and Steal an Egg",
       "slug": "break-and-steal-an-egg",
       "covered": false,
       "developer": "ILGames x Eggs",
       "placeId": "114326934417838",
       "universeId": "10765288803",
-      "playing": 118179,
-      "players": "118K playing",
+      "playing": 98408,
+      "players": "98K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-edbc7d8a482a8630b63670a450bee6a3/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 10,
-      "name": "Anime Dice",
-      "slug": "anime-dice",
-      "covered": false,
-      "developer": "More & More Games",
-      "placeId": "113290951185459",
-      "universeId": "10708913337",
-      "playing": 71775,
-      "players": "72K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-6eadd1cbe12feeb513bb90ce46070a07/256/256/Image/Png/noFilter"
     }
   ]
 }
