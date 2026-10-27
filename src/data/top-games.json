@@ -3,27 +3,27 @@
   "games": [
     {
       "rank": 1,
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
+      "covered": false,
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 704979,
+      "players": "705K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-e5b895a686172e5e4aedbd1782b02246/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 2,
       "name": "Steal An Egg",
       "slug": "steal-an-egg",
       "covered": true,
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1158352,
-      "players": "1.2M playing",
+      "playing": 667309,
+      "players": "667K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-02351c6dea8f18de5c6fbe3311834287/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 2,
-      "name": "Brookhaven RP",
-      "slug": "brookhaven-rp",
-      "covered": false,
-      "developer": "Brookhaven by Voldex",
-      "placeId": "4924922222",
-      "universeId": "1686885941",
-      "playing": 359846,
-      "players": "360K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
@@ -33,57 +33,57 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 344025,
-      "players": "344K playing",
+      "playing": 426506,
+      "players": "427K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
+      "name": "Brookhaven RP",
+      "slug": "brookhaven-rp",
+      "covered": false,
+      "developer": "Brookhaven by Voldex",
+      "placeId": "4924922222",
+      "universeId": "1686885941",
+      "playing": 333743,
+      "players": "334K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 5,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 211679,
-      "players": "212K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c8b47b2a1e1cc8a405615b21976e7717/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
-      "name": "Steal a Brainrot",
-      "slug": "steal-a-brainrot",
-      "covered": false,
-      "developer": "BRAZILIAN SPYDER",
-      "placeId": "109983668079237",
-      "universeId": "7709344486",
-      "playing": 196121,
-      "players": "196K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac8bc815065c53cd8aa417f9a78d896/256/256/Image/Png/noFilter"
+      "playing": 199290,
+      "players": "199K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-4dd71502e99ee8c47cbafec4c95c442d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
+      "covered": false,
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 140777,
+      "players": "141K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
       "name": "99 Nights in the Forest",
       "slug": "99-nights-in-the-forest",
       "covered": false,
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 193305,
-      "players": "193K playing",
+      "playing": 128976,
+      "players": "129K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6fea21af78ed824cf3e2e998f63b687c/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 168618,
-      "players": "169K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 164774,
-      "players": "165K playing",
+      "playing": 124367,
+      "players": "124K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
-      "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 118561,
-      "players": "119K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 123521,
+      "players": "124K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
+      "name": "DONT SPLASH",
+      "slug": "dont-splash",
       "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 98408,
-      "players": "98K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-edbc7d8a482a8630b63670a450bee6a3/256/256/Image/Png/noFilter"
+      "developer": "Bacon Theory",
+      "placeId": "119958473240233",
+      "universeId": "10771421858",
+      "playing": 92580,
+      "players": "93K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-7fe70f786eea50c96ec21cdf480fe750/256/256/Image/Png/noFilter"
     }
   ]
 }
