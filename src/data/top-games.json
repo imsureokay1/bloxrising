@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 678023,
-      "players": "678K playing",
+      "playing": 1084968,
+      "players": "1.1M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-02351c6dea8f18de5c6fbe3311834287/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 406819,
-      "players": "407K playing",
+      "playing": 424301,
+      "players": "424K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 318372,
-      "players": "318K playing",
+      "playing": 311891,
+      "players": "312K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-577f3f78d1f056c80db7d2a54c8d384d/256/256/Image/Png/noFilter"
     },
     {
@@ -45,8 +45,8 @@
       "developer": "BRAZILIAN SPYDER",
       "placeId": "109983668079237",
       "universeId": "7709344486",
-      "playing": 242414,
-      "players": "242K playing",
+      "playing": 211983,
+      "players": "212K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-3ac8bc815065c53cd8aa417f9a78d896/256/256/Image/Png/noFilter"
     },
     {
@@ -57,21 +57,21 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 206490,
-      "players": "206K playing",
+      "playing": 210211,
+      "players": "210K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-4dd71502e99ee8c47cbafec4c95c442d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
-      "name": "Jujutsu Shenanigans",
-      "slug": "jujutsu-shenanigans",
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
       "covered": false,
-      "developer": "Tze's Shenanigans",
-      "placeId": "9391468976",
-      "universeId": "3508322461",
-      "playing": 131163,
-      "players": "131K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 169342,
+      "players": "169K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-6fea21af78ed824cf3e2e998f63b687c/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
@@ -81,8 +81,8 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 123996,
-      "players": "124K playing",
+      "playing": 157865,
+      "players": "158K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
     },
     {
@@ -93,33 +93,33 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 115550,
-      "players": "116K playing",
+      "playing": 144720,
+      "players": "145K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
+      "name": "Break and Steal an Egg",
+      "slug": "break-and-steal-an-egg",
       "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 100690,
-      "players": "101K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-6fea21af78ed824cf3e2e998f63b687c/256/256/Image/Png/noFilter"
+      "developer": "ILGames x Eggs",
+      "placeId": "114326934417838",
+      "universeId": "10765288803",
+      "playing": 103415,
+      "players": "103K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-edbc7d8a482a8630b63670a450bee6a3/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "DONT SPLASH",
-      "slug": "dont-splash",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "Bacon Theory",
-      "placeId": "119958473240233",
-      "universeId": "10771421858",
-      "playing": 94222,
-      "players": "94K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-7fe70f786eea50c96ec21cdf480fe750/256/256/Image/Png/noFilter"
+      "developer": "Tze's Shenanigans",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 80453,
+      "players": "80K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
     }
   ]
 }
