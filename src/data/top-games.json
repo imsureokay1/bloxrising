@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 1140198,
-      "players": "1.1M playing",
+      "playing": 1266806,
+      "players": "1.3M playing",
       "icon": "https://tr.rbxcdn.com/180DAY-b961167f9192c74ad75e7a152f88aa98/256/256/Image/Png/noFilter"
     },
     {
@@ -21,33 +21,33 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 367409,
-      "players": "367K playing",
+      "playing": 574589,
+      "players": "575K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ecebfdc5f5b0aa5c4635cdbb8eace755/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
-      "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 366082,
-      "players": "366K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 4,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 352322,
-      "players": "352K playing",
+      "playing": 566463,
+      "players": "566K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 4,
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
+      "covered": false,
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 394396,
+      "players": "394K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,8 +57,8 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 214090,
-      "players": "214K playing",
+      "playing": 267159,
+      "players": "267K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-803b10967bcf106364e5d475685d8545/256/256/Image/Png/noFilter"
     },
     {
@@ -69,8 +69,8 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 191154,
-      "players": "191K playing",
+      "playing": 259700,
+      "players": "260K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
     },
     {
@@ -81,8 +81,8 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 172950,
-      "players": "173K playing",
+      "playing": 256109,
+      "players": "256K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-e37fa2bc895ad96f27cf7c7d0fe94f2c/256/256/Image/Png/noFilter"
     },
     {
@@ -93,33 +93,33 @@
       "developer": "Goofy Chupacabra",
       "placeId": "120219252362013",
       "universeId": "10766972131",
-      "playing": 145425,
-      "players": "145K playing",
+      "playing": 177159,
+      "players": "177K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-66e921f27922a7d8d2248ee0969ba42d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Steal a Brainrot",
-      "slug": "steal-a-brainrot",
+      "name": "DONT SPLASH",
+      "slug": "dont-splash",
       "covered": false,
-      "developer": "BRAZILIAN SPYDER",
-      "placeId": "109983668079237",
-      "universeId": "7709344486",
-      "playing": 133154,
+      "developer": "Bacon Theory",
+      "placeId": "119958473240233",
+      "universeId": "10771421858",
+      "playing": 133125,
       "players": "133K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac8bc815065c53cd8aa417f9a78d896/256/256/Image/Png/noFilter"
+      "icon": "https://tr.rbxcdn.com/180DAY-644bf5a236d485c076985aebb6904180/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "The Hollow",
-      "slug": "the-hollow",
+      "name": "Anime Adventures",
+      "slug": "anime-adventures",
       "covered": false,
-      "developer": "Roblox Presents",
-      "placeId": "116463962153167",
-      "universeId": "10770728771",
-      "playing": 116461,
-      "players": "116K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c8b65636fafc702eb1c7e0499367d09a/256/256/Image/Png/noFilter"
+      "developer": "Gomu",
+      "placeId": "8304191830",
+      "universeId": "3183403065",
+      "playing": 132730,
+      "players": "133K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-7ceb7a64126dbc19469cfdd375fbe762/256/256/Image/Png/noFilter"
     }
   ]
 }
