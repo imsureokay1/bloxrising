@@ -3,27 +3,27 @@
   "games": [
     {
       "rank": 1,
-      "name": "Steal An Egg",
-      "slug": "steal-an-egg",
-      "covered": true,
-      "developer": "and Collect Rare Pets",
-      "placeId": "107778070777162",
-      "universeId": "10563114921",
-      "playing": 870309,
-      "players": "870K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-910355fa3ecc8a4524e0ffa7a55707a3/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 2,
       "name": "Murder Mystery 2",
       "slug": "murder-mystery-2",
       "covered": false,
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 502931,
-      "players": "503K playing",
+      "playing": 584894,
+      "players": "585K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 2,
+      "name": "Steal An Egg",
+      "slug": "steal-an-egg",
+      "covered": true,
+      "developer": "and Collect Rare Pets",
+      "placeId": "107778070777162",
+      "universeId": "10563114921",
+      "playing": 508921,
+      "players": "509K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-910355fa3ecc8a4524e0ffa7a55707a3/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
@@ -33,8 +33,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 313750,
-      "players": "314K playing",
+      "playing": 324233,
+      "players": "324K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-59e7f600e77655f8507846254b461a8b/256/256/Image/Png/noFilter"
     },
     {
@@ -45,45 +45,45 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 267032,
-      "players": "267K playing",
+      "playing": 229756,
+      "players": "230K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
-      "name": "Throw Food For Animals",
-      "slug": "throw-food-for-animals",
-      "covered": false,
-      "developer": "Goofy Chupacabra",
-      "placeId": "120219252362013",
-      "universeId": "10766972131",
-      "playing": 250018,
-      "players": "250K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-29c31870bd22af0578d0b3067022b421/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 6,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 132325,
-      "players": "132K playing",
+      "playing": 141957,
+      "players": "142K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-16972705ca6b7ee982e76269d5b887e8/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 7,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
+      "rank": 6,
+      "name": "Throw Food For Animals",
+      "slug": "throw-food-for-animals",
       "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 127300,
-      "players": "127K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
+      "developer": "Goofy Chupacabra",
+      "placeId": "120219252362013",
+      "universeId": "10766972131",
+      "playing": 140306,
+      "players": "140K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-29c31870bd22af0578d0b3067022b421/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 7,
+      "name": "Steal a Brainrot",
+      "slug": "steal-a-brainrot",
+      "covered": false,
+      "developer": "BRAZILIAN SPYDER",
+      "placeId": "109983668079237",
+      "universeId": "7709344486",
+      "playing": 124948,
+      "players": "125K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-4c294595b6becb4b5b11910cd8413381/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
@@ -93,33 +93,33 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 122614,
-      "players": "123K playing",
+      "playing": 95667,
+      "players": "96K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-1912e777e949b6490e59fa4ac83b1063/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
-      "name": "Anime Adventures",
-      "slug": "anime-adventures",
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
       "covered": false,
-      "developer": "Gomu",
-      "placeId": "8304191830",
-      "universeId": "3183403065",
-      "playing": 101318,
-      "players": "101K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-7ceb7a64126dbc19469cfdd375fbe762/256/256/Image/Png/noFilter"
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 84707,
+      "players": "85K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-c162b715402c51fd948c6686d668456d/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
+      "name": "Jujutsu Shenanigans",
+      "slug": "jujutsu-shenanigans",
       "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 95697,
-      "players": "96K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3aa4bae3dde3b3799cb0e1e748fa52e4/256/256/Image/Png/noFilter"
+      "developer": "Jujutsu Shenanigans!",
+      "placeId": "9391468976",
+      "universeId": "3508322461",
+      "playing": 76732,
+      "players": "77K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
     }
   ]
 }
