@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 926759,
-      "players": "927K playing",
+      "playing": 562545,
+      "players": "563K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-7f84a708b373a2a1df134e08daefe8fa/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 596431,
-      "players": "596K playing",
+      "playing": 366502,
+      "players": "367K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6f23687d6e2dde20e32b4fa84dd0671b/256/256/Image/Png/noFilter"
     },
     {
@@ -33,8 +33,8 @@
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 428226,
-      "players": "428K playing",
+      "playing": 259196,
+      "players": "259K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
     },
     {
@@ -45,81 +45,81 @@
       "developer": "Goofy Chupacabra",
       "placeId": "120219252362013",
       "universeId": "10766972131",
-      "playing": 405564,
-      "players": "406K playing",
+      "playing": 231667,
+      "players": "232K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-eeb61048a8ee1bf008f1d14f7f501166/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
-      "name": "Break and Steal an Egg",
-      "slug": "break-and-steal-an-egg",
-      "covered": false,
-      "developer": "ILGames x Eggs",
-      "placeId": "114326934417838",
-      "universeId": "10765288803",
-      "playing": 379072,
-      "players": "379K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-1307ef5710c44e0cb2432a5c4ad6c35e/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 6,
-      "name": "99 Nights in the Forest",
-      "slug": "99-nights-in-the-forest",
-      "covered": false,
-      "developer": "Grandma's Favourite Games",
-      "placeId": "79546208627805",
-      "universeId": "7326934954",
-      "playing": 246587,
-      "players": "247K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-5dc8686b186676dcc806ef07623ec945/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 7,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 241679,
-      "players": "242K playing",
+      "playing": 228361,
+      "players": "228K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c06fc801af1fbb76e5ee605ce59609f/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 8,
-      "name": "RIVALS",
-      "slug": "rivals",
-      "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 232798,
-      "players": "233K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-5a52ded2ed56c9e92f5edc5fa49d1b3a/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "name": "Murder Mystery 2",
       "slug": "murder-mystery-2",
       "covered": false,
       "developer": "Nikilis",
       "placeId": "142823291",
       "universeId": "66654135",
-      "playing": 201378,
-      "players": "201K playing",
+      "playing": 153706,
+      "players": "154K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 130769,
+      "players": "131K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-5a52ded2ed56c9e92f5edc5fa49d1b3a/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 8,
+      "name": "99 Nights in the Forest",
+      "slug": "99-nights-in-the-forest",
+      "covered": false,
+      "developer": "Grandma's Favourite Games",
+      "placeId": "79546208627805",
+      "universeId": "7326934954",
+      "playing": 124484,
+      "players": "124K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-5dc8686b186676dcc806ef07623ec945/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 9,
       "name": "Jujutsu Shenanigans",
       "slug": "jujutsu-shenanigans",
       "covered": false,
       "developer": "Jujutsu Shenanigans!",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 111256,
-      "players": "111K playing",
+      "playing": 96010,
+      "players": "96K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 10,
+      "name": "Dandy's World",
+      "slug": "dandy-s-world",
+      "covered": false,
+      "developer": "BlushCrunch Studio",
+      "placeId": "16116270224",
+      "universeId": "5569032992",
+      "playing": 85102,
+      "players": "85K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-36941d9b7214ea43a04f9708ffc14aec/256/256/Image/Png/noFilter"
     }
   ]
 }
