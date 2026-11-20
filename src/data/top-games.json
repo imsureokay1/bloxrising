@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "games": [
     {
       "rank": 1,
@@ -9,8 +9,8 @@
       "developer": "and Collect Rare Pets",
       "placeId": "107778070777162",
       "universeId": "10563114921",
-      "playing": 451172,
-      "players": "451K playing",
+      "playing": 499037,
+      "players": "499K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-7f84a708b373a2a1df134e08daefe8fa/256/256/Image/Png/noFilter"
     },
     {
@@ -21,8 +21,8 @@
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 301655,
-      "players": "302K playing",
+      "playing": 277127,
+      "players": "277K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6f23687d6e2dde20e32b4fa84dd0671b/256/256/Image/Png/noFilter"
     },
     {
@@ -33,45 +33,45 @@
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 250671,
-      "players": "251K playing",
+      "playing": 238685,
+      "players": "239K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5c06fc801af1fbb76e5ee605ce59609f/256/256/Image/Png/noFilter"
     },
     {
       "rank": 4,
-      "name": "Throw Food For Animals",
-      "slug": "throw-food-for-animals",
-      "covered": false,
-      "developer": "Goofy Chupacabra",
-      "placeId": "120219252362013",
-      "universeId": "10766972131",
-      "playing": 190274,
-      "players": "190K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-eeb61048a8ee1bf008f1d14f7f501166/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 5,
       "name": "Blox Fruits",
       "slug": "blox-fruits",
       "covered": true,
       "developer": "Gamer Robot Inc",
       "placeId": "2753915549",
       "universeId": "994732206",
-      "playing": 186545,
-      "players": "187K playing",
+      "playing": 193011,
+      "players": "193K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
     },
     {
-      "rank": 6,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
+      "rank": 5,
+      "name": "Throw Food For Animals",
+      "slug": "throw-food-for-animals",
       "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 120550,
-      "players": "121K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
+      "developer": "Goofy Chupacabra",
+      "placeId": "120219252362013",
+      "universeId": "10766972131",
+      "playing": 188833,
+      "players": "189K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-eeb61048a8ee1bf008f1d14f7f501166/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 6,
+      "name": "RIVALS",
+      "slug": "rivals",
+      "covered": false,
+      "developer": "Nosniy Games",
+      "placeId": "17625359962",
+      "universeId": "6035872082",
+      "playing": 115184,
+      "players": "115K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-5a52ded2ed56c9e92f5edc5fa49d1b3a/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
@@ -81,21 +81,21 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 103899,
-      "players": "104K playing",
+      "playing": 115116,
+      "players": "115K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-5dc8686b186676dcc806ef07623ec945/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "RIVALS",
-      "slug": "rivals",
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
       "covered": false,
-      "developer": "Nosniy Games",
-      "placeId": "17625359962",
-      "universeId": "6035872082",
-      "playing": 100525,
-      "players": "101K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-5a52ded2ed56c9e92f5edc5fa49d1b3a/256/256/Image/Png/noFilter"
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 113293,
+      "players": "113K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,8 +105,8 @@
       "developer": "Emo Playworks",
       "placeId": "101277003916102",
       "universeId": "10773618503",
-      "playing": 85987,
-      "players": "86K playing",
+      "playing": 87740,
+      "players": "88K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-53df62d0ff3e6885e50612cdc98e2548/256/256/Image/Png/noFilter"
     },
     {
@@ -117,8 +117,8 @@
       "developer": "Jujutsu Shenanigans!",
       "placeId": "9391468976",
       "universeId": "3508322461",
-      "playing": 71723,
-      "players": "72K playing",
+      "playing": 83498,
+      "players": "83K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-d050b3c50d30c76d215accd60ddbb1c5/256/256/Image/Png/noFilter"
     }
   ]
