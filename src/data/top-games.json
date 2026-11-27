@@ -3,51 +3,51 @@
   "games": [
     {
       "rank": 1,
-      "name": "Steal An Egg",
-      "slug": "steal-an-egg",
-      "covered": true,
-      "developer": "and Collect Rare Pets",
-      "placeId": "107778070777162",
-      "universeId": "10563114921",
-      "playing": 866702,
-      "players": "867K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-de1fa1528e87871c3acb258c9e70ef2f/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 2,
       "name": "Brookhaven RP",
       "slug": "brookhaven-rp",
       "covered": false,
       "developer": "Brookhaven by Voldex",
       "placeId": "4924922222",
       "universeId": "1686885941",
-      "playing": 288787,
-      "players": "289K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-d35bfa465c0ade2afd7c320d17b7474b/256/256/Image/Png/noFilter"
+      "playing": 537237,
+      "players": "537K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-2df2a2c51ae6a29b4d4463bf1c57c4f4/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 2,
+      "name": "Steal An Egg",
+      "slug": "steal-an-egg",
+      "covered": true,
+      "developer": "and Collect Rare Pets",
+      "placeId": "107778070777162",
+      "universeId": "10563114921",
+      "playing": 494027,
+      "players": "494K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-026300867bed07cc3bc527db6946dccb/256/256/Image/Png/noFilter"
     },
     {
       "rank": 3,
-      "name": "Blox Fruits",
-      "slug": "blox-fruits",
-      "covered": true,
-      "developer": "Gamer Robot Inc",
-      "placeId": "2753915549",
-      "universeId": "994732206",
-      "playing": 273467,
-      "players": "273K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
-    },
-    {
-      "rank": 4,
       "name": "Adopt Me!",
       "slug": "adopt-me",
       "covered": false,
       "developer": "Uplift Games",
       "placeId": "920587237",
       "universeId": "383310974",
-      "playing": 238547,
-      "players": "239K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-2aa4197257511c6639c20765be8d9b75/256/256/Image/Png/noFilter"
+      "playing": 447228,
+      "players": "447K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-1a37a7571350d45f22ae0b2f220e0e6f/256/256/Image/Png/noFilter"
+    },
+    {
+      "rank": 4,
+      "name": "Blox Fruits",
+      "slug": "blox-fruits",
+      "covered": true,
+      "developer": "Gamer Robot Inc",
+      "placeId": "2753915549",
+      "universeId": "994732206",
+      "playing": 223908,
+      "players": "224K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-8c9483d381a2da30608e6b1bce490bef/256/256/Image/Png/noFilter"
     },
     {
       "rank": 5,
@@ -57,21 +57,21 @@
       "developer": "Grandma's Favourite Games",
       "placeId": "79546208627805",
       "universeId": "7326934954",
-      "playing": 217441,
-      "players": "217K playing",
+      "playing": 209376,
+      "players": "209K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-1a584067dbd0dadaaec44e3405daa7e1/256/256/Image/Png/noFilter"
     },
     {
       "rank": 6,
-      "name": "Throw Food For Animals",
-      "slug": "throw-food-for-animals",
+      "name": "Murder Mystery 2",
+      "slug": "murder-mystery-2",
       "covered": false,
-      "developer": "Goofy Chupacabra",
-      "placeId": "120219252362013",
-      "universeId": "10766972131",
-      "playing": 211704,
-      "players": "212K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-ba6a8cb09b34cc51a3e13c9a99be8921/256/256/Image/Png/noFilter"
+      "developer": "Nikilis",
+      "placeId": "142823291",
+      "universeId": "66654135",
+      "playing": 188102,
+      "players": "188K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
     },
     {
       "rank": 7,
@@ -81,21 +81,21 @@
       "developer": "Nosniy Games",
       "placeId": "17625359962",
       "universeId": "6035872082",
-      "playing": 161153,
-      "players": "161K playing",
+      "playing": 174021,
+      "players": "174K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-6fb7c0cbb3f71e56a9e4b3230ea5e8e8/256/256/Image/Png/noFilter"
     },
     {
       "rank": 8,
-      "name": "Anime Crusaders X",
-      "slug": "anime-crusaders-x",
+      "name": "Throw Food For Animals",
+      "slug": "throw-food-for-animals",
       "covered": false,
-      "developer": "32x",
-      "placeId": "107573139811370",
-      "universeId": "7660436108",
-      "playing": 117928,
-      "players": "118K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-326d4dd4a96113711cb52740b282e9e0/256/256/Image/Png/noFilter"
+      "developer": "Goofy Chupacabra",
+      "placeId": "120219252362013",
+      "universeId": "10766972131",
+      "playing": 170501,
+      "players": "171K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-183129c2bf72d21f89e91c3497ede2ce/256/256/Image/Png/noFilter"
     },
     {
       "rank": 9,
@@ -105,21 +105,21 @@
       "developer": "Emo Playworks",
       "placeId": "101277003916102",
       "universeId": "10773618503",
-      "playing": 106743,
-      "players": "107K playing",
+      "playing": 148551,
+      "players": "149K playing",
       "icon": "https://tr.rbxcdn.com/180DAY-53df62d0ff3e6885e50612cdc98e2548/256/256/Image/Png/noFilter"
     },
     {
       "rank": 10,
-      "name": "Murder Mystery 2",
-      "slug": "murder-mystery-2",
+      "name": "Dandy's World",
+      "slug": "dandy-s-world",
       "covered": false,
-      "developer": "Nikilis",
-      "placeId": "142823291",
-      "universeId": "66654135",
-      "playing": 99218,
-      "players": "99K playing",
-      "icon": "https://tr.rbxcdn.com/180DAY-3ac5af325970a745b0156a5358174169/256/256/Image/Png/noFilter"
+      "developer": "BlushCrunch Studio",
+      "placeId": "16116270224",
+      "universeId": "5569032992",
+      "playing": 143815,
+      "players": "144K playing",
+      "icon": "https://tr.rbxcdn.com/180DAY-fb753c79a18f8d02d561f7cfea80cb6f/256/256/Image/Png/noFilter"
     }
   ]
 }
